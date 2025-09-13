@@ -1,0 +1,185 @@
+database,table,column,position,data_type,avg_length,cardinality,is_id/key_suffix,table_rows,is_nullable,is_all_null
+NorthWind,Alphabetical list of products,ProductID,1,int,1.0,69,Yes,69,No,No
+NorthWind,Alphabetical list of products,ProductName,2,nvarchar,16.0,69,No,69,No,No
+NorthWind,Alphabetical list of products,SupplierID,3,int,1.0,28,Yes,69,Yes,No
+NorthWind,Alphabetical list of products,CategoryID,4,int,1.0,8,Yes,69,Yes,No
+NorthWind,Alphabetical list of products,QuantityPerUnit,5,nvarchar,14.0,62,No,69,Yes,No
+NorthWind,Alphabetical list of products,UnitPrice,6,money,4.0,55,No,69,Yes,No
+NorthWind,Alphabetical list of products,UnitsInStock,7,smallint,2.0,51,No,69,Yes,No
+NorthWind,Alphabetical list of products,UnitsOnOrder,8,smallint,1.0,10,No,69,Yes,No
+NorthWind,Alphabetical list of products,ReorderLevel,9,smallint,1.0,7,No,69,Yes,No
+NorthWind,Alphabetical list of products,Discontinued,10,bit,1.0,1,No,69,No,No
+NorthWind,Alphabetical list of products,CategoryName,11,nvarchar,10.0,8,No,69,No,No
+NorthWind,Categories,CategoryID,1,int,1.0,8,Yes,8,No,No
+NorthWind,Categories,CategoryName,2,nvarchar,10.0,8,No,8,No,No
+NorthWind,Category Sales for 1997,CategoryName,1,nvarchar,10.0,8,No,8,No,No
+NorthWind,Category Sales for 1997,CategorySales,2,money,8.0,8,No,8,Yes,No
+NorthWind,Current Product List,ProductID,1,int,1.0,69,Yes,69,No,No
+NorthWind,Current Product List,ProductName,2,nvarchar,16.0,69,No,69,No,No
+NorthWind,Customer and Suppliers by City,City,1,nvarchar,7.0,93,No,120,Yes,No
+NorthWind,Customer and Suppliers by City,CompanyName,2,nvarchar,18.0,120,No,120,No,No
+NorthWind,Customer and Suppliers by City,ContactName,3,nvarchar,13.0,120,No,120,Yes,No
+NorthWind,Customer and Suppliers by City,Relationship,4,varchar,9.0,2,No,120,No,No
+NorthWind,CustomerCustomerDemo,CustomerID,1,nchar,0.0,0,Yes,0,No,No
+NorthWind,CustomerCustomerDemo,CustomerTypeID,2,nchar,0.0,0,Yes,0,No,No
+NorthWind,CustomerDemographics,CustomerTypeID,1,nchar,0.0,0,Yes,0,No,No
+NorthWind,Customers,CustomerID,1,nchar,5.0,91,Yes,91,No,No
+NorthWind,Customers,CompanyName,2,nvarchar,18.0,91,No,91,No,No
+NorthWind,Customers,ContactName,3,nvarchar,13.0,91,No,91,Yes,No
+NorthWind,Customers,ContactTitle,4,nvarchar,14.0,12,No,91,Yes,No
+NorthWind,Customers,Address,5,nvarchar,18.0,91,No,91,Yes,No
+NorthWind,Customers,City,6,nvarchar,8.0,69,No,91,Yes,No
+NorthWind,Customers,Region,7,nvarchar,3.0,18,No,91,Yes,No
+NorthWind,Customers,PostalCode,8,nvarchar,5.0,86,No,91,Yes,No
+NorthWind,Customers,Country,9,nvarchar,5.0,21,No,91,Yes,No
+NorthWind,Customers,Phone,10,nvarchar,12.0,91,No,91,Yes,No
+NorthWind,Customers,Fax,11,nvarchar,12.0,69,No,91,Yes,No
+NorthWind,Employees,EmployeeID,1,int,1.0,9,Yes,9,No,No
+NorthWind,Employees,LastName,2,nvarchar,7.0,9,No,9,No,No
+NorthWind,Employees,FirstName,3,nvarchar,5.0,9,No,9,No,No
+NorthWind,Employees,Title,4,nvarchar,19.0,4,No,9,Yes,No
+NorthWind,Employees,TitleOfCourtesy,5,nvarchar,3.0,4,No,9,Yes,No
+NorthWind,Employees,BirthDate,6,datetime,18.0,9,No,9,Yes,No
+NorthWind,Employees,HireDate,7,datetime,18.0,8,No,9,Yes,No
+NorthWind,Employees,Address,8,nvarchar,20.0,9,No,9,Yes,No
+NorthWind,Employees,City,9,nvarchar,6.0,5,No,9,Yes,No
+NorthWind,Employees,Region,10,nvarchar,2.0,1,No,9,Yes,No
+NorthWind,Employees,PostalCode,11,nvarchar,5.0,9,No,9,Yes,No
+NorthWind,Employees,Country,12,nvarchar,2.0,2,No,9,Yes,No
+NorthWind,Employees,HomePhone,13,nvarchar,13.0,9,No,9,Yes,No
+NorthWind,Employees,Extension,14,nvarchar,3.0,9,No,9,Yes,No
+NorthWind,Employees,ReportsTo,17,int,1.0,2,No,9,Yes,No
+NorthWind,Employees,PhotoPath,18,nvarchar,36.0,5,No,9,Yes,No
+NorthWind,EmployeeTerritories,EmployeeID,1,int,1.0,9,Yes,49,No,No
+NorthWind,EmployeeTerritories,TerritoryID,2,nvarchar,5.0,49,Yes,49,No,No
+NorthWind,Invoices,ShipName,1,nvarchar,17.0,90,No,2155,Yes,No
+NorthWind,Invoices,ShipAddress,2,nvarchar,17.0,89,No,2155,Yes,No
+NorthWind,Invoices,ShipCity,3,nvarchar,8.0,70,No,2155,Yes,No
+NorthWind,Invoices,ShipRegion,4,nvarchar,3.0,19,No,2155,Yes,No
+NorthWind,Invoices,ShipPostalCode,5,nvarchar,5.0,84,No,2155,Yes,No
+NorthWind,Invoices,ShipCountry,6,nvarchar,5.0,21,No,2155,Yes,No
+NorthWind,Invoices,CustomerID,7,nchar,5.0,89,Yes,2155,Yes,No
+NorthWind,Invoices,CustomerName,8,nvarchar,17.0,89,No,2155,No,No
+NorthWind,Invoices,Address,9,nvarchar,17.0,89,No,2155,Yes,No
+NorthWind,Invoices,City,10,nvarchar,7.0,69,No,2155,Yes,No
+NorthWind,Invoices,Region,11,nvarchar,3.0,18,No,2155,Yes,No
+NorthWind,Invoices,PostalCode,12,nvarchar,5.0,84,No,2155,Yes,No
+NorthWind,Invoices,Country,13,nvarchar,5.0,21,No,2155,Yes,No
+NorthWind,Invoices,Salesperson,14,nvarchar,14.0,9,No,2155,No,No
+NorthWind,Invoices,OrderID,15,int,5.0,830,Yes,2155,No,No
+NorthWind,Invoices,OrderDate,16,datetime,18.0,480,No,2155,Yes,No
+NorthWind,Invoices,RequiredDate,17,datetime,18.0,454,No,2155,Yes,No
+NorthWind,Invoices,ShippedDate,18,datetime,18.0,387,No,2155,Yes,No
+NorthWind,Invoices,ShipperName,19,nvarchar,14.0,3,No,2155,No,No
+NorthWind,Invoices,ProductID,20,int,1.0,77,Yes,2155,No,No
+NorthWind,Invoices,ProductName,21,nvarchar,16.0,77,No,2155,No,No
+NorthWind,Invoices,UnitPrice,22,money,4.0,116,No,2155,No,No
+NorthWind,Invoices,Quantity,23,smallint,1.0,55,No,2155,No,No
+NorthWind,Invoices,Discount,24,real,2.0,11,No,2155,No,No
+NorthWind,Invoices,ExtendedPrice,25,money,5.0,1141,No,2155,Yes,No
+NorthWind,Invoices,Freight,26,money,5.0,799,No,2155,Yes,No
+NorthWind,Order Details,OrderID,1,int,5.0,830,Yes,2155,No,No
+NorthWind,Order Details,ProductID,2,int,1.0,77,Yes,2155,No,No
+NorthWind,Order Details,UnitPrice,3,money,4.0,116,No,2155,No,No
+NorthWind,Order Details,Quantity,4,smallint,1.0,55,No,2155,No,No
+NorthWind,Order Details,Discount,5,real,2.0,11,No,2155,No,No
+NorthWind,Order Details Extended,OrderID,1,int,5.0,830,Yes,2155,No,No
+NorthWind,Order Details Extended,ProductID,2,int,1.0,77,Yes,2155,No,No
+NorthWind,Order Details Extended,ProductName,3,nvarchar,16.0,77,No,2155,No,No
+NorthWind,Order Details Extended,UnitPrice,4,money,4.0,116,No,2155,No,No
+NorthWind,Order Details Extended,Quantity,5,smallint,1.0,55,No,2155,No,No
+NorthWind,Order Details Extended,Discount,6,real,2.0,11,No,2155,No,No
+NorthWind,Order Details Extended,ExtendedPrice,7,money,5.0,1141,No,2155,Yes,No
+NorthWind,Order Subtotals,OrderID,1,int,5.0,830,Yes,830,No,No
+NorthWind,Order Subtotals,Subtotal,2,money,6.0,795,No,830,Yes,No
+NorthWind,Orders,OrderID,1,int,5.0,830,Yes,830,No,No
+NorthWind,Orders,CustomerID,2,nchar,5.0,89,Yes,830,Yes,No
+NorthWind,Orders,EmployeeID,3,int,1.0,9,Yes,830,Yes,No
+NorthWind,Orders,OrderDate,4,datetime,18.0,480,No,830,Yes,No
+NorthWind,Orders,RequiredDate,5,datetime,18.0,454,No,830,Yes,No
+NorthWind,Orders,ShippedDate,6,datetime,18.0,387,No,830,Yes,No
+NorthWind,Orders,ShipVia,7,int,1.0,3,No,830,Yes,No
+NorthWind,Orders,Freight,8,money,5.0,799,No,830,Yes,No
+NorthWind,Orders,ShipName,9,nvarchar,17.0,90,No,830,Yes,No
+NorthWind,Orders,ShipAddress,10,nvarchar,18.0,89,No,830,Yes,No
+NorthWind,Orders,ShipCity,11,nvarchar,8.0,70,No,830,Yes,No
+NorthWind,Orders,ShipRegion,12,nvarchar,3.0,19,No,830,Yes,No
+NorthWind,Orders,ShipPostalCode,13,nvarchar,5.0,84,No,830,Yes,No
+NorthWind,Orders,ShipCountry,14,nvarchar,5.0,21,No,830,Yes,No
+NorthWind,Orders Qry,OrderID,1,int,5.0,830,Yes,830,No,No
+NorthWind,Orders Qry,CustomerID,2,nchar,5.0,89,Yes,830,Yes,No
+NorthWind,Orders Qry,EmployeeID,3,int,1.0,9,Yes,830,Yes,No
+NorthWind,Orders Qry,OrderDate,4,datetime,18.0,480,No,830,Yes,No
+NorthWind,Orders Qry,RequiredDate,5,datetime,18.0,454,No,830,Yes,No
+NorthWind,Orders Qry,ShippedDate,6,datetime,18.0,387,No,830,Yes,No
+NorthWind,Orders Qry,ShipVia,7,int,1.0,3,No,830,Yes,No
+NorthWind,Orders Qry,Freight,8,money,5.0,799,No,830,Yes,No
+NorthWind,Orders Qry,ShipName,9,nvarchar,17.0,90,No,830,Yes,No
+NorthWind,Orders Qry,ShipAddress,10,nvarchar,18.0,89,No,830,Yes,No
+NorthWind,Orders Qry,ShipCity,11,nvarchar,8.0,70,No,830,Yes,No
+NorthWind,Orders Qry,ShipRegion,12,nvarchar,3.0,19,No,830,Yes,No
+NorthWind,Orders Qry,ShipPostalCode,13,nvarchar,5.0,84,No,830,Yes,No
+NorthWind,Orders Qry,ShipCountry,14,nvarchar,5.0,21,No,830,Yes,No
+NorthWind,Orders Qry,CompanyName,15,nvarchar,17.0,89,No,830,No,No
+NorthWind,Orders Qry,Address,16,nvarchar,18.0,89,No,830,Yes,No
+NorthWind,Orders Qry,City,17,nvarchar,8.0,69,No,830,Yes,No
+NorthWind,Orders Qry,Region,18,nvarchar,3.0,18,No,830,Yes,No
+NorthWind,Orders Qry,PostalCode,19,nvarchar,5.0,84,No,830,Yes,No
+NorthWind,Orders Qry,Country,20,nvarchar,5.0,21,No,830,Yes,No
+NorthWind,Product Sales for 1997,CategoryName,1,nvarchar,10.0,8,No,77,No,No
+NorthWind,Product Sales for 1997,ProductName,2,nvarchar,16.0,77,No,77,No,No
+NorthWind,Product Sales for 1997,ProductSales,3,money,7.0,77,No,77,Yes,No
+NorthWind,Products,ProductID,1,int,1.0,77,Yes,77,No,No
+NorthWind,Products,ProductName,2,nvarchar,16.0,77,No,77,No,No
+NorthWind,Products,SupplierID,3,int,1.0,29,Yes,77,Yes,No
+NorthWind,Products,CategoryID,4,int,1.0,8,Yes,77,Yes,No
+NorthWind,Products,QuantityPerUnit,5,nvarchar,14.0,70,No,77,Yes,No
+NorthWind,Products,UnitPrice,6,money,4.0,62,No,77,Yes,No
+NorthWind,Products,UnitsInStock,7,smallint,1.0,51,No,77,Yes,No
+NorthWind,Products,UnitsOnOrder,8,smallint,1.0,10,No,77,Yes,No
+NorthWind,Products,ReorderLevel,9,smallint,1.0,7,No,77,Yes,No
+NorthWind,Products,Discontinued,10,bit,1.0,2,No,77,No,No
+NorthWind,Products Above Average Price,ProductName,1,nvarchar,18.0,25,No,25,No,No
+NorthWind,Products Above Average Price,UnitPrice,2,money,5.0,23,No,25,Yes,No
+NorthWind,Products by Category,CategoryName,1,nvarchar,10.0,8,No,69,No,No
+NorthWind,Products by Category,ProductName,2,nvarchar,16.0,69,No,69,No,No
+NorthWind,Products by Category,QuantityPerUnit,3,nvarchar,14.0,62,No,69,Yes,No
+NorthWind,Products by Category,UnitsInStock,4,smallint,2.0,51,No,69,Yes,No
+NorthWind,Products by Category,Discontinued,5,bit,1.0,1,No,69,No,No
+NorthWind,Quarterly Orders,CustomerID,1,nchar,5.0,86,Yes,86,Yes,No
+NorthWind,Quarterly Orders,CompanyName,2,nvarchar,18.0,86,No,86,Yes,No
+NorthWind,Quarterly Orders,City,3,nvarchar,8.0,68,No,86,Yes,No
+NorthWind,Quarterly Orders,Country,4,nvarchar,5.0,21,No,86,Yes,No
+NorthWind,Region,RegionID,1,int,1.0,4,Yes,4,No,No
+NorthWind,Region,RegionDescription,2,nchar,7.0,4,No,4,No,No
+NorthWind,Sales by Category,CategoryID,1,int,1.0,8,Yes,77,No,No
+NorthWind,Sales by Category,CategoryName,2,nvarchar,10.0,8,No,77,No,No
+NorthWind,Sales by Category,ProductName,3,nvarchar,16.0,77,No,77,No,No
+NorthWind,Sales by Category,ProductSales,4,money,7.0,77,No,77,Yes,No
+NorthWind,Sales Totals by Amount,SaleAmount,1,money,7.0,66,No,66,Yes,No
+NorthWind,Sales Totals by Amount,OrderID,2,int,5.0,66,Yes,66,No,No
+NorthWind,Sales Totals by Amount,CompanyName,3,nvarchar,16.0,31,No,66,No,No
+NorthWind,Sales Totals by Amount,ShippedDate,4,datetime,18.0,63,No,66,Yes,No
+NorthWind,Shippers,ShipperID,1,int,1.0,3,Yes,3,No,No
+NorthWind,Shippers,CompanyName,2,nvarchar,14.0,3,No,3,No,No
+NorthWind,Shippers,Phone,3,nvarchar,14.0,3,No,3,Yes,No
+NorthWind,Summary of Sales by Quarter,ShippedDate,1,datetime,18.0,387,No,809,Yes,No
+NorthWind,Summary of Sales by Quarter,OrderID,2,int,5.0,809,Yes,809,No,No
+NorthWind,Summary of Sales by Quarter,Subtotal,3,money,6.0,777,No,809,Yes,No
+NorthWind,Summary of Sales by Year,ShippedDate,1,datetime,18.0,387,No,809,Yes,No
+NorthWind,Summary of Sales by Year,OrderID,2,int,5.0,809,Yes,809,No,No
+NorthWind,Summary of Sales by Year,Subtotal,3,money,6.0,777,No,809,Yes,No
+NorthWind,Suppliers,SupplierID,1,int,1.0,29,Yes,29,No,No
+NorthWind,Suppliers,CompanyName,2,nvarchar,19.0,29,No,29,No,No
+NorthWind,Suppliers,ContactName,3,nvarchar,13.0,29,No,29,Yes,No
+NorthWind,Suppliers,ContactTitle,4,nvarchar,18.0,15,No,29,Yes,No
+NorthWind,Suppliers,Address,5,nvarchar,20.0,29,No,29,Yes,No
+NorthWind,Suppliers,City,6,nvarchar,7.0,29,No,29,Yes,No
+NorthWind,Suppliers,Region,7,nvarchar,4.0,8,No,29,Yes,No
+NorthWind,Suppliers,PostalCode,8,nvarchar,5.0,29,No,29,Yes,No
+NorthWind,Suppliers,Country,9,nvarchar,5.0,16,No,29,Yes,No
+NorthWind,Suppliers,Phone,10,nvarchar,12.0,29,No,29,Yes,No
+NorthWind,Suppliers,Fax,11,nvarchar,12.0,13,No,29,Yes,No
+NorthWind,Territories,TerritoryID,1,nvarchar,5.0,53,Yes,53,No,No
+NorthWind,Territories,TerritoryDescription,2,nchar,8.0,52,No,53,No,No
+NorthWind,Territories,RegionID,3,int,1.0,4,Yes,53,No,No

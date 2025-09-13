@@ -1,0 +1,2508 @@
+database,table,column,position,data_type,avg_length,cardinality,is_id/key_suffix,table_rows,is_nullable,is_all_null
+musicbrainz_db,alternative_medium,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,alternative_medium,medium,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,alternative_medium,alternative_release,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,alternative_medium,name,4,character varying,0.0,0,No,0,Yes,No
+musicbrainz_db,alternative_medium_track,alternative_medium,1,integer,0.0,0,No,0,No,No
+musicbrainz_db,alternative_medium_track,track,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,alternative_medium_track,alternative_track,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,alternative_release,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,alternative_release,gid,2,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,alternative_release,release,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,alternative_release,name,4,character varying,0.0,0,No,0,Yes,No
+musicbrainz_db,alternative_release,artist_credit,5,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,alternative_release,type,6,integer,0.0,0,No,0,No,No
+musicbrainz_db,alternative_release,language,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,alternative_release,script,8,integer,0.0,0,No,0,No,No
+musicbrainz_db,alternative_release,comment,9,character varying,0.0,0,No,0,No,No
+musicbrainz_db,alternative_release_type,id,1,integer,1.0,3,Yes,3,No,No
+musicbrainz_db,alternative_release_type,name,2,text,16.67,3,No,3,No,No
+musicbrainz_db,alternative_release_type,parent,3,integer,1.0,1,No,3,Yes,No
+musicbrainz_db,alternative_release_type,child_order,4,integer,1.0,2,No,3,No,No
+musicbrainz_db,alternative_release_type,description,5,text,0.0,1,No,3,Yes,No
+musicbrainz_db,alternative_release_type,gid,6,uuid,36.0,3,Yes,3,No,No
+musicbrainz_db,alternative_track,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,alternative_track,name,2,character varying,0.0,0,No,0,Yes,No
+musicbrainz_db,alternative_track,artist_credit,3,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,alternative_track,ref_count,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,annotation,id,1,integer,6.06,81325,Yes,81325,No,No
+musicbrainz_db,annotation,editor,2,integer,5.94,3298,No,81325,No,No
+musicbrainz_db,annotation,text,3,text,368.74,56641,No,81325,Yes,No
+musicbrainz_db,annotation,changelog,4,character varying,12.86,6701,No,81325,Yes,No
+musicbrainz_db,annotation,created,5,timestamp with time zone,28.89,77646,No,81325,Yes,No
+musicbrainz_db,application,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,application,owner,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,application,name,3,text,0.0,0,No,0,No,No
+musicbrainz_db,application,oauth_id,4,text,0.0,0,Yes,0,No,No
+musicbrainz_db,application,oauth_secret,5,text,0.0,0,No,0,No,No
+musicbrainz_db,application,oauth_redirect_uri,6,text,0.0,0,No,0,Yes,No
+musicbrainz_db,area,id,1,integer,4.95,17727,Yes,17727,No,No
+musicbrainz_db,area,gid,2,uuid,36.0,17727,Yes,17727,No,No
+musicbrainz_db,area,name,3,character varying,9.73,15981,No,17727,No,No
+musicbrainz_db,area,type,4,integer,1.0,8,No,17727,Yes,No
+musicbrainz_db,area,edits_pending,5,integer,1.0,1,No,17727,No,No
+musicbrainz_db,area,last_updated,6,timestamp with time zone,28.89,17727,No,17727,Yes,No
+musicbrainz_db,area,begin_date_year,7,smallint,4.0,13,No,17727,Yes,No
+musicbrainz_db,area,begin_date_month,8,smallint,1.06,4,No,17727,Yes,No
+musicbrainz_db,area,begin_date_day,9,smallint,1.19,3,No,17727,Yes,No
+musicbrainz_db,area,end_date_year,10,smallint,4.0,11,No,17727,Yes,No
+musicbrainz_db,area,end_date_month,11,smallint,1.13,2,No,17727,Yes,No
+musicbrainz_db,area,end_date_day,12,smallint,1.13,3,No,17727,Yes,No
+musicbrainz_db,area,ended,13,boolean,5.0,2,No,17727,No,No
+musicbrainz_db,area,comment,14,character varying,0.03,36,No,17727,No,No
+musicbrainz_db,area_alias,id,1,integer,4.67,18782,Yes,18782,No,No
+musicbrainz_db,area_alias,area,2,integer,4.1,5862,No,18782,No,No
+musicbrainz_db,area_alias,name,3,character varying,10.07,13579,No,18782,No,No
+musicbrainz_db,area_alias,locale,4,text,2.07,121,No,18782,Yes,No
+musicbrainz_db,area_alias,edits_pending,5,integer,1.0,1,No,18782,No,No
+musicbrainz_db,area_alias,last_updated,6,timestamp with time zone,28.89,18730,No,18782,Yes,No
+musicbrainz_db,area_alias,type,7,integer,1.0,3,No,18782,Yes,No
+musicbrainz_db,area_alias,sort_name,8,character varying,10.08,13581,No,18782,No,No
+musicbrainz_db,area_alias,begin_date_year,9,smallint,4.0,17,No,18782,Yes,No
+musicbrainz_db,area_alias,begin_date_month,10,smallint,1.0,2,No,18782,Yes,No
+musicbrainz_db,area_alias,begin_date_day,11,smallint,1.75,2,No,18782,Yes,No
+musicbrainz_db,area_alias,end_date_year,12,smallint,4.0,22,No,18782,Yes,No
+musicbrainz_db,area_alias,end_date_month,13,smallint,1.62,5,No,18782,Yes,No
+musicbrainz_db,area_alias,end_date_day,14,smallint,1.9,5,No,18782,Yes,No
+musicbrainz_db,area_alias,primary_for_locale,15,boolean,4.02,2,No,18782,No,No
+musicbrainz_db,area_alias,ended,16,boolean,5.0,2,No,18782,No,No
+musicbrainz_db,area_alias_type,id,1,integer,1.0,3,Yes,3,No,No
+musicbrainz_db,area_alias_type,name,2,text,10.33,3,No,3,No,No
+musicbrainz_db,area_alias_type,parent,3,integer,0.0,0,No,3,Yes,Yes
+musicbrainz_db,area_alias_type,child_order,4,integer,1.0,1,No,3,No,No
+musicbrainz_db,area_alias_type,description,5,text,0.0,0,No,3,Yes,Yes
+musicbrainz_db,area_alias_type,gid,6,uuid,36.0,3,Yes,3,No,No
+musicbrainz_db,area_annotation,area,1,integer,5.0,4,No,4,No,No
+musicbrainz_db,area_annotation,annotation,2,integer,6.0,4,No,4,No,No
+musicbrainz_db,area_attribute,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,area_attribute,area,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,area_attribute,area_attribute_type,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,area_attribute,area_attribute_type_allowed_value,4,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,area_attribute,area_attribute_text,5,text,0.0,0,No,0,Yes,No
+musicbrainz_db,area_attribute_type,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,area_attribute_type,name,2,character varying,0.0,0,No,0,No,No
+musicbrainz_db,area_attribute_type,comment,3,character varying,0.0,0,No,0,No,No
+musicbrainz_db,area_attribute_type,free_text,4,boolean,0.0,0,No,0,No,No
+musicbrainz_db,area_attribute_type,parent,5,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,area_attribute_type,child_order,6,integer,0.0,0,No,0,No,No
+musicbrainz_db,area_attribute_type,description,7,text,0.0,0,No,0,Yes,No
+musicbrainz_db,area_attribute_type,gid,8,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,area_attribute_type_allowed_value,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,area_attribute_type_allowed_value,area_attribute_type,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,area_attribute_type_allowed_value,value,3,text,0.0,0,No,0,Yes,No
+musicbrainz_db,area_attribute_type_allowed_value,parent,4,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,area_attribute_type_allowed_value,child_order,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,area_attribute_type_allowed_value,description,6,text,0.0,0,No,0,Yes,No
+musicbrainz_db,area_attribute_type_allowed_value,gid,7,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,area_containment,descendant,1,integer,0.0,0,No,0,No,No
+musicbrainz_db,area_containment,parent,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,area_containment,depth,3,smallint,0.0,0,No,0,No,No
+musicbrainz_db,area_gid_redirect,gid,1,uuid,36.0,70,Yes,70,No,No
+musicbrainz_db,area_gid_redirect,new_id,2,integer,4.64,67,Yes,70,No,No
+musicbrainz_db,area_gid_redirect,created,3,timestamp with time zone,28.96,70,No,70,Yes,No
+musicbrainz_db,area_tag,area,1,integer,3.08,693,No,2018,No,No
+musicbrainz_db,area_tag,tag,2,integer,4.76,471,No,2018,No,No
+musicbrainz_db,area_tag,count,3,integer,1.03,14,No,2018,No,No
+musicbrainz_db,area_tag,last_updated,4,timestamp with time zone,28.9,2016,No,2018,Yes,No
+musicbrainz_db,area_tag_raw,area,1,integer,2.9,437,No,2234,No,No
+musicbrainz_db,area_tag_raw,editor,2,integer,6.85,254,No,2234,No,No
+musicbrainz_db,area_tag_raw,tag,3,integer,4.72,351,No,2234,No,No
+musicbrainz_db,area_tag_raw,is_upvote,4,boolean,4.09,2,No,2234,No,No
+musicbrainz_db,area_type,id,1,integer,1.0,9,Yes,9,No,No
+musicbrainz_db,area_type,name,2,character varying,10.78,9,No,9,No,No
+musicbrainz_db,area_type,parent,3,integer,0.0,0,No,9,Yes,Yes
+musicbrainz_db,area_type,child_order,4,integer,1.0,9,No,9,No,No
+musicbrainz_db,area_type,description,5,text,151.0,9,No,9,Yes,No
+musicbrainz_db,area_type,gid,6,uuid,36.0,9,Yes,9,No,No
+musicbrainz_db,artist,id,1,integer,6.35,256975,Yes,256975,No,No
+musicbrainz_db,artist,gid,2,uuid,36.0,256975,Yes,256975,No,No
+musicbrainz_db,artist,name,3,character varying,13.29,249701,No,256975,No,No
+musicbrainz_db,artist,sort_name,4,character varying,14.26,249616,No,256975,No,No
+musicbrainz_db,artist,begin_date_year,5,smallint,4.0,649,No,256975,Yes,No
+musicbrainz_db,artist,begin_date_month,6,smallint,1.24,12,No,256975,Yes,No
+musicbrainz_db,artist,begin_date_day,7,smallint,1.7,31,No,256975,Yes,No
+musicbrainz_db,artist,end_date_year,8,smallint,4.0,595,No,256975,Yes,No
+musicbrainz_db,artist,end_date_month,9,smallint,1.26,12,No,256975,Yes,No
+musicbrainz_db,artist,end_date_day,10,smallint,1.7,31,No,256975,Yes,No
+musicbrainz_db,artist,type,11,integer,1.0,6,No,256975,Yes,No
+musicbrainz_db,artist,area,12,integer,2.86,2806,No,256975,Yes,No
+musicbrainz_db,artist,gender,13,integer,1.0,5,No,256975,Yes,No
+musicbrainz_db,artist,comment,14,character varying,7.51,48583,No,256975,No,No
+musicbrainz_db,artist,edits_pending,15,integer,1.0,8,No,256975,No,No
+musicbrainz_db,artist,last_updated,16,timestamp with time zone,28.89,240901,No,256975,Yes,No
+musicbrainz_db,artist,ended,17,boolean,4.86,2,No,256975,No,No
+musicbrainz_db,artist,begin_area,18,integer,4.26,13542,No,256975,Yes,No
+musicbrainz_db,artist,end_area,19,integer,4.28,4632,No,256975,Yes,No
+musicbrainz_db,artist_alias,id,1,integer,5.67,149259,Yes,149259,No,No
+musicbrainz_db,artist_alias,artist,2,integer,5.9,70277,No,149259,No,No
+musicbrainz_db,artist_alias,name,3,character varying,15.06,146642,No,149259,No,No
+musicbrainz_db,artist_alias,locale,4,text,2.36,233,No,149259,Yes,No
+musicbrainz_db,artist_alias,edits_pending,5,integer,1.0,2,No,149259,No,No
+musicbrainz_db,artist_alias,last_updated,6,timestamp with time zone,28.91,98772,No,149259,Yes,No
+musicbrainz_db,artist_alias,type,7,integer,1.0,3,No,149259,Yes,No
+musicbrainz_db,artist_alias,sort_name,8,character varying,15.58,145857,No,149259,No,No
+musicbrainz_db,artist_alias,begin_date_year,9,smallint,4.0,167,No,149259,Yes,No
+musicbrainz_db,artist_alias,begin_date_month,10,smallint,1.24,12,No,149259,Yes,No
+musicbrainz_db,artist_alias,begin_date_day,11,smallint,1.61,31,No,149259,Yes,No
+musicbrainz_db,artist_alias,end_date_year,12,smallint,4.0,139,No,149259,Yes,No
+musicbrainz_db,artist_alias,end_date_month,13,smallint,1.26,12,No,149259,Yes,No
+musicbrainz_db,artist_alias,end_date_day,14,smallint,1.65,31,No,149259,Yes,No
+musicbrainz_db,artist_alias,primary_for_locale,15,boolean,4.91,2,No,149259,No,No
+musicbrainz_db,artist_alias,ended,16,boolean,4.98,2,No,149259,No,No
+musicbrainz_db,artist_alias_type,id,1,integer,1.0,3,Yes,3,No,No
+musicbrainz_db,artist_alias_type,name,2,text,10.67,3,No,3,No,No
+musicbrainz_db,artist_alias_type,parent,3,integer,0.0,0,No,3,Yes,Yes
+musicbrainz_db,artist_alias_type,child_order,4,integer,1.0,1,No,3,No,No
+musicbrainz_db,artist_alias_type,description,5,text,0.0,0,No,3,Yes,Yes
+musicbrainz_db,artist_alias_type,gid,6,uuid,36.0,3,Yes,3,No,No
+musicbrainz_db,artist_annotation,artist,1,integer,5.5,7691,No,16801,No,No
+musicbrainz_db,artist_annotation,annotation,2,integer,5.64,16801,No,16801,No,No
+musicbrainz_db,artist_attribute,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,artist_attribute,artist,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,artist_attribute,artist_attribute_type,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,artist_attribute,artist_attribute_type_allowed_value,4,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,artist_attribute,artist_attribute_text,5,text,0.0,0,No,0,Yes,No
+musicbrainz_db,artist_attribute_type,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,artist_attribute_type,name,2,character varying,0.0,0,No,0,No,No
+musicbrainz_db,artist_attribute_type,comment,3,character varying,0.0,0,No,0,No,No
+musicbrainz_db,artist_attribute_type,free_text,4,boolean,0.0,0,No,0,No,No
+musicbrainz_db,artist_attribute_type,parent,5,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,artist_attribute_type,child_order,6,integer,0.0,0,No,0,No,No
+musicbrainz_db,artist_attribute_type,description,7,text,0.0,0,No,0,Yes,No
+musicbrainz_db,artist_attribute_type,gid,8,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,artist_attribute_type_allowed_value,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,artist_attribute_type_allowed_value,artist_attribute_type,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,artist_attribute_type_allowed_value,value,3,text,0.0,0,No,0,Yes,No
+musicbrainz_db,artist_attribute_type_allowed_value,parent,4,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,artist_attribute_type_allowed_value,child_order,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,artist_attribute_type_allowed_value,description,6,text,0.0,0,No,0,Yes,No
+musicbrainz_db,artist_attribute_type_allowed_value,gid,7,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,artist_credit,id,1,integer,6.68,285044,Yes,285044,No,No
+musicbrainz_db,artist_credit,name,2,character varying,39.04,282097,No,285044,No,No
+musicbrainz_db,artist_credit,artist_count,3,smallint,1.01,33,No,285044,No,No
+musicbrainz_db,artist_credit,ref_count,4,integer,1.63,4116,No,285044,Yes,No
+musicbrainz_db,artist_credit,created,5,timestamp with time zone,28.91,186207,No,285044,Yes,No
+musicbrainz_db,artist_credit,edits_pending,6,integer,1.0,2,No,285044,No,No
+musicbrainz_db,artist_credit,gid,7,uuid,36.0,285044,Yes,285044,No,No
+musicbrainz_db,artist_credit_gid_redirect,gid,1,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,artist_credit_gid_redirect,new_id,2,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,artist_credit_gid_redirect,created,3,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,artist_credit_name,artist_credit,1,integer,6.84,285044,No,647470,No,No
+musicbrainz_db,artist_credit_name,position,2,smallint,1.01,39,No,647470,No,No
+musicbrainz_db,artist_credit_name,artist,3,integer,5.94,168077,No,647470,No,No
+musicbrainz_db,artist_credit_name,name,4,character varying,15.6,188872,No,647470,No,No
+musicbrainz_db,artist_credit_name,join_phrase,5,text,1.59,1760,No,647470,No,No
+musicbrainz_db,artist_gid_redirect,gid,1,uuid,36.0,38474,Yes,38474,No,No
+musicbrainz_db,artist_gid_redirect,new_id,2,integer,5.77,26773,Yes,38474,No,No
+musicbrainz_db,artist_gid_redirect,created,3,timestamp with time zone,28.91,28610,No,38474,Yes,No
+musicbrainz_db,artist_ipi,artist,1,integer,6.03,30566,No,36750,No,No
+musicbrainz_db,artist_ipi,ipi,2,character,11.0,36608,No,36750,No,No
+musicbrainz_db,artist_ipi,edits_pending,3,integer,1.0,1,No,36750,No,No
+musicbrainz_db,artist_ipi,created,4,timestamp with time zone,28.89,34021,No,36750,Yes,No
+musicbrainz_db,artist_isni,artist,1,integer,5.97,57343,No,59636,No,No
+musicbrainz_db,artist_isni,isni,2,character,16.0,59399,No,59636,No,No
+musicbrainz_db,artist_isni,edits_pending,3,integer,1.0,1,No,59636,No,No
+musicbrainz_db,artist_isni,created,4,timestamp with time zone,28.89,59296,No,59636,Yes,No
+musicbrainz_db,artist_meta,id,1,integer,6.35,256975,Yes,256975,No,No
+musicbrainz_db,artist_meta,rating,2,smallint,2.64,56,No,256975,Yes,No
+musicbrainz_db,artist_meta,rating_count,3,integer,1.01,48,No,256975,Yes,No
+musicbrainz_db,artist_rating_raw,artist,1,integer,5.34,20217,No,32925,No,No
+musicbrainz_db,artist_rating_raw,editor,2,integer,6.53,6797,No,32925,No,No
+musicbrainz_db,artist_rating_raw,rating,3,smallint,2.66,20,No,32925,No,No
+musicbrainz_db,artist_release,is_track_artist,1,boolean,0.0,0,No,0,No,No
+musicbrainz_db,artist_release,artist,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,artist_release,first_release_date,3,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,artist_release,catalog_numbers,4,array,0.0,0,No,0,Yes,No
+musicbrainz_db,artist_release,country_code,5,character,0.0,0,No,0,Yes,No
+musicbrainz_db,artist_release,barcode,6,bigint,0.0,0,No,0,Yes,No
+musicbrainz_db,artist_release,sort_character,7,character,0.0,0,No,0,No,No
+musicbrainz_db,artist_release,release,8,integer,0.0,0,No,0,No,No
+musicbrainz_db,artist_release_group,is_track_artist,1,boolean,0.0,0,No,0,No,No
+musicbrainz_db,artist_release_group,artist,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,artist_release_group,unofficial,3,boolean,0.0,0,No,0,No,No
+musicbrainz_db,artist_release_group,primary_type,4,smallint,0.0,0,No,0,Yes,No
+musicbrainz_db,artist_release_group,secondary_types,5,array,0.0,0,No,0,Yes,No
+musicbrainz_db,artist_release_group,first_release_date,6,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,artist_release_group,sort_character,7,character,0.0,0,No,0,No,No
+musicbrainz_db,artist_release_group,release_group,8,integer,0.0,0,No,0,No,No
+musicbrainz_db,artist_release_group_nonva,is_track_artist,1,boolean,0.0,0,No,0,No,No
+musicbrainz_db,artist_release_group_nonva,artist,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,artist_release_group_nonva,unofficial,3,boolean,0.0,0,No,0,No,No
+musicbrainz_db,artist_release_group_nonva,primary_type,4,smallint,0.0,0,No,0,Yes,No
+musicbrainz_db,artist_release_group_nonva,secondary_types,5,array,0.0,0,No,0,Yes,No
+musicbrainz_db,artist_release_group_nonva,first_release_date,6,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,artist_release_group_nonva,sort_character,7,character,0.0,0,No,0,No,No
+musicbrainz_db,artist_release_group_nonva,release_group,8,integer,0.0,0,No,0,No,No
+musicbrainz_db,artist_release_group_pending_update,release_group,1,integer,0.0,0,No,0,No,No
+musicbrainz_db,artist_release_group_va,is_track_artist,1,boolean,0.0,0,No,0,No,No
+musicbrainz_db,artist_release_group_va,artist,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,artist_release_group_va,unofficial,3,boolean,0.0,0,No,0,No,No
+musicbrainz_db,artist_release_group_va,primary_type,4,smallint,0.0,0,No,0,Yes,No
+musicbrainz_db,artist_release_group_va,secondary_types,5,array,0.0,0,No,0,Yes,No
+musicbrainz_db,artist_release_group_va,first_release_date,6,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,artist_release_group_va,sort_character,7,character,0.0,0,No,0,No,No
+musicbrainz_db,artist_release_group_va,release_group,8,integer,0.0,0,No,0,No,No
+musicbrainz_db,artist_release_nonva,is_track_artist,1,boolean,0.0,0,No,0,No,No
+musicbrainz_db,artist_release_nonva,artist,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,artist_release_nonva,first_release_date,3,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,artist_release_nonva,catalog_numbers,4,array,0.0,0,No,0,Yes,No
+musicbrainz_db,artist_release_nonva,country_code,5,character,0.0,0,No,0,Yes,No
+musicbrainz_db,artist_release_nonva,barcode,6,bigint,0.0,0,No,0,Yes,No
+musicbrainz_db,artist_release_nonva,sort_character,7,character,0.0,0,No,0,No,No
+musicbrainz_db,artist_release_nonva,release,8,integer,0.0,0,No,0,No,No
+musicbrainz_db,artist_release_pending_update,release,1,integer,0.0,0,No,0,No,No
+musicbrainz_db,artist_release_va,is_track_artist,1,boolean,0.0,0,No,0,No,No
+musicbrainz_db,artist_release_va,artist,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,artist_release_va,first_release_date,3,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,artist_release_va,catalog_numbers,4,array,0.0,0,No,0,Yes,No
+musicbrainz_db,artist_release_va,country_code,5,character,0.0,0,No,0,Yes,No
+musicbrainz_db,artist_release_va,barcode,6,bigint,0.0,0,No,0,Yes,No
+musicbrainz_db,artist_release_va,sort_character,7,character,0.0,0,No,0,No,No
+musicbrainz_db,artist_release_va,release,8,integer,0.0,0,No,0,No,No
+musicbrainz_db,artist_series,artist,1,integer,6.31,427,No,721,Yes,No
+musicbrainz_db,artist_series,series,2,integer,5.0,378,No,721,Yes,No
+musicbrainz_db,artist_series,relationship,3,integer,4.84,721,No,721,Yes,No
+musicbrainz_db,artist_series,link_order,4,integer,1.84,211,No,721,Yes,No
+musicbrainz_db,artist_series,link,5,integer,6.03,244,No,721,Yes,No
+musicbrainz_db,artist_series,text_value,6,text,3.75,174,No,721,Yes,No
+musicbrainz_db,artist_tag,artist,1,integer,5.65,54998,No,166228,No,No
+musicbrainz_db,artist_tag,tag,2,integer,3.46,12771,No,166228,No,No
+musicbrainz_db,artist_tag,count,3,integer,1.02,54,No,166228,No,No
+musicbrainz_db,artist_tag,last_updated,4,timestamp with time zone,28.9,133577,No,166228,Yes,No
+musicbrainz_db,artist_tag_raw,artist,1,integer,5.4,45936,No,182266,No,No
+musicbrainz_db,artist_tag_raw,editor,2,integer,6.47,6722,No,182266,No,No
+musicbrainz_db,artist_tag_raw,tag,3,integer,3.38,11860,No,182266,No,No
+musicbrainz_db,artist_tag_raw,is_upvote,4,boolean,4.1,2,No,182266,No,No
+musicbrainz_db,artist_type,id,1,integer,1.0,6,Yes,6,No,No
+musicbrainz_db,artist_type,name,2,character varying,6.5,6,No,6,No,No
+musicbrainz_db,artist_type,parent,3,integer,1.0,1,No,6,Yes,No
+musicbrainz_db,artist_type,child_order,4,integer,1.17,5,No,6,No,No
+musicbrainz_db,artist_type,description,5,text,159.4,5,No,6,Yes,No
+musicbrainz_db,artist_type,gid,6,uuid,36.0,6,Yes,6,No,No
+musicbrainz_db,autoeditor_election,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,autoeditor_election,candidate,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,autoeditor_election,proposer,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,autoeditor_election,seconder_1,4,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,autoeditor_election,seconder_2,5,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,autoeditor_election,status,6,integer,0.0,0,No,0,No,No
+musicbrainz_db,autoeditor_election,yes_votes,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,autoeditor_election,no_votes,8,integer,0.0,0,No,0,No,No
+musicbrainz_db,autoeditor_election,propose_time,9,timestamp with time zone,0.0,0,No,0,No,No
+musicbrainz_db,autoeditor_election,open_time,10,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,autoeditor_election,close_time,11,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,autoeditor_election_vote,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,autoeditor_election_vote,autoeditor_election,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,autoeditor_election_vote,voter,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,autoeditor_election_vote,vote,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,autoeditor_election_vote,vote_time,5,timestamp with time zone,0.0,0,No,0,No,No
+musicbrainz_db,cdtoc,id,1,integer,5.93,38700,Yes,38700,No,No
+musicbrainz_db,cdtoc,discid,2,character,28.0,38700,Yes,38700,No,No
+musicbrainz_db,cdtoc,freedb_id,3,character,8.0,36076,Yes,38700,No,No
+musicbrainz_db,cdtoc,track_count,4,integer,1.7,84,No,38700,No,No
+musicbrainz_db,cdtoc,leadout_offset,5,integer,5.98,33277,No,38700,No,No
+musicbrainz_db,cdtoc,track_offset,6,array,82.32,37509,No,38700,No,No
+musicbrainz_db,cdtoc,created,7,timestamp with time zone,28.94,19878,No,38700,Yes,No
+musicbrainz_db,cdtoc_raw,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,cdtoc_raw,release,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,cdtoc_raw,discid,3,character,0.0,0,Yes,0,No,No
+musicbrainz_db,cdtoc_raw,track_count,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,cdtoc_raw,leadout_offset,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,cdtoc_raw,track_offset,6,array,0.0,0,No,0,No,No
+musicbrainz_db,country_area,area,1,integer,2.59,257,No,257,No,No
+musicbrainz_db,deleted_entity,gid,1,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,deleted_entity,data,2,jsonb,0.0,0,No,0,No,No
+musicbrainz_db,deleted_entity,deleted_at,3,timestamp with time zone,0.0,0,No,0,No,No
+musicbrainz_db,edit,id,1,integer,8.18,114811,Yes,114811,No,No
+musicbrainz_db,edit,editor,2,integer,6.5,4491,No,114811,No,No
+musicbrainz_db,edit,type,3,smallint,3.0,4,No,114811,No,No
+musicbrainz_db,edit,status,4,smallint,1.0,2,No,114811,No,No
+musicbrainz_db,edit,autoedit,5,smallint,1.0,2,No,114811,No,No
+musicbrainz_db,edit,open_time,6,timestamp with time zone,27.59,114807,No,114811,Yes,No
+musicbrainz_db,edit,close_time,7,timestamp with time zone,28.89,114629,No,114811,Yes,No
+musicbrainz_db,edit,expire_time,8,timestamp with time zone,27.59,114807,No,114811,No,No
+musicbrainz_db,edit,language,9,integer,0.0,0,No,114811,Yes,Yes
+musicbrainz_db,edit,quality,10,smallint,1.0,3,No,114811,No,No
+musicbrainz_db,edit_area,edit,1,integer,0.0,0,No,0,No,No
+musicbrainz_db,edit_area,area,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,edit_artist,edit,1,integer,8.19,114762,No,157181,No,No
+musicbrainz_db,edit_artist,artist,2,integer,4.66,12098,No,157181,No,No
+musicbrainz_db,edit_artist,status,3,smallint,1.0,2,No,157181,No,No
+musicbrainz_db,edit_data,edit,1,integer,8.18,114811,No,114811,No,No
+musicbrainz_db,edit_data,data,2,jsonb,8.18,0,No,114811,No,No
+musicbrainz_db,edit_event,edit,1,integer,0.0,0,No,0,No,No
+musicbrainz_db,edit_event,event,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,edit_genre,edit,1,integer,0.0,0,No,0,No,No
+musicbrainz_db,edit_genre,genre,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,edit_instrument,edit,1,integer,0.0,0,No,0,No,No
+musicbrainz_db,edit_instrument,instrument,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,edit_label,edit,1,integer,0.0,0,No,0,No,No
+musicbrainz_db,edit_label,label,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,edit_label,status,3,smallint,0.0,0,No,0,No,No
+musicbrainz_db,edit_mood,edit,1,integer,0.0,0,No,0,No,No
+musicbrainz_db,edit_mood,mood,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,edit_note,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,edit_note,editor,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,edit_note,edit,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,edit_note,text,4,text,0.0,0,No,0,No,No
+musicbrainz_db,edit_note,post_time,5,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,edit_note_change,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,edit_note_change,status,2,user-defined,0.0,0,No,0,Yes,No
+musicbrainz_db,edit_note_change,edit_note,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,edit_note_change,change_editor,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,edit_note_change,change_time,5,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,edit_note_change,old_note,6,text,0.0,0,No,0,No,No
+musicbrainz_db,edit_note_change,new_note,7,text,0.0,0,No,0,No,No
+musicbrainz_db,edit_note_change,reason,8,text,0.0,0,No,0,No,No
+musicbrainz_db,edit_note_recipient,recipient,1,integer,0.0,0,No,0,No,No
+musicbrainz_db,edit_note_recipient,edit_note,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,edit_place,edit,1,integer,0.0,0,No,0,No,No
+musicbrainz_db,edit_place,place,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,edit_recording,edit,1,integer,9.0,2,No,13,No,No
+musicbrainz_db,edit_recording,recording,2,integer,8.0,13,No,13,No,No
+musicbrainz_db,edit_release,edit,1,integer,8.18,114809,No,114814,No,No
+musicbrainz_db,edit_release,release,2,integer,6.53,26926,No,114814,No,No
+musicbrainz_db,edit_release_group,edit,1,integer,8.19,114466,No,114468,No,No
+musicbrainz_db,edit_release_group,release_group,2,integer,6.25,21354,No,114468,No,No
+musicbrainz_db,edit_series,edit,1,integer,0.0,0,No,0,No,No
+musicbrainz_db,edit_series,series,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,edit_url,edit,1,integer,0.0,0,No,0,No,No
+musicbrainz_db,edit_url,url,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,edit_work,edit,1,integer,0.0,0,No,0,No,No
+musicbrainz_db,edit_work,work,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,editor,id,1,integer,6.5,22808,Yes,22808,No,No
+musicbrainz_db,editor,name,2,character varying,9.47,22808,No,22808,No,No
+musicbrainz_db,editor,privs,3,integer,1.0,1,No,22808,Yes,No
+musicbrainz_db,editor,email,4,character varying,0.0,1,No,22808,Yes,No
+musicbrainz_db,editor,website,5,character varying,0.0,0,No,22808,Yes,Yes
+musicbrainz_db,editor,bio,6,text,0.0,0,No,22808,Yes,Yes
+musicbrainz_db,editor,member_since,7,timestamp with time zone,28.89,22782,No,22808,Yes,No
+musicbrainz_db,editor,email_confirm_date,8,timestamp with time zone,28.89,21491,No,22808,Yes,No
+musicbrainz_db,editor,last_login_date,9,timestamp with time zone,29.0,1,No,22808,Yes,No
+musicbrainz_db,editor,last_updated,10,timestamp with time zone,28.49,12656,No,22808,Yes,No
+musicbrainz_db,editor,birth_date,11,date,0.0,0,No,22808,Yes,Yes
+musicbrainz_db,editor,gender,12,integer,0.0,0,No,22808,Yes,Yes
+musicbrainz_db,editor,area,13,integer,0.0,0,No,22808,Yes,Yes
+musicbrainz_db,editor,password,14,character varying,13.0,1,No,22808,No,No
+musicbrainz_db,editor,ha1,15,character,32.0,22808,No,22808,No,No
+musicbrainz_db,editor,deleted,16,boolean,4.99,2,No,22808,No,No
+musicbrainz_db,editor_collection,id,1,integer,6.55,1167,Yes,1167,No,No
+musicbrainz_db,editor_collection,gid,2,uuid,36.0,1167,Yes,1167,No,No
+musicbrainz_db,editor_collection,editor,3,integer,6.63,693,No,1167,No,No
+musicbrainz_db,editor_collection,name,4,character varying,17.68,946,No,1167,No,No
+musicbrainz_db,editor_collection,public,5,boolean,4.0,1,No,1167,No,No
+musicbrainz_db,editor_collection,description,6,text,386.09,484,No,1167,No,No
+musicbrainz_db,editor_collection,type,7,integer,1.1,12,No,1167,No,No
+musicbrainz_db,editor_collection_area,collection,1,integer,7.0,11,No,12,No,No
+musicbrainz_db,editor_collection_area,area,2,integer,4.17,8,No,12,No,No
+musicbrainz_db,editor_collection_area,added,3,timestamp with time zone,29.0,11,No,12,Yes,No
+musicbrainz_db,editor_collection_area,position,4,integer,1.0,1,No,12,No,No
+musicbrainz_db,editor_collection_area,comment,5,text,0.0,1,No,12,No,No
+musicbrainz_db,editor_collection_artist,collection,1,integer,7.0,322,No,1194,No,No
+musicbrainz_db,editor_collection_artist,artist,2,integer,6.1,889,No,1194,No,No
+musicbrainz_db,editor_collection_artist,added,3,timestamp with time zone,28.86,620,No,1194,Yes,No
+musicbrainz_db,editor_collection_artist,position,4,integer,1.0,1,No,1194,No,No
+musicbrainz_db,editor_collection_artist,comment,5,text,0.0,1,No,1194,No,No
+musicbrainz_db,editor_collection_collaborator,collection,1,integer,0.0,0,No,0,No,No
+musicbrainz_db,editor_collection_collaborator,editor,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,editor_collection_deleted_entity,collection,1,integer,0.0,0,No,0,No,No
+musicbrainz_db,editor_collection_deleted_entity,gid,2,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,editor_collection_deleted_entity,added,3,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,editor_collection_deleted_entity,position,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,editor_collection_deleted_entity,comment,5,text,0.0,0,No,0,No,No
+musicbrainz_db,editor_collection_event,collection,1,integer,7.0,1,No,1,No,No
+musicbrainz_db,editor_collection_event,event,2,integer,5.0,1,No,1,No,No
+musicbrainz_db,editor_collection_event,added,3,timestamp with time zone,29.0,1,No,1,Yes,No
+musicbrainz_db,editor_collection_event,position,4,integer,1.0,1,No,1,No,No
+musicbrainz_db,editor_collection_event,comment,5,text,0.0,1,No,1,No,No
+musicbrainz_db,editor_collection_genre,collection,1,integer,0.0,0,No,0,No,No
+musicbrainz_db,editor_collection_genre,genre,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,editor_collection_genre,added,3,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,editor_collection_genre,position,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,editor_collection_genre,comment,5,text,0.0,0,No,0,No,No
+musicbrainz_db,editor_collection_gid_redirect,gid,1,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,editor_collection_gid_redirect,new_id,2,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,editor_collection_gid_redirect,created,3,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,editor_collection_instrument,collection,1,integer,0.0,0,No,0,No,No
+musicbrainz_db,editor_collection_instrument,instrument,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,editor_collection_instrument,added,3,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,editor_collection_instrument,position,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,editor_collection_instrument,comment,5,text,0.0,0,No,0,No,No
+musicbrainz_db,editor_collection_label,collection,1,integer,7.0,18,No,32,No,No
+musicbrainz_db,editor_collection_label,label,2,integer,5.0,30,No,32,No,No
+musicbrainz_db,editor_collection_label,added,3,timestamp with time zone,28.93,30,No,32,Yes,No
+musicbrainz_db,editor_collection_label,position,4,integer,1.0,1,No,32,No,No
+musicbrainz_db,editor_collection_label,comment,5,text,0.0,1,No,32,No,No
+musicbrainz_db,editor_collection_place,collection,1,integer,0.0,0,No,0,No,No
+musicbrainz_db,editor_collection_place,place,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,editor_collection_place,added,3,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,editor_collection_place,position,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,editor_collection_place,comment,5,text,0.0,0,No,0,No,No
+musicbrainz_db,editor_collection_recording,collection,1,integer,7.0,41,No,158,No,No
+musicbrainz_db,editor_collection_recording,recording,2,integer,7.29,145,No,158,No,No
+musicbrainz_db,editor_collection_recording,added,3,timestamp with time zone,28.94,100,No,158,Yes,No
+musicbrainz_db,editor_collection_recording,position,4,integer,1.0,1,No,158,No,No
+musicbrainz_db,editor_collection_recording,comment,5,text,0.0,1,No,158,No,No
+musicbrainz_db,editor_collection_release,collection,1,integer,6.38,716,No,5115,No,No
+musicbrainz_db,editor_collection_release,release,2,integer,6.42,2726,No,5115,No,No
+musicbrainz_db,editor_collection_release,added,3,timestamp with time zone,28.9,2104,No,5115,Yes,No
+musicbrainz_db,editor_collection_release,position,4,integer,1.0,1,No,5115,No,No
+musicbrainz_db,editor_collection_release,comment,5,text,0.02,2,No,5115,No,No
+musicbrainz_db,editor_collection_release_group,collection,1,integer,7.0,29,No,53,No,No
+musicbrainz_db,editor_collection_release_group,release_group,2,integer,6.51,42,No,53,No,No
+musicbrainz_db,editor_collection_release_group,added,3,timestamp with time zone,28.9,44,No,53,Yes,No
+musicbrainz_db,editor_collection_release_group,position,4,integer,1.0,1,No,53,No,No
+musicbrainz_db,editor_collection_release_group,comment,5,text,0.0,1,No,53,No,No
+musicbrainz_db,editor_collection_series,collection,1,integer,7.0,3,No,3,No,No
+musicbrainz_db,editor_collection_series,series,2,integer,5.0,3,No,3,No,No
+musicbrainz_db,editor_collection_series,added,3,timestamp with time zone,29.0,3,No,3,Yes,No
+musicbrainz_db,editor_collection_series,position,4,integer,1.0,1,No,3,No,No
+musicbrainz_db,editor_collection_series,comment,5,text,0.0,1,No,3,No,No
+musicbrainz_db,editor_collection_type,id,1,integer,1.47,17,Yes,17,No,No
+musicbrainz_db,editor_collection_type,name,2,character varying,15.88,17,No,17,No,No
+musicbrainz_db,editor_collection_type,entity_type,3,character varying,6.59,12,No,17,No,No
+musicbrainz_db,editor_collection_type,parent,4,integer,1.2,3,No,17,Yes,No
+musicbrainz_db,editor_collection_type,child_order,5,integer,1.0,2,No,17,No,No
+musicbrainz_db,editor_collection_type,description,6,text,0.0,0,No,17,Yes,Yes
+musicbrainz_db,editor_collection_type,gid,7,uuid,36.0,17,Yes,17,No,No
+musicbrainz_db,editor_collection_work,collection,1,integer,7.0,26,No,165,No,No
+musicbrainz_db,editor_collection_work,work,2,integer,7.62,161,No,165,No,No
+musicbrainz_db,editor_collection_work,added,3,timestamp with time zone,28.89,133,No,165,Yes,No
+musicbrainz_db,editor_collection_work,position,4,integer,1.0,1,No,165,No,No
+musicbrainz_db,editor_collection_work,comment,5,text,0.0,1,No,165,No,No
+musicbrainz_db,editor_language,editor,1,integer,6.57,3480,No,7879,No,No
+musicbrainz_db,editor_language,language,2,integer,2.97,143,No,7879,No,No
+musicbrainz_db,editor_language,fluency,3,user-defined,7.02,4,No,7879,No,No
+musicbrainz_db,editor_oauth_token,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,editor_oauth_token,editor,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,editor_oauth_token,application,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,editor_oauth_token,authorization_code,4,text,0.0,0,No,0,Yes,No
+musicbrainz_db,editor_oauth_token,refresh_token,5,text,0.0,0,No,0,Yes,No
+musicbrainz_db,editor_oauth_token,access_token,6,text,0.0,0,No,0,Yes,No
+musicbrainz_db,editor_oauth_token,expire_time,7,timestamp with time zone,0.0,0,No,0,No,No
+musicbrainz_db,editor_oauth_token,scope,8,integer,0.0,0,No,0,No,No
+musicbrainz_db,editor_oauth_token,granted,9,timestamp with time zone,0.0,0,No,0,No,No
+musicbrainz_db,editor_oauth_token,code_challenge,10,text,0.0,0,No,0,Yes,No
+musicbrainz_db,editor_oauth_token,code_challenge_method,11,user-defined,0.0,0,No,0,Yes,No
+musicbrainz_db,editor_preference,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,editor_preference,editor,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,editor_preference,name,3,character varying,0.0,0,No,0,No,No
+musicbrainz_db,editor_preference,value,4,character varying,0.0,0,No,0,No,No
+musicbrainz_db,editor_subscribe_artist,id,1,integer,6.35,11705,Yes,11705,No,No
+musicbrainz_db,editor_subscribe_artist,editor,2,integer,6.23,2217,No,11705,No,No
+musicbrainz_db,editor_subscribe_artist,artist,3,integer,6.32,8944,No,11705,No,No
+musicbrainz_db,editor_subscribe_artist,last_edit_sent,4,integer,9.0,4,No,11705,No,No
+musicbrainz_db,editor_subscribe_artist_deleted,editor,1,integer,0.0,0,No,0,No,No
+musicbrainz_db,editor_subscribe_artist_deleted,gid,2,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,editor_subscribe_artist_deleted,deleted_by,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,editor_subscribe_collection,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,editor_subscribe_collection,editor,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,editor_subscribe_collection,collection,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,editor_subscribe_collection,last_edit_sent,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,editor_subscribe_collection,available,5,boolean,0.0,0,No,0,No,No
+musicbrainz_db,editor_subscribe_collection,last_seen_name,6,character varying,0.0,0,No,0,Yes,No
+musicbrainz_db,editor_subscribe_editor,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,editor_subscribe_editor,editor,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,editor_subscribe_editor,subscribed_editor,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,editor_subscribe_editor,last_edit_sent,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,editor_subscribe_label,id,1,integer,5.39,1036,Yes,1036,No,No
+musicbrainz_db,editor_subscribe_label,editor,2,integer,6.3,411,No,1036,No,No
+musicbrainz_db,editor_subscribe_label,label,3,integer,5.37,925,No,1036,No,No
+musicbrainz_db,editor_subscribe_label,last_edit_sent,4,integer,9.0,2,No,1036,No,No
+musicbrainz_db,editor_subscribe_label_deleted,editor,1,integer,0.0,0,No,0,No,No
+musicbrainz_db,editor_subscribe_label_deleted,gid,2,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,editor_subscribe_label_deleted,deleted_by,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,editor_subscribe_series,id,1,integer,4.22,18,Yes,18,No,No
+musicbrainz_db,editor_subscribe_series,editor,2,integer,6.22,9,No,18,No,No
+musicbrainz_db,editor_subscribe_series,series,3,integer,4.22,17,No,18,No,No
+musicbrainz_db,editor_subscribe_series,last_edit_sent,4,integer,9.0,1,No,18,No,No
+musicbrainz_db,editor_subscribe_series_deleted,editor,1,integer,0.0,0,No,0,No,No
+musicbrainz_db,editor_subscribe_series_deleted,gid,2,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,editor_subscribe_series_deleted,deleted_by,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,event,id,1,integer,4.81,4632,Yes,4632,No,No
+musicbrainz_db,event,gid,2,uuid,36.0,4632,Yes,4632,No,No
+musicbrainz_db,event,name,3,character varying,32.31,4048,No,4632,No,No
+musicbrainz_db,event,begin_date_year,4,smallint,4.0,183,No,4632,Yes,No
+musicbrainz_db,event,begin_date_month,5,smallint,1.19,12,No,4632,Yes,No
+musicbrainz_db,event,begin_date_day,6,smallint,1.76,31,No,4632,Yes,No
+musicbrainz_db,event,end_date_year,7,smallint,4.0,183,No,4632,Yes,No
+musicbrainz_db,event,end_date_month,8,smallint,1.19,12,No,4632,Yes,No
+musicbrainz_db,event,end_date_day,9,smallint,1.76,31,No,4632,Yes,No
+musicbrainz_db,event,time,10,time without time zone,8.0,89,No,4632,Yes,No
+musicbrainz_db,event,type,11,integer,1.0,7,No,4632,Yes,No
+musicbrainz_db,event,cancelled,12,boolean,4.98,2,No,4632,No,No
+musicbrainz_db,event,setlist,13,text,123.76,912,No,4632,Yes,No
+musicbrainz_db,event,comment,14,character varying,1.22,272,No,4632,No,No
+musicbrainz_db,event,edits_pending,15,integer,1.0,3,No,4632,No,No
+musicbrainz_db,event,last_updated,16,timestamp with time zone,28.89,4628,No,4632,Yes,No
+musicbrainz_db,event,ended,17,boolean,4.01,2,No,4632,No,No
+musicbrainz_db,event_alias,id,1,integer,3.81,90,Yes,90,No,No
+musicbrainz_db,event_alias,event,2,integer,4.8,59,No,90,No,No
+musicbrainz_db,event_alias,name,3,character varying,21.66,90,No,90,No,No
+musicbrainz_db,event_alias,locale,4,text,2.0,5,No,90,Yes,No
+musicbrainz_db,event_alias,edits_pending,5,integer,1.0,1,No,90,No,No
+musicbrainz_db,event_alias,last_updated,6,timestamp with time zone,28.92,86,No,90,Yes,No
+musicbrainz_db,event_alias,type,7,integer,1.0,2,No,90,Yes,No
+musicbrainz_db,event_alias,sort_name,8,character varying,21.72,90,No,90,No,No
+musicbrainz_db,event_alias,begin_date_year,9,smallint,4.0,1,No,90,Yes,No
+musicbrainz_db,event_alias,begin_date_month,10,smallint,1.0,1,No,90,Yes,No
+musicbrainz_db,event_alias,begin_date_day,11,smallint,1.0,1,No,90,Yes,No
+musicbrainz_db,event_alias,end_date_year,12,smallint,4.0,1,No,90,Yes,No
+musicbrainz_db,event_alias,end_date_month,13,smallint,1.0,1,No,90,Yes,No
+musicbrainz_db,event_alias,end_date_day,14,smallint,1.0,1,No,90,Yes,No
+musicbrainz_db,event_alias,primary_for_locale,15,boolean,4.83,2,No,90,No,No
+musicbrainz_db,event_alias,ended,16,boolean,4.99,2,No,90,No,No
+musicbrainz_db,event_alias_type,id,1,integer,1.0,2,Yes,2,No,No
+musicbrainz_db,event_alias_type,name,2,text,10.5,2,No,2,No,No
+musicbrainz_db,event_alias_type,parent,3,integer,0.0,0,No,2,Yes,Yes
+musicbrainz_db,event_alias_type,child_order,4,integer,1.0,1,No,2,No,No
+musicbrainz_db,event_alias_type,description,5,text,0.0,0,No,2,Yes,Yes
+musicbrainz_db,event_alias_type,gid,6,uuid,36.0,2,Yes,2,No,No
+musicbrainz_db,event_annotation,event,1,integer,4.71,188,No,342,No,No
+musicbrainz_db,event_annotation,annotation,2,integer,6.46,342,No,342,No,No
+musicbrainz_db,event_attribute,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,event_attribute,event,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,event_attribute,event_attribute_type,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,event_attribute,event_attribute_type_allowed_value,4,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,event_attribute,event_attribute_text,5,text,0.0,0,No,0,Yes,No
+musicbrainz_db,event_attribute_type,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,event_attribute_type,name,2,character varying,0.0,0,No,0,No,No
+musicbrainz_db,event_attribute_type,comment,3,character varying,0.0,0,No,0,No,No
+musicbrainz_db,event_attribute_type,free_text,4,boolean,0.0,0,No,0,No,No
+musicbrainz_db,event_attribute_type,parent,5,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,event_attribute_type,child_order,6,integer,0.0,0,No,0,No,No
+musicbrainz_db,event_attribute_type,description,7,text,0.0,0,No,0,Yes,No
+musicbrainz_db,event_attribute_type,gid,8,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,event_attribute_type_allowed_value,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,event_attribute_type_allowed_value,event_attribute_type,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,event_attribute_type_allowed_value,value,3,text,0.0,0,No,0,Yes,No
+musicbrainz_db,event_attribute_type_allowed_value,parent,4,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,event_attribute_type_allowed_value,child_order,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,event_attribute_type_allowed_value,description,6,text,0.0,0,No,0,Yes,No
+musicbrainz_db,event_attribute_type_allowed_value,gid,7,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,event_gid_redirect,gid,1,uuid,36.0,39,Yes,39,No,No
+musicbrainz_db,event_gid_redirect,new_id,2,integer,4.38,33,Yes,39,No,No
+musicbrainz_db,event_gid_redirect,created,3,timestamp with time zone,28.92,33,No,39,Yes,No
+musicbrainz_db,event_meta,id,1,integer,4.81,4632,Yes,4632,No,No
+musicbrainz_db,event_meta,rating,2,smallint,2.42,5,No,4632,Yes,No
+musicbrainz_db,event_meta,rating_count,3,integer,1.0,2,No,4632,Yes,No
+musicbrainz_db,event_meta,event_art_presence,4,user-defined,6.03,2,No,4632,No,No
+musicbrainz_db,event_rating_raw,event,1,integer,4.67,38,No,39,No,No
+musicbrainz_db,event_rating_raw,editor,2,integer,6.46,17,No,39,No,No
+musicbrainz_db,event_rating_raw,rating,3,smallint,2.41,5,No,39,No,No
+musicbrainz_db,event_series,event,1,integer,4.93,14,No,14,Yes,No
+musicbrainz_db,event_series,series,2,integer,4.14,6,No,14,Yes,No
+musicbrainz_db,event_series,relationship,3,integer,4.71,14,No,14,Yes,No
+musicbrainz_db,event_series,link_order,4,integer,1.5,10,No,14,Yes,No
+musicbrainz_db,event_series,link,5,integer,6.0,3,No,14,Yes,No
+musicbrainz_db,event_series,text_value,6,text,0.57,3,No,14,Yes,No
+musicbrainz_db,event_tag,event,1,integer,4.87,490,No,937,No,No
+musicbrainz_db,event_tag,tag,2,integer,3.05,109,No,937,No,No
+musicbrainz_db,event_tag,count,3,integer,1.0,3,No,937,No,No
+musicbrainz_db,event_tag,last_updated,4,timestamp with time zone,28.91,930,No,937,Yes,No
+musicbrainz_db,event_tag_raw,event,1,integer,4.87,484,No,928,No,No
+musicbrainz_db,event_tag_raw,editor,2,integer,6.11,29,No,928,No,No
+musicbrainz_db,event_tag_raw,tag,3,integer,3.04,102,No,928,No,No
+musicbrainz_db,event_tag_raw,is_upvote,4,boolean,4.0,2,No,928,No,No
+musicbrainz_db,event_type,id,1,integer,1.13,8,Yes,8,No,No
+musicbrainz_db,event_type,name,2,character varying,12.75,8,No,8,No,No
+musicbrainz_db,event_type,parent,3,integer,0.0,0,No,8,Yes,Yes
+musicbrainz_db,event_type,child_order,4,integer,1.0,5,No,8,No,No
+musicbrainz_db,event_type,description,5,text,161.13,8,No,8,Yes,No
+musicbrainz_db,event_type,gid,6,uuid,36.0,8,Yes,8,No,No
+musicbrainz_db,gender,id,1,integer,1.0,5,Yes,5,No,No
+musicbrainz_db,gender,name,2,character varying,7.8,5,No,5,No,No
+musicbrainz_db,gender,parent,3,integer,0.0,0,No,5,Yes,Yes
+musicbrainz_db,gender,child_order,4,integer,1.0,5,No,5,No,No
+musicbrainz_db,gender,description,5,text,85.0,1,No,5,Yes,No
+musicbrainz_db,gender,gid,6,uuid,36.0,5,Yes,5,No,No
+musicbrainz_db,genre,id,1,integer,3.49,2012,Yes,2012,No,No
+musicbrainz_db,genre,gid,2,uuid,36.0,2012,Yes,2012,No,No
+musicbrainz_db,genre,name,3,character varying,10.67,2012,No,2012,No,No
+musicbrainz_db,genre,comment,4,character varying,0.14,18,No,2012,No,No
+musicbrainz_db,genre,edits_pending,5,integer,1.0,1,No,2012,No,No
+musicbrainz_db,genre,last_updated,6,timestamp with time zone,28.91,1615,No,2012,Yes,No
+musicbrainz_db,genre_alias,id,1,integer,2.9,917,Yes,917,No,No
+musicbrainz_db,genre_alias,genre,2,integer,3.25,564,No,917,No,No
+musicbrainz_db,genre_alias,name,3,character varying,10.77,917,No,917,No,No
+musicbrainz_db,genre_alias,locale,4,text,2.07,34,No,917,Yes,No
+musicbrainz_db,genre_alias,edits_pending,5,integer,1.0,1,No,917,No,No
+musicbrainz_db,genre_alias,last_updated,6,timestamp with time zone,28.88,913,No,917,Yes,No
+musicbrainz_db,genre_alias,type,7,integer,1.0,2,No,917,Yes,No
+musicbrainz_db,genre_alias,sort_name,8,character varying,10.79,917,No,917,No,No
+musicbrainz_db,genre_alias,begin_date_year,9,smallint,0.0,0,No,917,Yes,Yes
+musicbrainz_db,genre_alias,begin_date_month,10,smallint,0.0,0,No,917,Yes,Yes
+musicbrainz_db,genre_alias,begin_date_day,11,smallint,0.0,0,No,917,Yes,Yes
+musicbrainz_db,genre_alias,end_date_year,12,smallint,0.0,0,No,917,Yes,Yes
+musicbrainz_db,genre_alias,end_date_month,13,smallint,0.0,0,No,917,Yes,Yes
+musicbrainz_db,genre_alias,end_date_day,14,smallint,0.0,0,No,917,Yes,Yes
+musicbrainz_db,genre_alias,primary_for_locale,15,boolean,4.88,2,No,917,No,No
+musicbrainz_db,genre_alias,ended,16,boolean,5.0,1,No,917,No,No
+musicbrainz_db,genre_alias_type,id,1,integer,1.0,2,Yes,2,No,No
+musicbrainz_db,genre_alias_type,name,2,text,10.5,2,No,2,No,No
+musicbrainz_db,genre_alias_type,parent,3,integer,0.0,0,No,2,Yes,Yes
+musicbrainz_db,genre_alias_type,child_order,4,integer,1.0,1,No,2,No,No
+musicbrainz_db,genre_alias_type,description,5,text,0.0,0,No,2,Yes,Yes
+musicbrainz_db,genre_alias_type,gid,6,uuid,36.0,2,Yes,2,No,No
+musicbrainz_db,genre_annotation,genre,1,integer,0.0,0,No,0,No,No
+musicbrainz_db,genre_annotation,annotation,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,instrument,id,1,integer,2.98,1048,Yes,1048,No,No
+musicbrainz_db,instrument,gid,2,uuid,36.0,1048,Yes,1048,No,No
+musicbrainz_db,instrument,name,3,character varying,9.68,1047,No,1048,No,No
+musicbrainz_db,instrument,type,4,integer,1.0,7,No,1048,Yes,No
+musicbrainz_db,instrument,edits_pending,5,integer,1.0,1,No,1048,No,No
+musicbrainz_db,instrument,last_updated,6,timestamp with time zone,28.87,1048,No,1048,Yes,No
+musicbrainz_db,instrument,comment,7,character varying,15.32,500,No,1048,No,No
+musicbrainz_db,instrument,description,8,text,108.03,816,No,1048,No,No
+musicbrainz_db,instrument_alias,id,1,integer,4.4,167,Yes,167,No,No
+musicbrainz_db,instrument_alias,instrument,2,integer,3.16,11,No,167,No,No
+musicbrainz_db,instrument_alias,name,3,character varying,8.12,118,No,167,No,No
+musicbrainz_db,instrument_alias,locale,4,text,2.1,46,No,167,Yes,No
+musicbrainz_db,instrument_alias,edits_pending,5,integer,1.0,1,No,167,No,No
+musicbrainz_db,instrument_alias,last_updated,6,timestamp with time zone,28.86,162,No,167,Yes,No
+musicbrainz_db,instrument_alias,type,7,integer,1.0,2,No,167,Yes,No
+musicbrainz_db,instrument_alias,sort_name,8,character varying,8.86,114,No,167,No,No
+musicbrainz_db,instrument_alias,begin_date_year,9,smallint,0.0,0,No,167,Yes,Yes
+musicbrainz_db,instrument_alias,begin_date_month,10,smallint,0.0,0,No,167,Yes,Yes
+musicbrainz_db,instrument_alias,begin_date_day,11,smallint,0.0,0,No,167,Yes,Yes
+musicbrainz_db,instrument_alias,end_date_year,12,smallint,0.0,0,No,167,Yes,Yes
+musicbrainz_db,instrument_alias,end_date_month,13,smallint,0.0,0,No,167,Yes,Yes
+musicbrainz_db,instrument_alias,end_date_day,14,smallint,0.0,0,No,167,Yes,Yes
+musicbrainz_db,instrument_alias,primary_for_locale,15,boolean,4.23,2,No,167,No,No
+musicbrainz_db,instrument_alias,ended,16,boolean,5.0,1,No,167,No,No
+musicbrainz_db,instrument_alias_type,id,1,integer,1.0,3,Yes,3,No,No
+musicbrainz_db,instrument_alias_type,name,2,text,12.0,3,No,3,No,No
+musicbrainz_db,instrument_alias_type,parent,3,integer,0.0,0,No,3,Yes,Yes
+musicbrainz_db,instrument_alias_type,child_order,4,integer,1.0,2,No,3,No,No
+musicbrainz_db,instrument_alias_type,description,5,text,0.0,0,No,3,Yes,Yes
+musicbrainz_db,instrument_alias_type,gid,6,uuid,36.0,3,Yes,3,No,No
+musicbrainz_db,instrument_annotation,instrument,1,integer,3.0,2,No,2,No,No
+musicbrainz_db,instrument_annotation,annotation,2,integer,6.0,2,No,2,No,No
+musicbrainz_db,instrument_attribute,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,instrument_attribute,instrument,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,instrument_attribute,instrument_attribute_type,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,instrument_attribute,instrument_attribute_type_allowed_value,4,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,instrument_attribute,instrument_attribute_text,5,text,0.0,0,No,0,Yes,No
+musicbrainz_db,instrument_attribute_type,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,instrument_attribute_type,name,2,character varying,0.0,0,No,0,No,No
+musicbrainz_db,instrument_attribute_type,comment,3,character varying,0.0,0,No,0,No,No
+musicbrainz_db,instrument_attribute_type,free_text,4,boolean,0.0,0,No,0,No,No
+musicbrainz_db,instrument_attribute_type,parent,5,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,instrument_attribute_type,child_order,6,integer,0.0,0,No,0,No,No
+musicbrainz_db,instrument_attribute_type,description,7,text,0.0,0,No,0,Yes,No
+musicbrainz_db,instrument_attribute_type,gid,8,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,instrument_attribute_type_allowed_value,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,instrument_attribute_type_allowed_value,instrument_attribute_type,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,instrument_attribute_type_allowed_value,value,3,text,0.0,0,No,0,Yes,No
+musicbrainz_db,instrument_attribute_type_allowed_value,parent,4,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,instrument_attribute_type_allowed_value,child_order,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,instrument_attribute_type_allowed_value,description,6,text,0.0,0,No,0,Yes,No
+musicbrainz_db,instrument_attribute_type_allowed_value,gid,7,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,instrument_gid_redirect,gid,1,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,instrument_gid_redirect,new_id,2,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,instrument_gid_redirect,created,3,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,instrument_tag,instrument,1,integer,3.19,7,No,57,No,No
+musicbrainz_db,instrument_tag,tag,2,integer,4.56,52,No,57,No,No
+musicbrainz_db,instrument_tag,count,3,integer,1.0,2,No,57,No,No
+musicbrainz_db,instrument_tag,last_updated,4,timestamp with time zone,28.95,57,No,57,Yes,No
+musicbrainz_db,instrument_tag_raw,instrument,1,integer,3.0,1,No,1,No,No
+musicbrainz_db,instrument_tag_raw,editor,2,integer,7.0,1,No,1,No,No
+musicbrainz_db,instrument_tag_raw,tag,3,integer,6.0,1,No,1,No,No
+musicbrainz_db,instrument_tag_raw,is_upvote,4,boolean,4.0,1,No,1,No,No
+musicbrainz_db,instrument_type,id,1,integer,1.0,7,Yes,7,No,No
+musicbrainz_db,instrument_type,name,2,character varying,14.86,7,No,7,No,No
+musicbrainz_db,instrument_type,parent,3,integer,0.0,0,No,7,Yes,Yes
+musicbrainz_db,instrument_type,child_order,4,integer,1.29,7,No,7,No,No
+musicbrainz_db,instrument_type,description,5,text,85.0,2,No,7,Yes,No
+musicbrainz_db,instrument_type,gid,6,uuid,36.0,7,Yes,7,No,No
+musicbrainz_db,iso_3166_1,area,1,integer,2.59,258,No,258,No,No
+musicbrainz_db,iso_3166_1,code,2,character,2.0,258,No,258,No,No
+musicbrainz_db,iso_3166_2,area,1,integer,3.71,1653,No,1662,No,No
+musicbrainz_db,iso_3166_2,code,2,character varying,5.23,1662,No,1662,No,No
+musicbrainz_db,iso_3166_3,area,1,integer,3.0,6,No,6,No,No
+musicbrainz_db,iso_3166_3,code,2,character,4.0,6,No,6,No,No
+musicbrainz_db,isrc,id,1,integer,6.55,534472,Yes,534472,No,No
+musicbrainz_db,isrc,recording,2,integer,7.47,491659,No,534472,No,No
+musicbrainz_db,isrc,isrc,3,character,12.0,517723,No,534472,No,No
+musicbrainz_db,isrc,source,4,smallint,1.0,1,No,534472,Yes,No
+musicbrainz_db,isrc,edits_pending,5,integer,1.0,2,No,534472,No,No
+musicbrainz_db,isrc,created,6,timestamp with time zone,28.9,138362,No,534472,Yes,No
+musicbrainz_db,iswc,id,1,integer,5.7,65042,Yes,65042,No,No
+musicbrainz_db,iswc,work,2,integer,7.65,58992,No,65042,No,No
+musicbrainz_db,iswc,iswc,3,character,15.0,64419,No,65042,Yes,No
+musicbrainz_db,iswc,source,4,smallint,0.0,0,No,65042,Yes,Yes
+musicbrainz_db,iswc,edits_pending,5,integer,1.0,2,No,65042,No,No
+musicbrainz_db,iswc,created,6,timestamp with time zone,28.9,57461,No,65042,No,No
+musicbrainz_db,l_area_area,id,1,integer,4.92,1904,Yes,1904,No,No
+musicbrainz_db,l_area_area,link,2,integer,6.0,3,No,1904,No,No
+musicbrainz_db,l_area_area,entity0,3,integer,3.81,426,No,1904,No,No
+musicbrainz_db,l_area_area,entity1,4,integer,4.95,1902,No,1904,No,No
+musicbrainz_db,l_area_area,edits_pending,5,integer,1.0,1,No,1904,No,No
+musicbrainz_db,l_area_area,last_updated,6,timestamp with time zone,28.89,1855,No,1904,Yes,No
+musicbrainz_db,l_area_area,link_order,7,integer,1.0,1,No,1904,No,No
+musicbrainz_db,l_area_area,entity0_credit,8,text,0.0,1,No,1904,No,No
+musicbrainz_db,l_area_area,entity1_credit,9,text,0.0,1,No,1904,No,No
+musicbrainz_db,l_area_artist,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_area_artist,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_area_artist,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_area_artist,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_area_artist,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_area_artist,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_area_artist,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_area_artist,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_area_artist,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_area_event,id,1,integer,3.75,191,Yes,191,No,No
+musicbrainz_db,l_area_event,link,2,integer,6.0,1,No,191,No,No
+musicbrainz_db,l_area_event,entity0,3,integer,4.04,36,No,191,No,No
+musicbrainz_db,l_area_event,entity1,4,integer,4.94,190,No,191,No,No
+musicbrainz_db,l_area_event,edits_pending,5,integer,1.0,1,No,191,No,No
+musicbrainz_db,l_area_event,last_updated,6,timestamp with time zone,28.92,191,No,191,Yes,No
+musicbrainz_db,l_area_event,link_order,7,integer,1.0,1,No,191,No,No
+musicbrainz_db,l_area_event,entity0_credit,8,text,0.0,1,No,191,No,No
+musicbrainz_db,l_area_event,entity1_credit,9,text,0.0,1,No,191,No,No
+musicbrainz_db,l_area_genre,id,1,integer,3.1,135,Yes,135,No,No
+musicbrainz_db,l_area_genre,link,2,integer,6.0,1,No,135,No,No
+musicbrainz_db,l_area_genre,entity0,3,integer,3.01,3,No,135,No,No
+musicbrainz_db,l_area_genre,entity1,4,integer,3.56,135,No,135,No,No
+musicbrainz_db,l_area_genre,edits_pending,5,integer,1.0,1,No,135,No,No
+musicbrainz_db,l_area_genre,last_updated,6,timestamp with time zone,28.9,132,No,135,Yes,No
+musicbrainz_db,l_area_genre,link_order,7,integer,1.0,1,No,135,No,No
+musicbrainz_db,l_area_genre,entity0_credit,8,text,0.0,1,No,135,No,No
+musicbrainz_db,l_area_genre,entity1_credit,9,text,0.0,1,No,135,No,No
+musicbrainz_db,l_area_instrument,id,1,integer,3.0,11,Yes,11,No,No
+musicbrainz_db,l_area_instrument,link,2,integer,6.0,1,No,11,No,No
+musicbrainz_db,l_area_instrument,entity0,3,integer,3.18,4,No,11,No,No
+musicbrainz_db,l_area_instrument,entity1,4,integer,3.0,11,No,11,No,No
+musicbrainz_db,l_area_instrument,edits_pending,5,integer,1.0,1,No,11,No,No
+musicbrainz_db,l_area_instrument,last_updated,6,timestamp with time zone,28.91,11,No,11,Yes,No
+musicbrainz_db,l_area_instrument,link_order,7,integer,1.0,1,No,11,No,No
+musicbrainz_db,l_area_instrument,entity0_credit,8,text,5.27,3,No,11,No,No
+musicbrainz_db,l_area_instrument,entity1_credit,9,text,0.0,1,No,11,No,No
+musicbrainz_db,l_area_label,id,1,integer,2.0,1,Yes,1,No,No
+musicbrainz_db,l_area_label,link,2,integer,7.0,1,No,1,No,No
+musicbrainz_db,l_area_label,entity0,3,integer,3.0,1,No,1,No,No
+musicbrainz_db,l_area_label,entity1,4,integer,6.0,1,No,1,No,No
+musicbrainz_db,l_area_label,edits_pending,5,integer,1.0,1,No,1,No,No
+musicbrainz_db,l_area_label,last_updated,6,timestamp with time zone,29.0,1,No,1,Yes,No
+musicbrainz_db,l_area_label,link_order,7,integer,1.0,1,No,1,No,No
+musicbrainz_db,l_area_label,entity0_credit,8,text,0.0,1,No,1,No,No
+musicbrainz_db,l_area_label,entity1_credit,9,text,0.0,1,No,1,No,No
+musicbrainz_db,l_area_mood,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_area_mood,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_area_mood,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_area_mood,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_area_mood,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_area_mood,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_area_mood,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_area_mood,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_area_mood,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_area_place,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_area_place,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_area_place,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_area_place,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_area_place,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_area_place,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_area_place,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_area_place,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_area_place,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_area_recording,id,1,integer,5.28,18786,Yes,18786,No,No
+musicbrainz_db,l_area_recording,link,2,integer,6.08,3261,No,18786,No,No
+musicbrainz_db,l_area_recording,entity0,3,integer,3.89,584,No,18786,No,No
+musicbrainz_db,l_area_recording,entity1,4,integer,7.55,17511,No,18786,No,No
+musicbrainz_db,l_area_recording,edits_pending,5,integer,1.0,1,No,18786,No,No
+musicbrainz_db,l_area_recording,last_updated,6,timestamp with time zone,28.9,8786,No,18786,Yes,No
+musicbrainz_db,l_area_recording,link_order,7,integer,1.0,1,No,18786,No,No
+musicbrainz_db,l_area_recording,entity0_credit,8,text,0.47,90,No,18786,No,No
+musicbrainz_db,l_area_recording,entity1_credit,9,text,0.0,1,No,18786,No,No
+musicbrainz_db,l_area_release,id,1,integer,4.78,7507,Yes,7507,No,No
+musicbrainz_db,l_area_release,link,2,integer,6.0,54,No,7507,No,No
+musicbrainz_db,l_area_release,entity0,3,integer,3.0,35,No,7507,No,No
+musicbrainz_db,l_area_release,entity1,4,integer,6.49,6368,No,7507,No,No
+musicbrainz_db,l_area_release,edits_pending,5,integer,1.0,1,No,7507,No,No
+musicbrainz_db,l_area_release,last_updated,6,timestamp with time zone,28.9,6506,No,7507,Yes,No
+musicbrainz_db,l_area_release,link_order,7,integer,1.0,1,No,7507,No,No
+musicbrainz_db,l_area_release,entity0_credit,8,text,1.06,39,No,7507,No,No
+musicbrainz_db,l_area_release,entity1_credit,9,text,0.0,1,No,7507,No,No
+musicbrainz_db,l_area_release_group,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_area_release_group,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_area_release_group,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_area_release_group,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_area_release_group,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_area_release_group,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_area_release_group,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_area_release_group,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_area_release_group,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_area_series,id,1,integer,2.86,72,Yes,72,No,No
+musicbrainz_db,l_area_series,link,2,integer,6.15,10,No,72,No,No
+musicbrainz_db,l_area_series,entity0,3,integer,3.06,5,No,72,No,No
+musicbrainz_db,l_area_series,entity1,4,integer,4.88,69,No,72,No,No
+musicbrainz_db,l_area_series,edits_pending,5,integer,1.0,1,No,72,No,No
+musicbrainz_db,l_area_series,last_updated,6,timestamp with time zone,28.96,69,No,72,Yes,No
+musicbrainz_db,l_area_series,link_order,7,integer,1.0,1,No,72,No,No
+musicbrainz_db,l_area_series,entity0_credit,8,text,0.0,1,No,72,No,No
+musicbrainz_db,l_area_series,entity1_credit,9,text,0.0,1,No,72,No,No
+musicbrainz_db,l_area_url,id,1,integer,5.68,1533,Yes,1533,No,No
+musicbrainz_db,l_area_url,link,2,integer,6.0,3,No,1533,No,No
+musicbrainz_db,l_area_url,entity0,3,integer,4.99,496,No,1533,No,No
+musicbrainz_db,l_area_url,entity1,4,integer,7.01,1533,No,1533,No,No
+musicbrainz_db,l_area_url,edits_pending,5,integer,1.0,1,No,1533,No,No
+musicbrainz_db,l_area_url,last_updated,6,timestamp with time zone,28.88,1322,No,1533,Yes,No
+musicbrainz_db,l_area_url,link_order,7,integer,1.0,1,No,1533,No,No
+musicbrainz_db,l_area_url,entity0_credit,8,text,0.0,1,No,1533,No,No
+musicbrainz_db,l_area_url,entity1_credit,9,text,0.0,1,No,1533,No,No
+musicbrainz_db,l_area_work,id,1,integer,3.82,1278,Yes,1278,No,No
+musicbrainz_db,l_area_work,link,2,integer,6.04,500,No,1278,No,No
+musicbrainz_db,l_area_work,entity0,3,integer,4.06,256,No,1278,No,No
+musicbrainz_db,l_area_work,entity1,4,integer,7.65,1024,No,1278,No,No
+musicbrainz_db,l_area_work,edits_pending,5,integer,1.0,1,No,1278,No,No
+musicbrainz_db,l_area_work,last_updated,6,timestamp with time zone,28.93,755,No,1278,Yes,No
+musicbrainz_db,l_area_work,link_order,7,integer,1.0,1,No,1278,No,No
+musicbrainz_db,l_area_work,entity0_credit,8,text,0.22,9,No,1278,No,No
+musicbrainz_db,l_area_work,entity1_credit,9,text,0.0,1,No,1278,No,No
+musicbrainz_db,l_artist_artist,id,1,integer,5.85,14466,Yes,14466,No,No
+musicbrainz_db,l_artist_artist,link,2,integer,4.85,2955,No,14466,No,No
+musicbrainz_db,l_artist_artist,entity0,3,integer,6.33,10168,No,14466,No,No
+musicbrainz_db,l_artist_artist,entity1,4,integer,6.05,8510,No,14466,No,No
+musicbrainz_db,l_artist_artist,edits_pending,5,integer,1.0,2,No,14466,No,No
+musicbrainz_db,l_artist_artist,last_updated,6,timestamp with time zone,28.92,8907,No,14466,Yes,No
+musicbrainz_db,l_artist_artist,link_order,7,integer,1.0,1,No,14466,No,No
+musicbrainz_db,l_artist_artist,entity0_credit,8,text,0.27,305,No,14466,No,No
+musicbrainz_db,l_artist_artist,entity1_credit,9,text,0.11,89,No,14466,No,No
+musicbrainz_db,l_artist_event,id,1,integer,5.44,4598,Yes,4598,No,No
+musicbrainz_db,l_artist_event,link,2,integer,6.02,672,No,4598,No,No
+musicbrainz_db,l_artist_event,entity0,3,integer,6.0,1985,No,4598,No,No
+musicbrainz_db,l_artist_event,entity1,4,integer,4.72,3312,No,4598,No,No
+musicbrainz_db,l_artist_event,edits_pending,5,integer,1.0,2,No,4598,No,No
+musicbrainz_db,l_artist_event,last_updated,6,timestamp with time zone,28.89,3399,No,4598,Yes,No
+musicbrainz_db,l_artist_event,link_order,7,integer,1.0,1,No,4598,No,No
+musicbrainz_db,l_artist_event,entity0_credit,8,text,0.63,110,No,4598,No,No
+musicbrainz_db,l_artist_event,entity1_credit,9,text,0.0,1,No,4598,No,No
+musicbrainz_db,l_artist_genre,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_artist_genre,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_artist_genre,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_artist_genre,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_artist_genre,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_artist_genre,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_artist_genre,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_artist_genre,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_artist_genre,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_artist_instrument,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_artist_instrument,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_artist_instrument,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_artist_instrument,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_artist_instrument,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_artist_instrument,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_artist_instrument,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_artist_instrument,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_artist_instrument,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_artist_label,id,1,integer,4.73,1070,Yes,1070,No,No
+musicbrainz_db,l_artist_label,link,2,integer,5.36,241,No,1070,No,No
+musicbrainz_db,l_artist_label,entity0,3,integer,6.24,916,No,1070,No,No
+musicbrainz_db,l_artist_label,entity1,4,integer,5.12,776,No,1070,No,No
+musicbrainz_db,l_artist_label,edits_pending,5,integer,1.0,1,No,1070,No,No
+musicbrainz_db,l_artist_label,last_updated,6,timestamp with time zone,28.89,834,No,1070,Yes,No
+musicbrainz_db,l_artist_label,link_order,7,integer,1.0,1,No,1070,No,No
+musicbrainz_db,l_artist_label,entity0_credit,8,text,0.3,28,No,1070,No,No
+musicbrainz_db,l_artist_label,entity1_credit,9,text,0.15,9,No,1070,No,No
+musicbrainz_db,l_artist_mood,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_artist_mood,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_artist_mood,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_artist_mood,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_artist_mood,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_artist_mood,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_artist_mood,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_artist_mood,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_artist_mood,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_artist_place,id,1,integer,4.74,1415,Yes,1415,No,No
+musicbrainz_db,l_artist_place,link,2,integer,6.08,722,No,1415,No,No
+musicbrainz_db,l_artist_place,entity0,3,integer,6.57,1054,No,1415,No,No
+musicbrainz_db,l_artist_place,entity1,4,integer,4.53,538,No,1415,No,No
+musicbrainz_db,l_artist_place,edits_pending,5,integer,1.0,1,No,1415,No,No
+musicbrainz_db,l_artist_place,last_updated,6,timestamp with time zone,28.88,1140,No,1415,Yes,No
+musicbrainz_db,l_artist_place,link_order,7,integer,1.0,1,No,1415,No,No
+musicbrainz_db,l_artist_place,entity0_credit,8,text,0.12,13,No,1415,No,No
+musicbrainz_db,l_artist_place,entity1_credit,9,text,0.26,15,No,1415,No,No
+musicbrainz_db,l_artist_recording,id,1,integer,7.33,2020481,Yes,2020481,No,No
+musicbrainz_db,l_artist_recording,link,2,integer,5.35,107356,No,2020481,No,No
+musicbrainz_db,l_artist_recording,entity0,3,integer,6.03,106302,No,2020481,No,No
+musicbrainz_db,l_artist_recording,entity1,4,integer,7.44,563620,No,2020481,No,No
+musicbrainz_db,l_artist_recording,edits_pending,5,integer,1.0,2,No,2020481,No,No
+musicbrainz_db,l_artist_recording,last_updated,6,timestamp with time zone,28.89,337763,No,2020481,Yes,No
+musicbrainz_db,l_artist_recording,link_order,7,integer,1.0,1,No,2020481,No,No
+musicbrainz_db,l_artist_recording,entity0_credit,8,text,1.41,18824,No,2020481,No,No
+musicbrainz_db,l_artist_recording,entity1_credit,9,text,0.0,1,No,2020481,No,No
+musicbrainz_db,l_artist_release,id,1,integer,6.12,19410,Yes,19410,No,No
+musicbrainz_db,l_artist_release,link,2,integer,2.78,1448,No,19410,No,No
+musicbrainz_db,l_artist_release,entity0,3,integer,6.16,4431,No,19410,No,No
+musicbrainz_db,l_artist_release,entity1,4,integer,6.47,12904,No,19410,No,No
+musicbrainz_db,l_artist_release,edits_pending,5,integer,1.0,2,No,19410,No,No
+musicbrainz_db,l_artist_release,last_updated,6,timestamp with time zone,28.92,10479,No,19410,Yes,No
+musicbrainz_db,l_artist_release,link_order,7,integer,1.0,1,No,19410,No,No
+musicbrainz_db,l_artist_release,entity0_credit,8,text,1.03,659,No,19410,No,No
+musicbrainz_db,l_artist_release,entity1_credit,9,text,0.0,1,No,19410,No,No
+musicbrainz_db,l_artist_release_group,id,1,integer,4.13,246,Yes,246,No,No
+musicbrainz_db,l_artist_release_group,link,2,integer,3.15,19,No,246,No,No
+musicbrainz_db,l_artist_release_group,entity0,3,integer,5.83,129,No,246,No,No
+musicbrainz_db,l_artist_release_group,entity1,4,integer,6.44,215,No,246,No,No
+musicbrainz_db,l_artist_release_group,edits_pending,5,integer,1.0,1,No,246,No,No
+musicbrainz_db,l_artist_release_group,last_updated,6,timestamp with time zone,28.87,170,No,246,Yes,No
+musicbrainz_db,l_artist_release_group,link_order,7,integer,1.0,1,No,246,No,No
+musicbrainz_db,l_artist_release_group,entity0_credit,8,text,1.5,24,No,246,No,No
+musicbrainz_db,l_artist_release_group,entity1_credit,9,text,0.0,1,No,246,No,No
+musicbrainz_db,l_artist_series,id,1,integer,4.7,820,Yes,820,No,No
+musicbrainz_db,l_artist_series,link,2,integer,6.02,251,No,820,No,No
+musicbrainz_db,l_artist_series,entity0,3,integer,6.25,494,No,820,No,No
+musicbrainz_db,l_artist_series,entity1,4,integer,4.9,470,No,820,No,No
+musicbrainz_db,l_artist_series,edits_pending,5,integer,1.0,1,No,820,No,No
+musicbrainz_db,l_artist_series,last_updated,6,timestamp with time zone,28.87,721,No,820,Yes,No
+musicbrainz_db,l_artist_series,link_order,7,integer,1.74,211,No,820,No,No
+musicbrainz_db,l_artist_series,entity0_credit,8,text,0.27,16,No,820,No,No
+musicbrainz_db,l_artist_series,entity1_credit,9,text,0.0,1,No,820,No,No
+musicbrainz_db,l_artist_url,id,1,integer,6.72,63443,Yes,63443,No,No
+musicbrainz_db,l_artist_url,link,2,integer,5.22,143,No,63443,No,No
+musicbrainz_db,l_artist_url,entity0,3,integer,6.25,13185,No,63443,No,No
+musicbrainz_db,l_artist_url,entity1,4,integer,7.06,63207,No,63443,No,No
+musicbrainz_db,l_artist_url,edits_pending,5,integer,1.0,2,No,63443,No,No
+musicbrainz_db,l_artist_url,last_updated,6,timestamp with time zone,28.9,32509,No,63443,Yes,No
+musicbrainz_db,l_artist_url,link_order,7,integer,1.0,1,No,63443,No,No
+musicbrainz_db,l_artist_url,entity0_credit,8,text,0.22,524,No,63443,No,No
+musicbrainz_db,l_artist_url,entity1_credit,9,text,0.0,1,No,63443,No,No
+musicbrainz_db,l_artist_work,id,1,integer,6.59,378203,Yes,378203,No,No
+musicbrainz_db,l_artist_work,link,2,integer,5.03,4204,No,378203,No,No
+musicbrainz_db,l_artist_work,entity0,3,integer,5.7,47422,No,378203,No,No
+musicbrainz_db,l_artist_work,entity1,4,integer,7.75,201076,No,378203,No,No
+musicbrainz_db,l_artist_work,edits_pending,5,integer,1.0,2,No,378203,No,No
+musicbrainz_db,l_artist_work,last_updated,6,timestamp with time zone,28.9,143770,No,378203,Yes,No
+musicbrainz_db,l_artist_work,link_order,7,integer,1.0,1,No,378203,No,No
+musicbrainz_db,l_artist_work,entity0_credit,8,text,1.23,8917,No,378203,No,No
+musicbrainz_db,l_artist_work,entity1_credit,9,text,0.0,1,No,378203,No,No
+musicbrainz_db,l_event_event,id,1,integer,4.6,42,Yes,42,No,No
+musicbrainz_db,l_event_event,link,2,integer,6.0,1,No,42,No,No
+musicbrainz_db,l_event_event,entity0,3,integer,4.4,26,No,42,No,No
+musicbrainz_db,l_event_event,entity1,4,integer,4.86,42,No,42,No,No
+musicbrainz_db,l_event_event,edits_pending,5,integer,1.0,1,No,42,No,No
+musicbrainz_db,l_event_event,last_updated,6,timestamp with time zone,28.95,42,No,42,Yes,No
+musicbrainz_db,l_event_event,link_order,7,integer,1.0,1,No,42,No,No
+musicbrainz_db,l_event_event,entity0_credit,8,text,0.0,1,No,42,No,No
+musicbrainz_db,l_event_event,entity1_credit,9,text,0.0,1,No,42,No,No
+musicbrainz_db,l_event_genre,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_event_genre,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_event_genre,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_event_genre,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_event_genre,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_event_genre,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_event_genre,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_event_genre,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_event_genre,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_event_instrument,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_event_instrument,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_event_instrument,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_event_instrument,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_event_instrument,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_event_instrument,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_event_instrument,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_event_instrument,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_event_instrument,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_event_label,id,1,integer,2.94,18,Yes,18,No,No
+musicbrainz_db,l_event_label,link,2,integer,7.0,1,No,18,No,No
+musicbrainz_db,l_event_label,entity0,3,integer,5.0,18,No,18,No,No
+musicbrainz_db,l_event_label,entity1,4,integer,4.94,4,No,18,No,No
+musicbrainz_db,l_event_label,edits_pending,5,integer,1.0,1,No,18,No,No
+musicbrainz_db,l_event_label,last_updated,6,timestamp with time zone,28.89,18,No,18,Yes,No
+musicbrainz_db,l_event_label,link_order,7,integer,1.0,1,No,18,No,No
+musicbrainz_db,l_event_label,entity0_credit,8,text,0.0,1,No,18,No,No
+musicbrainz_db,l_event_label,entity1_credit,9,text,0.0,1,No,18,No,No
+musicbrainz_db,l_event_mood,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_event_mood,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_event_mood,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_event_mood,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_event_mood,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_event_mood,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_event_mood,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_event_mood,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_event_mood,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_event_place,id,1,integer,4.83,453,Yes,453,No,No
+musicbrainz_db,l_event_place,link,2,integer,6.0,1,No,453,No,No
+musicbrainz_db,l_event_place,entity0,3,integer,4.84,452,No,453,No,No
+musicbrainz_db,l_event_place,entity1,4,integer,4.06,128,No,453,No,No
+musicbrainz_db,l_event_place,edits_pending,5,integer,1.0,1,No,453,No,No
+musicbrainz_db,l_event_place,last_updated,6,timestamp with time zone,28.9,452,No,453,Yes,No
+musicbrainz_db,l_event_place,link_order,7,integer,1.0,1,No,453,No,No
+musicbrainz_db,l_event_place,entity0_credit,8,text,0.0,1,No,453,No,No
+musicbrainz_db,l_event_place,entity1_credit,9,text,2.04,23,No,453,No,No
+musicbrainz_db,l_event_recording,id,1,integer,5.09,4158,Yes,4158,No,No
+musicbrainz_db,l_event_recording,link,2,integer,6.0,14,No,4158,No,No
+musicbrainz_db,l_event_recording,entity0,3,integer,4.83,582,No,4158,No,No
+musicbrainz_db,l_event_recording,entity1,4,integer,7.57,3958,No,4158,No,No
+musicbrainz_db,l_event_recording,edits_pending,5,integer,1.0,2,No,4158,No,No
+musicbrainz_db,l_event_recording,last_updated,6,timestamp with time zone,28.91,836,No,4158,Yes,No
+musicbrainz_db,l_event_recording,link_order,7,integer,1.0,1,No,4158,No,No
+musicbrainz_db,l_event_recording,entity0_credit,8,text,0.0,1,No,4158,No,No
+musicbrainz_db,l_event_recording,entity1_credit,9,text,0.0,1,No,4158,No,No
+musicbrainz_db,l_event_release,id,1,integer,4.5,6,Yes,6,No,No
+musicbrainz_db,l_event_release,link,2,integer,6.0,1,No,6,No,No
+musicbrainz_db,l_event_release,entity0,3,integer,4.33,2,No,6,No,No
+musicbrainz_db,l_event_release,entity1,4,integer,6.83,6,No,6,No,No
+musicbrainz_db,l_event_release,edits_pending,5,integer,1.0,1,No,6,No,No
+musicbrainz_db,l_event_release,last_updated,6,timestamp with time zone,29.0,3,No,6,Yes,No
+musicbrainz_db,l_event_release,link_order,7,integer,1.0,1,No,6,No,No
+musicbrainz_db,l_event_release,entity0_credit,8,text,0.0,1,No,6,No,No
+musicbrainz_db,l_event_release,entity1_credit,9,text,0.0,1,No,6,No,No
+musicbrainz_db,l_event_release_group,id,1,integer,3.1,10,Yes,10,No,No
+musicbrainz_db,l_event_release_group,link,2,integer,6.0,2,No,10,No,No
+musicbrainz_db,l_event_release_group,entity0,3,integer,5.0,10,No,10,No,No
+musicbrainz_db,l_event_release_group,entity1,4,integer,6.4,4,No,10,No,No
+musicbrainz_db,l_event_release_group,edits_pending,5,integer,1.0,1,No,10,No,No
+musicbrainz_db,l_event_release_group,last_updated,6,timestamp with time zone,28.8,10,No,10,Yes,No
+musicbrainz_db,l_event_release_group,link_order,7,integer,1.0,1,No,10,No,No
+musicbrainz_db,l_event_release_group,entity0_credit,8,text,0.0,1,No,10,No,No
+musicbrainz_db,l_event_release_group,entity1_credit,9,text,0.0,1,No,10,No,No
+musicbrainz_db,l_event_series,id,1,integer,4.71,14,Yes,14,No,No
+musicbrainz_db,l_event_series,link,2,integer,6.0,3,No,14,No,No
+musicbrainz_db,l_event_series,entity0,3,integer,4.93,14,No,14,No,No
+musicbrainz_db,l_event_series,entity1,4,integer,4.14,6,No,14,No,No
+musicbrainz_db,l_event_series,edits_pending,5,integer,1.0,1,No,14,No,No
+musicbrainz_db,l_event_series,last_updated,6,timestamp with time zone,28.86,12,No,14,Yes,No
+musicbrainz_db,l_event_series,link_order,7,integer,1.5,10,No,14,No,No
+musicbrainz_db,l_event_series,entity0_credit,8,text,0.0,1,No,14,No,No
+musicbrainz_db,l_event_series,entity1_credit,9,text,0.0,1,No,14,No,No
+musicbrainz_db,l_event_url,id,1,integer,5.0,59,Yes,59,No,No
+musicbrainz_db,l_event_url,link,2,integer,6.0,9,No,59,No,No
+musicbrainz_db,l_event_url,entity0,3,integer,4.9,50,No,59,No,No
+musicbrainz_db,l_event_url,entity1,4,integer,7.2,59,No,59,No,No
+musicbrainz_db,l_event_url,edits_pending,5,integer,1.0,1,No,59,No,No
+musicbrainz_db,l_event_url,last_updated,6,timestamp with time zone,28.93,51,No,59,Yes,No
+musicbrainz_db,l_event_url,link_order,7,integer,1.0,1,No,59,No,No
+musicbrainz_db,l_event_url,entity0_credit,8,text,0.0,1,No,59,No,No
+musicbrainz_db,l_event_url,entity1_credit,9,text,0.0,1,No,59,No,No
+musicbrainz_db,l_event_work,id,1,integer,3.61,370,Yes,370,No,No
+musicbrainz_db,l_event_work,link,2,integer,6.0,3,No,370,No,No
+musicbrainz_db,l_event_work,entity0,3,integer,4.88,309,No,370,No,No
+musicbrainz_db,l_event_work,entity1,4,integer,7.67,368,No,370,No,No
+musicbrainz_db,l_event_work,edits_pending,5,integer,1.0,1,No,370,No,No
+musicbrainz_db,l_event_work,last_updated,6,timestamp with time zone,28.9,326,No,370,Yes,No
+musicbrainz_db,l_event_work,link_order,7,integer,1.0,1,No,370,No,No
+musicbrainz_db,l_event_work,entity0_credit,8,text,0.0,1,No,370,No,No
+musicbrainz_db,l_event_work,entity1_credit,9,text,0.0,1,No,370,No,No
+musicbrainz_db,l_genre_genre,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_genre_genre,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_genre,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_genre,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_genre,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_genre,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_genre_genre,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_genre,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_genre,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_instrument,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_genre_instrument,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_instrument,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_instrument,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_instrument,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_instrument,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_genre_instrument,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_instrument,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_instrument,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_label,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_genre_label,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_label,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_label,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_label,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_label,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_genre_label,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_label,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_label,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_mood,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_genre_mood,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_mood,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_mood,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_mood,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_mood,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_genre_mood,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_mood,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_mood,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_place,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_genre_place,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_place,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_place,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_place,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_place,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_genre_place,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_place,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_place,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_recording,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_genre_recording,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_recording,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_recording,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_recording,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_recording,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_genre_recording,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_recording,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_recording,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_release,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_genre_release,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_release,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_release,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_release,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_release,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_genre_release,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_release,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_release,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_release_group,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_genre_release_group,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_release_group,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_release_group,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_release_group,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_release_group,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_genre_release_group,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_release_group,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_release_group,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_series,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_genre_series,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_series,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_series,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_series,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_series,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_genre_series,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_series,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_series,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_url,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_genre_url,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_url,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_url,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_url,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_url,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_genre_url,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_url,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_url,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_work,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_genre_work,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_work,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_work,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_work,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_work,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_genre_work,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_work,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_genre_work,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_instrument,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_instrument_instrument,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_instrument,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_instrument,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_instrument,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_instrument,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_instrument_instrument,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_instrument,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_instrument,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_label,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_instrument_label,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_label,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_label,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_label,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_label,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_instrument_label,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_label,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_label,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_mood,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_instrument_mood,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_mood,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_mood,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_mood,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_mood,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_instrument_mood,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_mood,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_mood,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_place,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_instrument_place,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_place,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_place,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_place,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_place,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_instrument_place,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_place,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_place,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_recording,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_instrument_recording,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_recording,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_recording,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_recording,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_recording,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_instrument_recording,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_recording,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_recording,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_release,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_instrument_release,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_release,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_release,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_release,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_release,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_instrument_release,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_release,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_release,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_release_group,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_instrument_release_group,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_release_group,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_release_group,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_release_group,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_release_group,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_instrument_release_group,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_release_group,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_release_group,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_series,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_instrument_series,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_series,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_series,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_series,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_series,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_instrument_series,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_series,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_series,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_url,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_instrument_url,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_url,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_url,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_url,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_url,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_instrument_url,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_url,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_url,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_work,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_instrument_work,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_work,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_work,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_work,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_work,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_instrument_work,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_work,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_instrument_work,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_label_label,id,1,integer,4.58,1045,Yes,1045,No,No
+musicbrainz_db,l_label_label,link,2,integer,5.3,183,No,1045,No,No
+musicbrainz_db,l_label_label,entity0,3,integer,4.89,666,No,1045,No,No
+musicbrainz_db,l_label_label,entity1,4,integer,5.08,880,No,1045,No,No
+musicbrainz_db,l_label_label,edits_pending,5,integer,1.0,1,No,1045,No,No
+musicbrainz_db,l_label_label,last_updated,6,timestamp with time zone,28.91,824,No,1045,Yes,No
+musicbrainz_db,l_label_label,link_order,7,integer,1.0,1,No,1045,No,No
+musicbrainz_db,l_label_label,entity0_credit,8,text,0.47,14,No,1045,No,No
+musicbrainz_db,l_label_label,entity1_credit,9,text,0.19,14,No,1045,No,No
+musicbrainz_db,l_label_mood,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_label_mood,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_label_mood,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_label_mood,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_label_mood,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_label_mood,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_label_mood,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_label_mood,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_label_mood,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_label_place,id,1,integer,2.54,13,Yes,13,No,No
+musicbrainz_db,l_label_place,link,2,integer,6.0,2,No,13,No,No
+musicbrainz_db,l_label_place,entity0,3,integer,5.23,11,No,13,No,No
+musicbrainz_db,l_label_place,entity1,4,integer,4.62,13,No,13,No,No
+musicbrainz_db,l_label_place,edits_pending,5,integer,1.0,1,No,13,No,No
+musicbrainz_db,l_label_place,last_updated,6,timestamp with time zone,29.0,11,No,13,Yes,No
+musicbrainz_db,l_label_place,link_order,7,integer,1.0,1,No,13,No,No
+musicbrainz_db,l_label_place,entity0_credit,8,text,0.0,1,No,13,No,No
+musicbrainz_db,l_label_place,entity1_credit,9,text,0.0,1,No,13,No,No
+musicbrainz_db,l_label_recording,id,1,integer,5.81,94715,Yes,94715,No,No
+musicbrainz_db,l_label_recording,link,2,integer,6.01,308,No,94715,No,No
+musicbrainz_db,l_label_recording,entity0,3,integer,5.15,4149,No,94715,No,No
+musicbrainz_db,l_label_recording,entity1,4,integer,7.3,76844,No,94715,No,No
+musicbrainz_db,l_label_recording,edits_pending,5,integer,1.0,1,No,94715,No,No
+musicbrainz_db,l_label_recording,last_updated,6,timestamp with time zone,28.9,31048,No,94715,Yes,No
+musicbrainz_db,l_label_recording,link_order,7,integer,1.0,1,No,94715,No,No
+musicbrainz_db,l_label_recording,entity0_credit,8,text,3.01,1193,No,94715,No,No
+musicbrainz_db,l_label_recording,entity1_credit,9,text,0.0,1,No,94715,No,No
+musicbrainz_db,l_label_release,id,1,integer,5.71,9764,Yes,9764,No,No
+musicbrainz_db,l_label_release,link,2,integer,6.01,287,No,9764,No,No
+musicbrainz_db,l_label_release,entity0,3,integer,5.15,892,No,9764,No,No
+musicbrainz_db,l_label_release,entity1,4,integer,6.82,6256,No,9764,No,No
+musicbrainz_db,l_label_release,edits_pending,5,integer,1.0,1,No,9764,No,No
+musicbrainz_db,l_label_release,last_updated,6,timestamp with time zone,28.9,5989,No,9764,Yes,No
+musicbrainz_db,l_label_release,link_order,7,integer,1.0,1,No,9764,No,No
+musicbrainz_db,l_label_release,entity0_credit,8,text,6.16,440,No,9764,No,No
+musicbrainz_db,l_label_release,entity1_credit,9,text,0.0,1,No,9764,No,No
+musicbrainz_db,l_label_release_group,id,1,integer,3.0,1,Yes,1,No,No
+musicbrainz_db,l_label_release_group,link,2,integer,6.0,1,No,1,No,No
+musicbrainz_db,l_label_release_group,entity0,3,integer,5.0,1,No,1,No,No
+musicbrainz_db,l_label_release_group,entity1,4,integer,7.0,1,No,1,No,No
+musicbrainz_db,l_label_release_group,edits_pending,5,integer,1.0,1,No,1,No,No
+musicbrainz_db,l_label_release_group,last_updated,6,timestamp with time zone,29.0,1,No,1,Yes,No
+musicbrainz_db,l_label_release_group,link_order,7,integer,1.0,1,No,1,No,No
+musicbrainz_db,l_label_release_group,entity0_credit,8,text,0.0,1,No,1,No,No
+musicbrainz_db,l_label_release_group,entity1_credit,9,text,0.0,1,No,1,No,No
+musicbrainz_db,l_label_series,id,1,integer,3.82,330,Yes,330,No,No
+musicbrainz_db,l_label_series,link,2,integer,6.0,1,No,330,No,No
+musicbrainz_db,l_label_series,entity0,3,integer,4.7,128,No,330,No,No
+musicbrainz_db,l_label_series,entity1,4,integer,4.73,326,No,330,No,No
+musicbrainz_db,l_label_series,edits_pending,5,integer,1.0,1,No,330,No,No
+musicbrainz_db,l_label_series,last_updated,6,timestamp with time zone,28.89,295,No,330,Yes,No
+musicbrainz_db,l_label_series,link_order,7,integer,1.0,1,No,330,No,No
+musicbrainz_db,l_label_series,entity0_credit,8,text,0.37,7,No,330,No,No
+musicbrainz_db,l_label_series,entity1_credit,9,text,0.0,1,No,330,No,No
+musicbrainz_db,l_label_url,id,1,integer,5.53,2571,Yes,2571,No,No
+musicbrainz_db,l_label_url,link,2,integer,5.15,39,No,2571,No,No
+musicbrainz_db,l_label_url,entity0,3,integer,5.11,1305,No,2571,No,No
+musicbrainz_db,l_label_url,entity1,4,integer,6.97,2558,No,2571,No,No
+musicbrainz_db,l_label_url,edits_pending,5,integer,1.0,1,No,2571,No,No
+musicbrainz_db,l_label_url,last_updated,6,timestamp with time zone,28.91,1800,No,2571,Yes,No
+musicbrainz_db,l_label_url,link_order,7,integer,1.0,1,No,2571,No,No
+musicbrainz_db,l_label_url,entity0_credit,8,text,0.43,53,No,2571,No,No
+musicbrainz_db,l_label_url,entity1_credit,9,text,0.0,1,No,2571,No,No
+musicbrainz_db,l_label_work,id,1,integer,5.78,115467,Yes,115467,No,No
+musicbrainz_db,l_label_work,link,2,integer,5.11,589,No,115467,No,No
+musicbrainz_db,l_label_work,entity0,3,integer,5.49,14077,No,115467,No,No
+musicbrainz_db,l_label_work,entity1,4,integer,7.58,47453,No,115467,No,No
+musicbrainz_db,l_label_work,edits_pending,5,integer,1.0,1,No,115467,No,No
+musicbrainz_db,l_label_work,last_updated,6,timestamp with time zone,28.87,35262,No,115467,Yes,No
+musicbrainz_db,l_label_work,link_order,7,integer,1.0,1,No,115467,No,No
+musicbrainz_db,l_label_work,entity0_credit,8,text,1.41,2155,No,115467,No,No
+musicbrainz_db,l_label_work,entity1_credit,9,text,0.0,1,No,115467,No,No
+musicbrainz_db,l_mood_mood,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_mood_mood,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_mood,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_mood,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_mood,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_mood,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_mood_mood,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_mood,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_mood,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_place,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_mood_place,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_place,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_place,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_place,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_place,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_mood_place,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_place,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_place,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_recording,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_mood_recording,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_recording,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_recording,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_recording,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_recording,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_mood_recording,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_recording,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_recording,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_release,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_mood_release,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_release,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_release,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_release,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_release,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_mood_release,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_release,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_release,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_release_group,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_mood_release_group,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_release_group,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_release_group,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_release_group,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_release_group,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_mood_release_group,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_release_group,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_release_group,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_series,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_mood_series,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_series,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_series,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_series,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_series,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_mood_series,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_series,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_series,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_url,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_mood_url,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_url,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_url,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_url,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_url,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_mood_url,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_url,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_url,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_work,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_mood_work,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_work,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_work,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_work,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_work,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_mood_work,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_work,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_mood_work,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_place_place,id,1,integer,3.64,177,Yes,177,No,No
+musicbrainz_db,l_place_place,link,2,integer,6.01,20,No,177,No,No
+musicbrainz_db,l_place_place,entity0,3,integer,4.39,125,No,177,No,No
+musicbrainz_db,l_place_place,entity1,4,integer,4.6,175,No,177,No,No
+musicbrainz_db,l_place_place,edits_pending,5,integer,1.0,1,No,177,No,No
+musicbrainz_db,l_place_place,last_updated,6,timestamp with time zone,28.88,174,No,177,Yes,No
+musicbrainz_db,l_place_place,link_order,7,integer,1.0,1,No,177,No,No
+musicbrainz_db,l_place_place,entity0_credit,8,text,0.08,2,No,177,No,No
+musicbrainz_db,l_place_place,entity1_credit,9,text,0.63,4,No,177,No,No
+musicbrainz_db,l_place_recording,id,1,integer,6.46,300207,Yes,300207,No,No
+musicbrainz_db,l_place_recording,link,2,integer,6.04,21194,No,300207,No,No
+musicbrainz_db,l_place_recording,entity0,3,integer,4.26,9748,No,300207,No,No
+musicbrainz_db,l_place_recording,entity1,4,integer,7.5,241971,No,300207,No,No
+musicbrainz_db,l_place_recording,edits_pending,5,integer,1.0,3,No,300207,No,No
+musicbrainz_db,l_place_recording,last_updated,6,timestamp with time zone,28.9,97785,No,300207,Yes,No
+musicbrainz_db,l_place_recording,link_order,7,integer,1.0,1,No,300207,No,No
+musicbrainz_db,l_place_recording,entity0_credit,8,text,2.87,3190,No,300207,No,No
+musicbrainz_db,l_place_recording,entity1_credit,9,text,0.0,1,No,300207,No,No
+musicbrainz_db,l_place_release,id,1,integer,4.91,597,Yes,597,No,No
+musicbrainz_db,l_place_release,link,2,integer,6.02,131,No,597,No,No
+musicbrainz_db,l_place_release,entity0,3,integer,4.45,217,No,597,No,No
+musicbrainz_db,l_place_release,entity1,4,integer,6.68,504,No,597,No,No
+musicbrainz_db,l_place_release,edits_pending,5,integer,1.0,1,No,597,No,No
+musicbrainz_db,l_place_release,last_updated,6,timestamp with time zone,28.89,483,No,597,Yes,No
+musicbrainz_db,l_place_release,link_order,7,integer,1.0,1,No,597,No,No
+musicbrainz_db,l_place_release,entity0_credit,8,text,3.14,65,No,597,No,No
+musicbrainz_db,l_place_release,entity1_credit,9,text,0.0,1,No,597,No,No
+musicbrainz_db,l_place_release_group,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_place_release_group,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_place_release_group,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_place_release_group,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_place_release_group,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_place_release_group,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_place_release_group,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_place_release_group,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_place_release_group,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_place_series,id,1,integer,3.0,3,Yes,3,No,No
+musicbrainz_db,l_place_series,link,2,integer,6.0,1,No,3,No,No
+musicbrainz_db,l_place_series,entity0,3,integer,4.33,3,No,3,No,No
+musicbrainz_db,l_place_series,entity1,4,integer,4.67,3,No,3,No,No
+musicbrainz_db,l_place_series,edits_pending,5,integer,1.0,1,No,3,No,No
+musicbrainz_db,l_place_series,last_updated,6,timestamp with time zone,28.67,3,No,3,Yes,No
+musicbrainz_db,l_place_series,link_order,7,integer,1.0,1,No,3,No,No
+musicbrainz_db,l_place_series,entity0_credit,8,text,0.0,1,No,3,No,No
+musicbrainz_db,l_place_series,entity1_credit,9,text,0.0,1,No,3,No,No
+musicbrainz_db,l_place_url,id,1,integer,4.81,1181,Yes,1181,No,No
+musicbrainz_db,l_place_url,link,2,integer,6.0,20,No,1181,No,No
+musicbrainz_db,l_place_url,entity0,3,integer,4.54,559,No,1181,No,No
+musicbrainz_db,l_place_url,entity1,4,integer,7.13,1181,No,1181,No,No
+musicbrainz_db,l_place_url,edits_pending,5,integer,1.0,1,No,1181,No,No
+musicbrainz_db,l_place_url,last_updated,6,timestamp with time zone,28.87,866,No,1181,Yes,No
+musicbrainz_db,l_place_url,link_order,7,integer,1.0,1,No,1181,No,No
+musicbrainz_db,l_place_url,entity0_credit,8,text,0.28,15,No,1181,No,No
+musicbrainz_db,l_place_url,entity1_credit,9,text,0.0,1,No,1181,No,No
+musicbrainz_db,l_place_work,id,1,integer,3.3,579,Yes,579,No,No
+musicbrainz_db,l_place_work,link,2,integer,6.08,400,No,579,No,No
+musicbrainz_db,l_place_work,entity0,3,integer,4.31,206,No,579,No,No
+musicbrainz_db,l_place_work,entity1,4,integer,7.76,559,No,579,No,No
+musicbrainz_db,l_place_work,edits_pending,5,integer,1.0,1,No,579,No,No
+musicbrainz_db,l_place_work,last_updated,6,timestamp with time zone,28.88,458,No,579,Yes,No
+musicbrainz_db,l_place_work,link_order,7,integer,1.0,1,No,579,No,No
+musicbrainz_db,l_place_work,entity0_credit,8,text,0.72,14,No,579,No,No
+musicbrainz_db,l_place_work,entity1_credit,9,text,0.0,1,No,579,No,No
+musicbrainz_db,l_recording_recording,id,1,integer,5.6,40013,Yes,40013,No,No
+musicbrainz_db,l_recording_recording,link,2,integer,5.17,223,No,40013,No,No
+musicbrainz_db,l_recording_recording,entity0,3,integer,7.58,29501,No,40013,No,No
+musicbrainz_db,l_recording_recording,entity1,4,integer,7.17,21943,No,40013,No,No
+musicbrainz_db,l_recording_recording,edits_pending,5,integer,1.0,2,No,40013,No,No
+musicbrainz_db,l_recording_recording,last_updated,6,timestamp with time zone,28.89,19439,No,40013,Yes,No
+musicbrainz_db,l_recording_recording,link_order,7,integer,1.02,65,No,40013,No,No
+musicbrainz_db,l_recording_recording,entity0_credit,8,text,0.0,1,No,40013,No,No
+musicbrainz_db,l_recording_recording,entity1_credit,9,text,0.0,1,No,40013,No,No
+musicbrainz_db,l_recording_release,id,1,integer,3.17,106,Yes,106,No,No
+musicbrainz_db,l_recording_release,link,2,integer,4.49,11,No,106,No,No
+musicbrainz_db,l_recording_release,entity0,3,integer,7.46,87,No,106,No,No
+musicbrainz_db,l_recording_release,entity1,4,integer,6.63,39,No,106,No,No
+musicbrainz_db,l_recording_release,edits_pending,5,integer,1.0,1,No,106,No,No
+musicbrainz_db,l_recording_release,last_updated,6,timestamp with time zone,28.94,63,No,106,Yes,No
+musicbrainz_db,l_recording_release,link_order,7,integer,1.0,1,No,106,No,No
+musicbrainz_db,l_recording_release,entity0_credit,8,text,0.0,1,No,106,No,No
+musicbrainz_db,l_recording_release,entity1_credit,9,text,0.0,1,No,106,No,No
+musicbrainz_db,l_recording_release_group,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_recording_release_group,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_recording_release_group,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_recording_release_group,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_recording_release_group,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_recording_release_group,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_recording_release_group,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_recording_release_group,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_recording_release_group,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_recording_series,id,1,integer,4.73,5198,Yes,5198,No,No
+musicbrainz_db,l_recording_series,link,2,integer,6.03,1705,No,5198,No,No
+musicbrainz_db,l_recording_series,entity0,3,integer,7.16,3875,No,5198,No,No
+musicbrainz_db,l_recording_series,entity1,4,integer,4.81,255,No,5198,No,No
+musicbrainz_db,l_recording_series,edits_pending,5,integer,1.0,1,No,5198,No,No
+musicbrainz_db,l_recording_series,last_updated,6,timestamp with time zone,28.91,1297,No,5198,Yes,No
+musicbrainz_db,l_recording_series,link_order,7,integer,2.26,927,No,5198,No,No
+musicbrainz_db,l_recording_series,entity0_credit,8,text,0.0,1,No,5198,No,No
+musicbrainz_db,l_recording_series,entity1_credit,9,text,0.0,1,No,5198,No,No
+musicbrainz_db,l_recording_url,id,1,integer,5.72,22628,Yes,22628,No,No
+musicbrainz_db,l_recording_url,link,2,integer,5.12,228,No,22628,No,No
+musicbrainz_db,l_recording_url,entity0,3,integer,7.11,16285,No,22628,No,No
+musicbrainz_db,l_recording_url,entity1,4,integer,7.55,22085,No,22628,No,No
+musicbrainz_db,l_recording_url,edits_pending,5,integer,1.0,1,No,22628,No,No
+musicbrainz_db,l_recording_url,last_updated,6,timestamp with time zone,28.89,16973,No,22628,Yes,No
+musicbrainz_db,l_recording_url,link_order,7,integer,1.0,1,No,22628,No,No
+musicbrainz_db,l_recording_url,entity0_credit,8,text,0.0,1,No,22628,No,No
+musicbrainz_db,l_recording_url,entity1_credit,9,text,0.0,1,No,22628,No,No
+musicbrainz_db,l_recording_work,id,1,integer,6.83,2476636,Yes,2476636,No,No
+musicbrainz_db,l_recording_work,link,2,integer,5.28,91620,No,2476636,No,No
+musicbrainz_db,l_recording_work,entity0,3,integer,7.64,2428874,No,2476636,No,No
+musicbrainz_db,l_recording_work,entity1,4,integer,7.28,164253,No,2476636,No,No
+musicbrainz_db,l_recording_work,edits_pending,5,integer,1.0,2,No,2476636,No,No
+musicbrainz_db,l_recording_work,last_updated,6,timestamp with time zone,28.89,1239815,No,2476636,Yes,No
+musicbrainz_db,l_recording_work,link_order,7,integer,1.0,52,No,2476636,No,No
+musicbrainz_db,l_recording_work,entity0_credit,8,text,0.0,1,No,2476636,No,No
+musicbrainz_db,l_recording_work,entity1_credit,9,text,0.0,1,No,2476636,No,No
+musicbrainz_db,l_release_group_release_group,id,1,integer,5.0,567,Yes,567,No,No
+musicbrainz_db,l_release_group_release_group,link,2,integer,4.55,5,No,567,No,No
+musicbrainz_db,l_release_group_release_group,entity0,3,integer,6.61,530,No,567,No,No
+musicbrainz_db,l_release_group_release_group,entity1,4,integer,6.8,184,No,567,No,No
+musicbrainz_db,l_release_group_release_group,edits_pending,5,integer,1.0,1,No,567,No,No
+musicbrainz_db,l_release_group_release_group,last_updated,6,timestamp with time zone,28.84,348,No,567,Yes,No
+musicbrainz_db,l_release_group_release_group,link_order,7,integer,1.0,1,No,567,No,No
+musicbrainz_db,l_release_group_release_group,entity0_credit,8,text,0.0,1,No,567,No,No
+musicbrainz_db,l_release_group_release_group,entity1_credit,9,text,0.0,1,No,567,No,No
+musicbrainz_db,l_release_group_series,id,1,integer,5.1,755,Yes,755,No,No
+musicbrainz_db,l_release_group_series,link,2,integer,6.0,189,No,755,No,No
+musicbrainz_db,l_release_group_series,entity0,3,integer,6.52,690,No,755,No,No
+musicbrainz_db,l_release_group_series,entity1,4,integer,4.26,331,No,755,No,No
+musicbrainz_db,l_release_group_series,edits_pending,5,integer,1.0,1,No,755,No,No
+musicbrainz_db,l_release_group_series,last_updated,6,timestamp with time zone,28.92,541,No,755,Yes,No
+musicbrainz_db,l_release_group_series,link_order,7,integer,1.56,140,No,755,No,No
+musicbrainz_db,l_release_group_series,entity0_credit,8,text,0.0,1,No,755,No,No
+musicbrainz_db,l_release_group_series,entity1_credit,9,text,0.0,1,No,755,No,No
+musicbrainz_db,l_release_group_url,id,1,integer,5.94,1907,Yes,1907,No,No
+musicbrainz_db,l_release_group_url,link,2,integer,4.96,12,No,1907,No,No
+musicbrainz_db,l_release_group_url,entity0,3,integer,6.41,1233,No,1907,No,No
+musicbrainz_db,l_release_group_url,entity1,4,integer,7.11,1899,No,1907,No,No
+musicbrainz_db,l_release_group_url,edits_pending,5,integer,1.0,1,No,1907,No,No
+musicbrainz_db,l_release_group_url,last_updated,6,timestamp with time zone,28.88,1597,No,1907,Yes,No
+musicbrainz_db,l_release_group_url,link_order,7,integer,1.0,1,No,1907,No,No
+musicbrainz_db,l_release_group_url,entity0_credit,8,text,0.0,1,No,1907,No,No
+musicbrainz_db,l_release_group_url,entity1_credit,9,text,0.0,1,No,1907,No,No
+musicbrainz_db,l_release_group_work,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_release_group_work,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_release_group_work,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_release_group_work,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_release_group_work,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_release_group_work,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_release_group_work,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_release_group_work,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_release_group_work,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_release_release,id,1,integer,5.69,62,Yes,62,No,No
+musicbrainz_db,l_release_release,link,2,integer,2.08,8,No,62,No,No
+musicbrainz_db,l_release_release,entity0,3,integer,6.58,54,No,62,No,No
+musicbrainz_db,l_release_release,entity1,4,integer,6.48,57,No,62,No,No
+musicbrainz_db,l_release_release,edits_pending,5,integer,1.0,1,No,62,No,No
+musicbrainz_db,l_release_release,last_updated,6,timestamp with time zone,28.9,51,No,62,Yes,No
+musicbrainz_db,l_release_release,link_order,7,integer,1.0,1,No,62,No,No
+musicbrainz_db,l_release_release,entity0_credit,8,text,0.0,1,No,62,No,No
+musicbrainz_db,l_release_release,entity1_credit,9,text,0.0,1,No,62,No,No
+musicbrainz_db,l_release_release_group,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_release_release_group,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_release_release_group,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_release_release_group,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_release_release_group,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_release_release_group,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_release_release_group,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_release_release_group,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_release_release_group,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_release_series,id,1,integer,4.54,714,Yes,714,No,No
+musicbrainz_db,l_release_series,link,2,integer,6.0,164,No,714,No,No
+musicbrainz_db,l_release_series,entity0,3,integer,6.71,703,No,714,No,No
+musicbrainz_db,l_release_series,entity1,4,integer,3.96,207,No,714,No,No
+musicbrainz_db,l_release_series,edits_pending,5,integer,1.0,1,No,714,No,No
+musicbrainz_db,l_release_series,last_updated,6,timestamp with time zone,28.86,614,No,714,Yes,No
+musicbrainz_db,l_release_series,link_order,7,integer,1.82,177,No,714,No,No
+musicbrainz_db,l_release_series,entity0_credit,8,text,0.0,1,No,714,No,No
+musicbrainz_db,l_release_series,entity1_credit,9,text,0.0,1,No,714,No,No
+musicbrainz_db,l_release_url,id,1,integer,6.78,12734,Yes,12734,No,No
+musicbrainz_db,l_release_url,link,2,integer,4.28,38,No,12734,No,No
+musicbrainz_db,l_release_url,entity0,3,integer,6.72,7664,No,12734,No,No
+musicbrainz_db,l_release_url,entity1,4,integer,7.12,12290,No,12734,No,No
+musicbrainz_db,l_release_url,edits_pending,5,integer,1.0,1,No,12734,No,No
+musicbrainz_db,l_release_url,last_updated,6,timestamp with time zone,28.89,8787,No,12734,Yes,No
+musicbrainz_db,l_release_url,link_order,7,integer,1.0,1,No,12734,No,No
+musicbrainz_db,l_release_url,entity0_credit,8,text,0.0,1,No,12734,No,No
+musicbrainz_db,l_release_url,entity1_credit,9,text,0.0,1,No,12734,No,No
+musicbrainz_db,l_release_work,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_release_work,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_release_work,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_release_work,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_release_work,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_release_work,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_release_work,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_release_work,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_release_work,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_series_series,id,1,integer,3.7,10,Yes,10,No,No
+musicbrainz_db,l_series_series,link,2,integer,6.0,1,No,10,No,No
+musicbrainz_db,l_series_series,entity0,3,integer,4.8,8,No,10,No,No
+musicbrainz_db,l_series_series,entity1,4,integer,4.9,10,No,10,No,No
+musicbrainz_db,l_series_series,edits_pending,5,integer,1.0,1,No,10,No,No
+musicbrainz_db,l_series_series,last_updated,6,timestamp with time zone,29.0,8,No,10,Yes,No
+musicbrainz_db,l_series_series,link_order,7,integer,1.0,1,No,10,No,No
+musicbrainz_db,l_series_series,entity0_credit,8,text,0.0,1,No,10,No,No
+musicbrainz_db,l_series_series,entity1_credit,9,text,0.0,1,No,10,No,No
+musicbrainz_db,l_series_url,id,1,integer,4.26,19,Yes,19,No,No
+musicbrainz_db,l_series_url,link,2,integer,6.0,2,No,19,No,No
+musicbrainz_db,l_series_url,entity0,3,integer,4.68,16,No,19,No,No
+musicbrainz_db,l_series_url,entity1,4,integer,7.21,19,No,19,No,No
+musicbrainz_db,l_series_url,edits_pending,5,integer,1.0,1,No,19,No,No
+musicbrainz_db,l_series_url,last_updated,6,timestamp with time zone,28.63,16,No,19,Yes,No
+musicbrainz_db,l_series_url,link_order,7,integer,1.0,1,No,19,No,No
+musicbrainz_db,l_series_url,entity0_credit,8,text,0.0,1,No,19,No,No
+musicbrainz_db,l_series_url,entity1_credit,9,text,0.0,1,No,19,No,No
+musicbrainz_db,l_series_work,id,1,integer,4.55,7019,Yes,7019,No,No
+musicbrainz_db,l_series_work,link,2,integer,6.04,4589,No,7019,No,No
+musicbrainz_db,l_series_work,entity0,3,integer,3.44,492,No,7019,No,No
+musicbrainz_db,l_series_work,entity1,4,integer,7.72,5726,No,7019,No,No
+musicbrainz_db,l_series_work,edits_pending,5,integer,1.0,2,No,7019,No,No
+musicbrainz_db,l_series_work,last_updated,6,timestamp with time zone,28.89,3183,No,7019,Yes,No
+musicbrainz_db,l_series_work,link_order,7,integer,2.32,1032,No,7019,No,No
+musicbrainz_db,l_series_work,entity0_credit,8,text,0.0,1,No,7019,No,No
+musicbrainz_db,l_series_work,entity1_credit,9,text,0.0,1,No,7019,No,No
+musicbrainz_db,l_url_url,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,l_url_url,link,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_url_url,entity0,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_url_url,entity1,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_url_url,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_url_url,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,l_url_url,link_order,7,integer,0.0,0,No,0,No,No
+musicbrainz_db,l_url_url,entity0_credit,8,text,0.0,0,No,0,No,No
+musicbrainz_db,l_url_url,entity1_credit,9,text,0.0,0,No,0,No,No
+musicbrainz_db,l_url_work,id,1,integer,5.58,57794,Yes,57794,No,No
+musicbrainz_db,l_url_work,link,2,integer,5.34,24,No,57794,No,No
+musicbrainz_db,l_url_work,entity0,3,integer,7.19,57174,No,57794,No,No
+musicbrainz_db,l_url_work,entity1,4,integer,7.43,31365,No,57794,No,No
+musicbrainz_db,l_url_work,edits_pending,5,integer,1.0,1,No,57794,No,No
+musicbrainz_db,l_url_work,last_updated,6,timestamp with time zone,28.89,46554,No,57794,Yes,No
+musicbrainz_db,l_url_work,link_order,7,integer,1.0,1,No,57794,No,No
+musicbrainz_db,l_url_work,entity0_credit,8,text,0.0,1,No,57794,No,No
+musicbrainz_db,l_url_work,entity1_credit,9,text,0.0,1,No,57794,No,No
+musicbrainz_db,l_work_work,id,1,integer,5.64,94531,Yes,94531,No,No
+musicbrainz_db,l_work_work,link,2,integer,5.38,21,No,94531,No,No
+musicbrainz_db,l_work_work,entity0,3,integer,7.72,31396,No,94531,No,No
+musicbrainz_db,l_work_work,entity1,4,integer,7.79,85878,No,94531,No,No
+musicbrainz_db,l_work_work,edits_pending,5,integer,1.0,2,No,94531,No,No
+musicbrainz_db,l_work_work,last_updated,6,timestamp with time zone,28.89,49121,No,94531,Yes,No
+musicbrainz_db,l_work_work,link_order,7,integer,1.07,120,No,94531,No,No
+musicbrainz_db,l_work_work,entity0_credit,8,text,0.0,1,No,94531,No,No
+musicbrainz_db,l_work_work,entity1_credit,9,text,0.0,1,No,94531,No,No
+musicbrainz_db,label,id,1,integer,5.55,24090,Yes,24090,No,No
+musicbrainz_db,label,gid,2,uuid,36.0,24090,Yes,24090,No,No
+musicbrainz_db,label,name,3,character varying,17.76,23932,No,24090,No,No
+musicbrainz_db,label,begin_date_year,4,smallint,4.0,191,No,24090,Yes,No
+musicbrainz_db,label,begin_date_month,5,smallint,1.24,12,No,24090,Yes,No
+musicbrainz_db,label,begin_date_day,6,smallint,1.61,31,No,24090,Yes,No
+musicbrainz_db,label,end_date_year,7,smallint,4.0,86,No,24090,Yes,No
+musicbrainz_db,label,end_date_month,8,smallint,1.29,12,No,24090,Yes,No
+musicbrainz_db,label,end_date_day,9,smallint,1.69,31,No,24090,Yes,No
+musicbrainz_db,label,label_code,10,integer,4.17,1066,No,24090,Yes,No
+musicbrainz_db,label,type,11,integer,1.0,10,No,24090,Yes,No
+musicbrainz_db,label,area,12,integer,3.01,684,No,24090,Yes,No
+musicbrainz_db,label,comment,13,character varying,6.25,3361,No,24090,No,No
+musicbrainz_db,label,edits_pending,14,integer,1.0,3,No,24090,No,No
+musicbrainz_db,label,last_updated,15,timestamp with time zone,28.89,23022,No,24090,Yes,No
+musicbrainz_db,label,ended,16,boolean,4.95,2,No,24090,No,No
+musicbrainz_db,label_alias,id,1,integer,4.64,8060,Yes,8060,No,No
+musicbrainz_db,label_alias,label,2,integer,4.88,4155,No,8060,No,No
+musicbrainz_db,label_alias,name,3,character varying,17.94,7868,No,8060,No,No
+musicbrainz_db,label_alias,locale,4,text,2.57,44,No,8060,Yes,No
+musicbrainz_db,label_alias,edits_pending,5,integer,1.0,1,No,8060,No,No
+musicbrainz_db,label_alias,last_updated,6,timestamp with time zone,28.9,5427,No,8060,Yes,No
+musicbrainz_db,label_alias,type,7,integer,1.0,2,No,8060,Yes,No
+musicbrainz_db,label_alias,sort_name,8,character varying,18.05,7852,No,8060,No,No
+musicbrainz_db,label_alias,begin_date_year,9,smallint,4.0,99,No,8060,Yes,No
+musicbrainz_db,label_alias,begin_date_month,10,smallint,1.25,12,No,8060,Yes,No
+musicbrainz_db,label_alias,begin_date_day,11,smallint,1.66,30,No,8060,Yes,No
+musicbrainz_db,label_alias,end_date_year,12,smallint,4.0,77,No,8060,Yes,No
+musicbrainz_db,label_alias,end_date_month,13,smallint,1.22,12,No,8060,Yes,No
+musicbrainz_db,label_alias,end_date_day,14,smallint,1.68,29,No,8060,Yes,No
+musicbrainz_db,label_alias,primary_for_locale,15,boolean,4.91,2,No,8060,No,No
+musicbrainz_db,label_alias,ended,16,boolean,4.96,2,No,8060,No,No
+musicbrainz_db,label_alias_type,id,1,integer,1.0,2,Yes,2,No,No
+musicbrainz_db,label_alias_type,name,2,text,10.5,2,No,2,No,No
+musicbrainz_db,label_alias_type,parent,3,integer,0.0,0,No,2,Yes,Yes
+musicbrainz_db,label_alias_type,child_order,4,integer,1.0,1,No,2,No,No
+musicbrainz_db,label_alias_type,description,5,text,0.0,0,No,2,Yes,Yes
+musicbrainz_db,label_alias_type,gid,6,uuid,36.0,2,Yes,2,No,No
+musicbrainz_db,label_annotation,label,1,integer,4.45,1559,No,5066,No,No
+musicbrainz_db,label_annotation,annotation,2,integer,6.08,5066,No,5066,No,No
+musicbrainz_db,label_attribute,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,label_attribute,label,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,label_attribute,label_attribute_type,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,label_attribute,label_attribute_type_allowed_value,4,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,label_attribute,label_attribute_text,5,text,0.0,0,No,0,Yes,No
+musicbrainz_db,label_attribute_type,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,label_attribute_type,name,2,character varying,0.0,0,No,0,No,No
+musicbrainz_db,label_attribute_type,comment,3,character varying,0.0,0,No,0,No,No
+musicbrainz_db,label_attribute_type,free_text,4,boolean,0.0,0,No,0,No,No
+musicbrainz_db,label_attribute_type,parent,5,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,label_attribute_type,child_order,6,integer,0.0,0,No,0,No,No
+musicbrainz_db,label_attribute_type,description,7,text,0.0,0,No,0,Yes,No
+musicbrainz_db,label_attribute_type,gid,8,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,label_attribute_type_allowed_value,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,label_attribute_type_allowed_value,label_attribute_type,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,label_attribute_type_allowed_value,value,3,text,0.0,0,No,0,Yes,No
+musicbrainz_db,label_attribute_type_allowed_value,parent,4,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,label_attribute_type_allowed_value,child_order,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,label_attribute_type_allowed_value,description,6,text,0.0,0,No,0,Yes,No
+musicbrainz_db,label_attribute_type_allowed_value,gid,7,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,label_gid_redirect,gid,1,uuid,36.0,3586,Yes,3586,No,No
+musicbrainz_db,label_gid_redirect,new_id,2,integer,4.52,2029,Yes,3586,No,No
+musicbrainz_db,label_gid_redirect,created,3,timestamp with time zone,28.9,2492,No,3586,Yes,No
+musicbrainz_db,label_ipi,label,1,integer,5.74,6215,No,6351,No,No
+musicbrainz_db,label_ipi,ipi,2,character,11.0,6267,No,6351,No,No
+musicbrainz_db,label_ipi,edits_pending,3,integer,1.0,1,No,6351,No,No
+musicbrainz_db,label_ipi,created,4,timestamp with time zone,28.89,6271,No,6351,Yes,No
+musicbrainz_db,label_isni,label,1,integer,4.76,46,No,49,No,No
+musicbrainz_db,label_isni,isni,2,character,16.0,48,No,49,No,No
+musicbrainz_db,label_isni,edits_pending,3,integer,1.0,1,No,49,No,No
+musicbrainz_db,label_isni,created,4,timestamp with time zone,28.88,49,No,49,Yes,No
+musicbrainz_db,label_meta,id,1,integer,5.55,24090,Yes,24090,No,No
+musicbrainz_db,label_meta,rating,2,smallint,2.67,11,No,24090,Yes,No
+musicbrainz_db,label_meta,rating_count,3,integer,1.0,5,No,24090,Yes,No
+musicbrainz_db,label_rating_raw,label,1,integer,4.04,218,No,259,No,No
+musicbrainz_db,label_rating_raw,editor,2,integer,6.5,152,No,259,No,No
+musicbrainz_db,label_rating_raw,rating,3,smallint,2.69,5,No,259,No,No
+musicbrainz_db,label_tag,label,1,integer,4.41,1596,No,4437,No,No
+musicbrainz_db,label_tag,tag,2,integer,3.71,1233,No,4437,No,No
+musicbrainz_db,label_tag,count,3,integer,1.0,10,No,4437,No,No
+musicbrainz_db,label_tag,last_updated,4,timestamp with time zone,28.92,2805,No,4437,Yes,No
+musicbrainz_db,label_tag_raw,label,1,integer,4.34,1144,No,4029,No,No
+musicbrainz_db,label_tag_raw,editor,2,integer,6.36,522,No,4029,No,No
+musicbrainz_db,label_tag_raw,tag,3,integer,3.61,1070,No,4029,No,No
+musicbrainz_db,label_tag_raw,is_upvote,4,boolean,4.06,2,No,4029,No,No
+musicbrainz_db,label_type,id,1,integer,1.1,10,Yes,10,No,No
+musicbrainz_db,label_type,name,2,character varying,12.5,10,No,10,No,No
+musicbrainz_db,label_type,parent,3,integer,1.0,1,No,10,Yes,No
+musicbrainz_db,label_type,child_order,4,integer,1.1,2,No,10,No,No
+musicbrainz_db,label_type,description,5,text,70.67,3,No,10,Yes,No
+musicbrainz_db,label_type,gid,6,uuid,36.0,10,Yes,10,No,No
+musicbrainz_db,language,id,1,integer,3.86,7844,Yes,7844,No,No
+musicbrainz_db,language,iso_code_2t,2,character,3.0,485,No,7844,Yes,No
+musicbrainz_db,language,iso_code_2b,3,character,3.0,485,No,7844,Yes,No
+musicbrainz_db,language,iso_code_1,4,character,2.0,186,No,7844,Yes,No
+musicbrainz_db,language,name,5,character varying,9.04,7844,No,7844,No,No
+musicbrainz_db,language,frequency,6,smallint,1.0,3,No,7844,No,No
+musicbrainz_db,language,iso_code_3,7,character,3.0,7778,No,7844,Yes,No
+musicbrainz_db,link,id,1,integer,6.01,243897,Yes,243897,No,No
+musicbrainz_db,link,link_type,2,integer,2.99,484,No,243897,No,No
+musicbrainz_db,link,begin_date_year,3,smallint,4.0,478,No,243897,Yes,No
+musicbrainz_db,link,begin_date_month,4,smallint,1.25,12,No,243897,Yes,No
+musicbrainz_db,link,begin_date_day,5,smallint,1.71,31,No,243897,Yes,No
+musicbrainz_db,link,end_date_year,6,smallint,4.0,464,No,243897,Yes,No
+musicbrainz_db,link,end_date_month,7,smallint,1.25,12,No,243897,Yes,No
+musicbrainz_db,link,end_date_day,8,smallint,1.72,31,No,243897,Yes,No
+musicbrainz_db,link,attribute_count,9,integer,1.0,15,No,243897,No,No
+musicbrainz_db,link,created,10,timestamp with time zone,28.89,121426,No,243897,Yes,No
+musicbrainz_db,link,ended,11,boolean,4.08,2,No,243897,No,No
+musicbrainz_db,link_attribute,link,1,integer,6.03,141464,No,174485,No,No
+musicbrainz_db,link_attribute,attribute_type,2,integer,2.71,687,No,174485,No,No
+musicbrainz_db,link_attribute,created,3,timestamp with time zone,28.89,77885,No,174485,Yes,No
+musicbrainz_db,link_attribute_credit,link,1,integer,6.18,15246,No,15415,No,No
+musicbrainz_db,link_attribute_credit,attribute_type,2,integer,2.28,434,No,15415,No,No
+musicbrainz_db,link_attribute_credit,credited_as,3,text,11.38,7483,No,15415,No,No
+musicbrainz_db,link_attribute_text_value,link,1,integer,6.1,8156,No,8156,No,No
+musicbrainz_db,link_attribute_text_value,attribute_type,2,integer,3.09,3,No,8156,No,No
+musicbrainz_db,link_attribute_text_value,text_value,3,text,7.06,7216,No,8156,No,No
+musicbrainz_db,link_attribute_type,id,1,integer,3.16,1157,Yes,1157,No,No
+musicbrainz_db,link_attribute_type,parent,2,integer,2.06,9,No,1157,Yes,No
+musicbrainz_db,link_attribute_type,root,3,integer,2.11,48,No,1157,No,No
+musicbrainz_db,link_attribute_type,child_order,4,integer,1.0,11,No,1157,No,No
+musicbrainz_db,link_attribute_type,gid,5,uuid,36.0,1157,Yes,1157,No,No
+musicbrainz_db,link_attribute_type,name,6,character varying,9.71,1154,No,1157,No,No
+musicbrainz_db,link_attribute_type,description,7,text,107.4,882,No,1157,Yes,No
+musicbrainz_db,link_attribute_type,last_updated,8,timestamp with time zone,28.86,1131,No,1157,Yes,No
+musicbrainz_db,link_creditable_attribute_type,attribute_type,1,integer,3.15,1096,No,1096,No,No
+musicbrainz_db,link_text_attribute_type,attribute_type,1,integer,3.5,4,No,4,No,No
+musicbrainz_db,link_type,id,1,integer,3.06,666,Yes,666,No,No
+musicbrainz_db,link_type,parent,2,integer,2.87,108,No,666,Yes,No
+musicbrainz_db,link_type,child_order,3,integer,1.03,13,No,666,No,No
+musicbrainz_db,link_type,gid,4,uuid,36.0,666,Yes,666,No,No
+musicbrainz_db,link_type,entity_type0,5,character varying,6.0,13,No,666,No,No
+musicbrainz_db,link_type,entity_type1,6,character varying,5.65,13,No,666,No,No
+musicbrainz_db,link_type,name,7,character varying,11.49,337,No,666,No,No
+musicbrainz_db,link_type,description,8,text,109.56,595,No,666,Yes,No
+musicbrainz_db,link_type,link_phrase,9,character varying,21.27,362,No,666,No,No
+musicbrainz_db,link_type,reverse_link_phrase,10,character varying,21.41,369,No,666,No,No
+musicbrainz_db,link_type,long_link_phrase,11,character varying,32.33,376,No,666,No,No
+musicbrainz_db,link_type,last_updated,12,timestamp with time zone,28.89,666,No,666,Yes,No
+musicbrainz_db,link_type,is_deprecated,13,boolean,4.97,2,No,666,No,No
+musicbrainz_db,link_type,has_dates,14,boolean,4.22,2,No,666,No,No
+musicbrainz_db,link_type,entity0_cardinality,15,smallint,1.0,2,No,666,No,No
+musicbrainz_db,link_type,entity1_cardinality,16,smallint,1.0,2,No,666,No,No
+musicbrainz_db,link_type_attribute_type,link_type,1,integer,2.9,223,No,517,No,No
+musicbrainz_db,link_type_attribute_type,attribute_type,2,integer,2.13,47,No,517,No,No
+musicbrainz_db,link_type_attribute_type,min,3,smallint,1.0,2,No,517,Yes,No
+musicbrainz_db,link_type_attribute_type,max,4,smallint,1.0,1,No,517,Yes,No
+musicbrainz_db,link_type_attribute_type,last_updated,5,timestamp with time zone,28.87,223,No,517,Yes,No
+musicbrainz_db,medium,id,1,integer,6.71,59445,Yes,59445,No,No
+musicbrainz_db,medium,release,2,integer,6.7,35123,No,59445,No,No
+musicbrainz_db,medium,position,3,integer,1.2,356,No,59445,No,No
+musicbrainz_db,medium,format,4,integer,1.24,53,No,59445,Yes,No
+musicbrainz_db,medium,name,5,character varying,9.22,11491,No,59445,No,No
+musicbrainz_db,medium,edits_pending,6,integer,1.0,4,No,59445,No,No
+musicbrainz_db,medium,last_updated,7,timestamp with time zone,28.9,36694,No,59445,Yes,No
+musicbrainz_db,medium,track_count,8,integer,1.62,146,No,59445,No,No
+musicbrainz_db,medium_attribute,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,medium_attribute,medium,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,medium_attribute,medium_attribute_type,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,medium_attribute,medium_attribute_type_allowed_value,4,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,medium_attribute,medium_attribute_text,5,text,0.0,0,No,0,Yes,No
+musicbrainz_db,medium_attribute_type,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,medium_attribute_type,name,2,character varying,0.0,0,No,0,No,No
+musicbrainz_db,medium_attribute_type,comment,3,character varying,0.0,0,No,0,No,No
+musicbrainz_db,medium_attribute_type,free_text,4,boolean,0.0,0,No,0,No,No
+musicbrainz_db,medium_attribute_type,parent,5,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,medium_attribute_type,child_order,6,integer,0.0,0,No,0,No,No
+musicbrainz_db,medium_attribute_type,description,7,text,0.0,0,No,0,Yes,No
+musicbrainz_db,medium_attribute_type,gid,8,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,medium_attribute_type_allowed_format,medium_format,1,integer,0.0,0,No,0,No,No
+musicbrainz_db,medium_attribute_type_allowed_format,medium_attribute_type,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,medium_attribute_type_allowed_value,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,medium_attribute_type_allowed_value,medium_attribute_type,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,medium_attribute_type_allowed_value,value,3,text,0.0,0,No,0,Yes,No
+musicbrainz_db,medium_attribute_type_allowed_value,parent,4,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,medium_attribute_type_allowed_value,child_order,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,medium_attribute_type_allowed_value,description,6,text,0.0,0,No,0,Yes,No
+musicbrainz_db,medium_attribute_type_allowed_value,gid,7,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,medium_attribute_type_allowed_value_allowed_format,medium_format,1,integer,0.0,0,No,0,No,No
+musicbrainz_db,medium_attribute_type_allowed_value_allowed_format,medium_attribute_type_allowed_value,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,medium_cdtoc,id,1,integer,6.08,46511,Yes,46511,No,No
+musicbrainz_db,medium_cdtoc,medium,2,integer,6.27,32042,No,46511,No,No
+musicbrainz_db,medium_cdtoc,cdtoc,3,integer,5.89,38700,No,46511,No,No
+musicbrainz_db,medium_cdtoc,edits_pending,4,integer,1.0,1,No,46511,No,No
+musicbrainz_db,medium_cdtoc,last_updated,5,timestamp with time zone,28.93,23547,No,46511,Yes,No
+musicbrainz_db,medium_format,id,1,integer,2.1,114,Yes,114,No,No
+musicbrainz_db,medium_format,name,2,character varying,11.12,114,No,114,No,No
+musicbrainz_db,medium_format,parent,3,integer,1.67,27,No,114,Yes,No
+musicbrainz_db,medium_format,child_order,4,integer,1.06,12,No,114,No,No
+musicbrainz_db,medium_format,year,5,smallint,4.0,47,No,114,Yes,No
+musicbrainz_db,medium_format,has_discids,6,boolean,4.76,2,No,114,No,No
+musicbrainz_db,medium_format,description,7,text,120.11,38,No,114,Yes,No
+musicbrainz_db,medium_format,gid,8,uuid,36.0,114,Yes,114,No,No
+musicbrainz_db,medium_index,medium,1,integer,6.7,55155,No,55155,No,No
+musicbrainz_db,medium_index,toc,2,user-defined,46.14,47894,No,55155,Yes,No
+musicbrainz_db,medium_track_durations,medium,1,integer,6.71,59369,No,59369,Yes,No
+musicbrainz_db,medium_track_durations,pregap_length,2,array,7.71,21,No,59369,Yes,No
+musicbrainz_db,medium_track_durations,cdtoc_track_lengths,3,array,85.55,49750,No,59369,Yes,No
+musicbrainz_db,medium_track_durations,data_track_lengths,4,array,10.35,119,No,59369,Yes,No
+musicbrainz_db,mood,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,mood,gid,2,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,mood,name,3,character varying,0.0,0,No,0,No,No
+musicbrainz_db,mood,comment,4,character varying,0.0,0,No,0,No,No
+musicbrainz_db,mood,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,mood,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,mood_alias,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,mood_alias,mood,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,mood_alias,name,3,character varying,0.0,0,No,0,No,No
+musicbrainz_db,mood_alias,locale,4,text,0.0,0,No,0,Yes,No
+musicbrainz_db,mood_alias,edits_pending,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,mood_alias,last_updated,6,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,mood_alias,type,7,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,mood_alias,sort_name,8,character varying,0.0,0,No,0,No,No
+musicbrainz_db,mood_alias,begin_date_year,9,smallint,0.0,0,No,0,Yes,No
+musicbrainz_db,mood_alias,begin_date_month,10,smallint,0.0,0,No,0,Yes,No
+musicbrainz_db,mood_alias,begin_date_day,11,smallint,0.0,0,No,0,Yes,No
+musicbrainz_db,mood_alias,end_date_year,12,smallint,0.0,0,No,0,Yes,No
+musicbrainz_db,mood_alias,end_date_month,13,smallint,0.0,0,No,0,Yes,No
+musicbrainz_db,mood_alias,end_date_day,14,smallint,0.0,0,No,0,Yes,No
+musicbrainz_db,mood_alias,primary_for_locale,15,boolean,0.0,0,No,0,No,No
+musicbrainz_db,mood_alias,ended,16,boolean,0.0,0,No,0,No,No
+musicbrainz_db,mood_alias_type,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,mood_alias_type,name,2,text,0.0,0,No,0,No,No
+musicbrainz_db,mood_alias_type,parent,3,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,mood_alias_type,child_order,4,integer,0.0,0,No,0,No,No
+musicbrainz_db,mood_alias_type,description,5,text,0.0,0,No,0,Yes,No
+musicbrainz_db,mood_alias_type,gid,6,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,mood_annotation,mood,1,integer,0.0,0,No,0,No,No
+musicbrainz_db,mood_annotation,annotation,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,old_editor_name,name,1,character varying,0.0,0,No,0,No,No
+musicbrainz_db,orderable_link_type,link_type,1,integer,3.0,12,No,12,No,No
+musicbrainz_db,orderable_link_type,direction,2,smallint,1.0,2,No,12,No,No
+musicbrainz_db,place,id,1,integer,4.67,10208,Yes,10208,No,No
+musicbrainz_db,place,gid,2,uuid,36.0,10208,Yes,10208,No,No
+musicbrainz_db,place,name,3,character varying,18.69,9865,No,10208,No,No
+musicbrainz_db,place,type,4,integer,1.02,13,No,10208,Yes,No
+musicbrainz_db,place,address,5,character varying,17.78,4686,No,10208,No,No
+musicbrainz_db,place,area,6,integer,4.4,2798,No,10208,Yes,No
+musicbrainz_db,place,coordinates,7,point,4.4,0,No,10208,Yes,No
+musicbrainz_db,place,comment,8,character varying,3.5,1426,No,10208,No,No
+musicbrainz_db,place,edits_pending,9,integer,1.0,2,No,10208,No,No
+musicbrainz_db,place,last_updated,10,timestamp with time zone,28.89,10207,No,10208,Yes,No
+musicbrainz_db,place,begin_date_year,11,smallint,4.0,415,No,10208,Yes,No
+musicbrainz_db,place,begin_date_month,12,smallint,1.3,12,No,10208,Yes,No
+musicbrainz_db,place,begin_date_day,13,smallint,1.69,31,No,10208,Yes,No
+musicbrainz_db,place,end_date_year,14,smallint,4.0,105,No,10208,Yes,No
+musicbrainz_db,place,end_date_month,15,smallint,1.24,12,No,10208,Yes,No
+musicbrainz_db,place,end_date_day,16,smallint,1.67,31,No,10208,Yes,No
+musicbrainz_db,place,ended,17,boolean,4.9,2,No,10208,No,No
+musicbrainz_db,place_alias,id,1,integer,4.17,4778,Yes,4778,No,No
+musicbrainz_db,place_alias,place,2,integer,4.39,2204,No,4778,No,No
+musicbrainz_db,place_alias,name,3,character varying,19.62,4647,No,4778,No,No
+musicbrainz_db,place_alias,locale,4,text,2.19,53,No,4778,Yes,No
+musicbrainz_db,place_alias,edits_pending,5,integer,1.0,1,No,4778,No,No
+musicbrainz_db,place_alias,last_updated,6,timestamp with time zone,28.89,4297,No,4778,Yes,No
+musicbrainz_db,place_alias,type,7,integer,1.0,2,No,4778,Yes,No
+musicbrainz_db,place_alias,sort_name,8,character varying,19.71,4646,No,4778,No,No
+musicbrainz_db,place_alias,begin_date_year,9,smallint,4.0,170,No,4778,Yes,No
+musicbrainz_db,place_alias,begin_date_month,10,smallint,1.26,12,No,4778,Yes,No
+musicbrainz_db,place_alias,begin_date_day,11,smallint,1.56,31,No,4778,Yes,No
+musicbrainz_db,place_alias,end_date_year,12,smallint,4.0,134,No,4778,Yes,No
+musicbrainz_db,place_alias,end_date_month,13,smallint,1.25,12,No,4778,Yes,No
+musicbrainz_db,place_alias,end_date_day,14,smallint,1.7,31,No,4778,Yes,No
+musicbrainz_db,place_alias,primary_for_locale,15,boolean,4.86,2,No,4778,No,No
+musicbrainz_db,place_alias,ended,16,boolean,4.8,2,No,4778,No,No
+musicbrainz_db,place_alias_type,id,1,integer,1.0,2,Yes,2,No,No
+musicbrainz_db,place_alias_type,name,2,text,10.5,2,No,2,No,No
+musicbrainz_db,place_alias_type,parent,3,integer,0.0,0,No,2,Yes,Yes
+musicbrainz_db,place_alias_type,child_order,4,integer,1.0,1,No,2,No,No
+musicbrainz_db,place_alias_type,description,5,text,0.0,0,No,2,Yes,Yes
+musicbrainz_db,place_alias_type,gid,6,uuid,36.0,2,Yes,2,No,No
+musicbrainz_db,place_annotation,place,1,integer,4.38,282,No,499,No,No
+musicbrainz_db,place_annotation,annotation,2,integer,6.25,499,No,499,No,No
+musicbrainz_db,place_attribute,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,place_attribute,place,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,place_attribute,place_attribute_type,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,place_attribute,place_attribute_type_allowed_value,4,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,place_attribute,place_attribute_text,5,text,0.0,0,No,0,Yes,No
+musicbrainz_db,place_attribute_type,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,place_attribute_type,name,2,character varying,0.0,0,No,0,No,No
+musicbrainz_db,place_attribute_type,comment,3,character varying,0.0,0,No,0,No,No
+musicbrainz_db,place_attribute_type,free_text,4,boolean,0.0,0,No,0,No,No
+musicbrainz_db,place_attribute_type,parent,5,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,place_attribute_type,child_order,6,integer,0.0,0,No,0,No,No
+musicbrainz_db,place_attribute_type,description,7,text,0.0,0,No,0,Yes,No
+musicbrainz_db,place_attribute_type,gid,8,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,place_attribute_type_allowed_value,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,place_attribute_type_allowed_value,place_attribute_type,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,place_attribute_type_allowed_value,value,3,text,0.0,0,No,0,Yes,No
+musicbrainz_db,place_attribute_type_allowed_value,parent,4,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,place_attribute_type_allowed_value,child_order,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,place_attribute_type_allowed_value,description,6,text,0.0,0,No,0,Yes,No
+musicbrainz_db,place_attribute_type_allowed_value,gid,7,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,place_gid_redirect,gid,1,uuid,36.0,781,Yes,781,No,No
+musicbrainz_db,place_gid_redirect,new_id,2,integer,4.3,639,Yes,781,No,No
+musicbrainz_db,place_gid_redirect,created,3,timestamp with time zone,28.9,755,No,781,Yes,No
+musicbrainz_db,place_meta,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,place_meta,rating,2,smallint,0.0,0,No,0,Yes,No
+musicbrainz_db,place_meta,rating_count,3,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,place_rating_raw,place,1,integer,4.0,5,No,5,No,No
+musicbrainz_db,place_rating_raw,editor,2,integer,6.6,4,No,5,No,No
+musicbrainz_db,place_rating_raw,rating,3,smallint,2.8,2,No,5,No,No
+musicbrainz_db,place_tag,place,1,integer,4.16,409,No,479,No,No
+musicbrainz_db,place_tag,tag,2,integer,4.94,113,No,479,No,No
+musicbrainz_db,place_tag,count,3,integer,1.01,5,No,479,No,No
+musicbrainz_db,place_tag,last_updated,4,timestamp with time zone,28.87,465,No,479,Yes,No
+musicbrainz_db,place_tag_raw,place,1,integer,4.42,129,No,184,No,No
+musicbrainz_db,place_tag_raw,editor,2,integer,6.41,31,No,184,No,No
+musicbrainz_db,place_tag_raw,tag,3,integer,4.98,79,No,184,No,No
+musicbrainz_db,place_tag_raw,is_upvote,4,boolean,4.08,2,No,184,No,No
+musicbrainz_db,place_type,id,1,integer,1.31,13,Yes,13,No,No
+musicbrainz_db,place_type,name,2,character varying,11.23,13,No,13,No,No
+musicbrainz_db,place_type,parent,3,integer,1.0,1,No,13,Yes,No
+musicbrainz_db,place_type,child_order,4,integer,1.08,8,No,13,No,No
+musicbrainz_db,place_type,description,5,text,118.33,12,No,13,Yes,No
+musicbrainz_db,place_type,gid,6,uuid,36.0,13,Yes,13,No,No
+musicbrainz_db,recording,id,1,integer,7.64,2753252,Yes,2753252,No,No
+musicbrainz_db,recording,gid,2,uuid,36.0,2753252,Yes,2753252,No,No
+musicbrainz_db,recording,name,3,character varying,30.1,1225198,No,2753252,No,No
+musicbrainz_db,recording,artist_credit,4,integer,5.53,269588,No,2753252,No,No
+musicbrainz_db,recording,length,5,integer,5.94,180603,No,2753252,Yes,No
+musicbrainz_db,recording,comment,6,character varying,6.92,61382,No,2753252,No,No
+musicbrainz_db,recording,edits_pending,7,integer,1.0,6,No,2753252,No,No
+musicbrainz_db,recording,last_updated,8,timestamp with time zone,28.89,1272769,No,2753252,Yes,No
+musicbrainz_db,recording,video,9,boolean,4.98,2,No,2753252,No,No
+musicbrainz_db,recording_alias,id,1,integer,5.81,331568,Yes,331568,No,No
+musicbrainz_db,recording_alias,recording,2,integer,7.32,215709,No,331568,No,No
+musicbrainz_db,recording_alias,name,3,character varying,43.37,308086,No,331568,No,No
+musicbrainz_db,recording_alias,locale,4,text,2.1,33,No,331568,Yes,No
+musicbrainz_db,recording_alias,edits_pending,5,integer,1.0,1,No,331568,No,No
+musicbrainz_db,recording_alias,last_updated,6,timestamp with time zone,28.89,249579,No,331568,Yes,No
+musicbrainz_db,recording_alias,type,7,integer,1.0,2,No,331568,Yes,No
+musicbrainz_db,recording_alias,sort_name,8,character varying,43.37,308089,No,331568,No,No
+musicbrainz_db,recording_alias,begin_date_year,9,smallint,4.0,10,No,331568,Yes,No
+musicbrainz_db,recording_alias,begin_date_month,10,smallint,1.2,9,No,331568,Yes,No
+musicbrainz_db,recording_alias,begin_date_day,11,smallint,1.79,11,No,331568,Yes,No
+musicbrainz_db,recording_alias,end_date_year,12,smallint,4.0,6,No,331568,Yes,No
+musicbrainz_db,recording_alias,end_date_month,13,smallint,1.25,4,No,331568,Yes,No
+musicbrainz_db,recording_alias,end_date_day,14,smallint,1.0,3,No,331568,Yes,No
+musicbrainz_db,recording_alias,primary_for_locale,15,boolean,5.0,2,No,331568,No,No
+musicbrainz_db,recording_alias,ended,16,boolean,5.0,2,No,331568,No,No
+musicbrainz_db,recording_alias_type,id,1,integer,1.0,2,Yes,2,No,No
+musicbrainz_db,recording_alias_type,name,2,text,12.5,2,No,2,No,No
+musicbrainz_db,recording_alias_type,parent,3,integer,0.0,0,No,2,Yes,Yes
+musicbrainz_db,recording_alias_type,child_order,4,integer,1.0,1,No,2,No,No
+musicbrainz_db,recording_alias_type,description,5,text,0.0,0,No,2,Yes,Yes
+musicbrainz_db,recording_alias_type,gid,6,uuid,36.0,2,Yes,2,No,No
+musicbrainz_db,recording_annotation,recording,1,integer,7.29,14846,No,23011,No,No
+musicbrainz_db,recording_annotation,annotation,2,integer,6.17,23011,No,23011,No,No
+musicbrainz_db,recording_attribute,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,recording_attribute,recording,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,recording_attribute,recording_attribute_type,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,recording_attribute,recording_attribute_type_allowed_value,4,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,recording_attribute,recording_attribute_text,5,text,0.0,0,No,0,Yes,No
+musicbrainz_db,recording_attribute_type,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,recording_attribute_type,name,2,character varying,0.0,0,No,0,No,No
+musicbrainz_db,recording_attribute_type,comment,3,character varying,0.0,0,No,0,No,No
+musicbrainz_db,recording_attribute_type,free_text,4,boolean,0.0,0,No,0,No,No
+musicbrainz_db,recording_attribute_type,parent,5,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,recording_attribute_type,child_order,6,integer,0.0,0,No,0,No,No
+musicbrainz_db,recording_attribute_type,description,7,text,0.0,0,No,0,Yes,No
+musicbrainz_db,recording_attribute_type,gid,8,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,recording_attribute_type_allowed_value,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,recording_attribute_type_allowed_value,recording_attribute_type,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,recording_attribute_type_allowed_value,value,3,text,0.0,0,No,0,Yes,No
+musicbrainz_db,recording_attribute_type_allowed_value,parent,4,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,recording_attribute_type_allowed_value,child_order,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,recording_attribute_type_allowed_value,description,6,text,0.0,0,No,0,Yes,No
+musicbrainz_db,recording_attribute_type_allowed_value,gid,7,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,recording_first_release_date,recording,1,integer,0.0,0,No,0,No,No
+musicbrainz_db,recording_first_release_date,year,2,smallint,0.0,0,No,0,Yes,No
+musicbrainz_db,recording_first_release_date,month,3,smallint,0.0,0,No,0,Yes,No
+musicbrainz_db,recording_first_release_date,day,4,smallint,0.0,0,No,0,Yes,No
+musicbrainz_db,recording_gid_redirect,gid,1,uuid,36.0,1626975,Yes,1626975,No,No
+musicbrainz_db,recording_gid_redirect,new_id,2,integer,6.98,471618,Yes,1626975,No,No
+musicbrainz_db,recording_gid_redirect,created,3,timestamp with time zone,28.91,869034,No,1626975,Yes,No
+musicbrainz_db,recording_meta,id,1,integer,7.64,2753252,Yes,2753252,No,No
+musicbrainz_db,recording_meta,rating,2,smallint,2.17,88,No,2753252,Yes,No
+musicbrainz_db,recording_meta,rating_count,3,integer,1.02,32,No,2753252,Yes,No
+musicbrainz_db,recording_rating_raw,recording,1,integer,6.82,93106,No,169184,No,No
+musicbrainz_db,recording_rating_raw,editor,2,integer,6.36,3298,No,169184,No,No
+musicbrainz_db,recording_rating_raw,rating,3,smallint,2.25,92,No,169184,No,No
+musicbrainz_db,recording_series,recording,1,integer,7.16,3865,No,5188,Yes,No
+musicbrainz_db,recording_series,series,2,integer,4.81,252,No,5188,Yes,No
+musicbrainz_db,recording_series,relationship,3,integer,4.73,5188,No,5188,Yes,No
+musicbrainz_db,recording_series,link_order,4,integer,2.26,927,No,5188,Yes,No
+musicbrainz_db,recording_series,link,5,integer,6.03,1704,No,5188,Yes,No
+musicbrainz_db,recording_series,text_value,6,text,3.55,1704,No,5188,Yes,No
+musicbrainz_db,recording_tag,recording,1,integer,6.98,375897,No,1455451,No,No
+musicbrainz_db,recording_tag,tag,2,integer,3.12,7895,No,1455451,No,No
+musicbrainz_db,recording_tag,count,3,integer,1.0,27,No,1455451,No,No
+musicbrainz_db,recording_tag,last_updated,4,timestamp with time zone,28.89,1026791,No,1455451,Yes,No
+musicbrainz_db,recording_tag_raw,recording,1,integer,6.9,372652,No,2029471,No,No
+musicbrainz_db,recording_tag_raw,editor,2,integer,6.64,1580,No,2029471,No,No
+musicbrainz_db,recording_tag_raw,tag,3,integer,2.97,7537,No,2029471,No,No
+musicbrainz_db,recording_tag_raw,is_upvote,4,boolean,4.02,2,No,2029471,No,No
+musicbrainz_db,release,id,1,integer,6.61,35130,Yes,35130,No,No
+musicbrainz_db,release,gid,2,uuid,36.0,35130,Yes,35130,No,No
+musicbrainz_db,release,name,3,character varying,24.11,26553,No,35130,No,No
+musicbrainz_db,release,artist_credit,4,integer,5.01,14339,No,35130,No,No
+musicbrainz_db,release,release_group,5,integer,6.41,27157,No,35130,No,No
+musicbrainz_db,release,status,6,integer,1.0,7,No,35130,Yes,No
+musicbrainz_db,release,packaging,7,integer,1.07,23,No,35130,Yes,No
+musicbrainz_db,release,language,8,integer,3.0,90,No,35130,Yes,No
+musicbrainz_db,release,script,9,integer,2.0,17,No,35130,Yes,No
+musicbrainz_db,release,barcode,10,character varying,10.52,24105,No,35130,Yes,No
+musicbrainz_db,release,comment,11,character varying,1.79,1797,No,35130,No,No
+musicbrainz_db,release,edits_pending,12,integer,1.0,14,No,35130,No,No
+musicbrainz_db,release,quality,13,smallint,1.98,4,No,35130,No,No
+musicbrainz_db,release,last_updated,14,timestamp with time zone,28.89,34262,No,35130,Yes,No
+musicbrainz_db,release_alias,id,1,integer,4.65,1472,Yes,1472,No,No
+musicbrainz_db,release_alias,release,2,integer,6.65,869,No,1472,No,No
+musicbrainz_db,release_alias,name,3,character varying,42.6,1453,No,1472,No,No
+musicbrainz_db,release_alias,locale,4,text,2.19,11,No,1472,Yes,No
+musicbrainz_db,release_alias,edits_pending,5,integer,1.0,1,No,1472,No,No
+musicbrainz_db,release_alias,last_updated,6,timestamp with time zone,28.84,1115,No,1472,Yes,No
+musicbrainz_db,release_alias,type,7,integer,1.0,2,No,1472,Yes,No
+musicbrainz_db,release_alias,sort_name,8,character varying,42.69,1453,No,1472,No,No
+musicbrainz_db,release_alias,begin_date_year,9,smallint,4.0,4,No,1472,Yes,No
+musicbrainz_db,release_alias,begin_date_month,10,smallint,1.0,3,No,1472,Yes,No
+musicbrainz_db,release_alias,begin_date_day,11,smallint,1.75,4,No,1472,Yes,No
+musicbrainz_db,release_alias,end_date_year,12,smallint,4.0,2,No,1472,Yes,No
+musicbrainz_db,release_alias,end_date_month,13,smallint,1.0,2,No,1472,Yes,No
+musicbrainz_db,release_alias,end_date_day,14,smallint,2.0,2,No,1472,Yes,No
+musicbrainz_db,release_alias,primary_for_locale,15,boolean,4.96,2,No,1472,No,No
+musicbrainz_db,release_alias,ended,16,boolean,5.0,2,No,1472,No,No
+musicbrainz_db,release_alias_type,id,1,integer,1.0,2,Yes,2,No,No
+musicbrainz_db,release_alias_type,name,2,text,11.5,2,No,2,No,No
+musicbrainz_db,release_alias_type,parent,3,integer,0.0,0,No,2,Yes,Yes
+musicbrainz_db,release_alias_type,child_order,4,integer,1.0,1,No,2,No,No
+musicbrainz_db,release_alias_type,description,5,text,0.0,0,No,2,Yes,Yes
+musicbrainz_db,release_alias_type,gid,6,uuid,36.0,2,Yes,2,No,No
+musicbrainz_db,release_annotation,release,1,integer,6.24,10517,No,23549,No,No
+musicbrainz_db,release_annotation,annotation,2,integer,6.2,23549,No,23549,No,No
+musicbrainz_db,release_attribute,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,release_attribute,release,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,release_attribute,release_attribute_type,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,release_attribute,release_attribute_type_allowed_value,4,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,release_attribute,release_attribute_text,5,text,0.0,0,No,0,Yes,No
+musicbrainz_db,release_attribute_type,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,release_attribute_type,name,2,character varying,0.0,0,No,0,No,No
+musicbrainz_db,release_attribute_type,comment,3,character varying,0.0,0,No,0,No,No
+musicbrainz_db,release_attribute_type,free_text,4,boolean,0.0,0,No,0,No,No
+musicbrainz_db,release_attribute_type,parent,5,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,release_attribute_type,child_order,6,integer,0.0,0,No,0,No,No
+musicbrainz_db,release_attribute_type,description,7,text,0.0,0,No,0,Yes,No
+musicbrainz_db,release_attribute_type,gid,8,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,release_attribute_type_allowed_value,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,release_attribute_type_allowed_value,release_attribute_type,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,release_attribute_type_allowed_value,value,3,text,0.0,0,No,0,Yes,No
+musicbrainz_db,release_attribute_type_allowed_value,parent,4,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,release_attribute_type_allowed_value,child_order,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,release_attribute_type_allowed_value,description,6,text,0.0,0,No,0,Yes,No
+musicbrainz_db,release_attribute_type_allowed_value,gid,7,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,release_country,release,1,integer,6.86,31789,No,95385,No,No
+musicbrainz_db,release_country,country,2,integer,2.65,257,No,95385,No,No
+musicbrainz_db,release_country,date_year,3,smallint,4.0,95,No,95385,Yes,No
+musicbrainz_db,release_country,date_month,4,smallint,1.23,12,No,95385,Yes,No
+musicbrainz_db,release_country,date_day,5,smallint,1.69,31,No,95385,Yes,No
+musicbrainz_db,release_event,release,1,integer,6.86,34077,No,97708,Yes,No
+musicbrainz_db,release_event,date_year,2,smallint,4.0,95,No,97708,Yes,No
+musicbrainz_db,release_event,date_month,3,smallint,1.23,12,No,97708,Yes,No
+musicbrainz_db,release_event,date_day,4,smallint,1.69,31,No,97708,Yes,No
+musicbrainz_db,release_event,country,5,integer,2.65,257,No,97708,Yes,No
+musicbrainz_db,release_first_release_date,release,1,integer,0.0,0,No,0,No,No
+musicbrainz_db,release_first_release_date,year,2,smallint,0.0,0,No,0,Yes,No
+musicbrainz_db,release_first_release_date,month,3,smallint,0.0,0,No,0,Yes,No
+musicbrainz_db,release_first_release_date,day,4,smallint,0.0,0,No,0,Yes,No
+musicbrainz_db,release_gid_redirect,gid,1,uuid,36.0,6174,Yes,6174,No,No
+musicbrainz_db,release_gid_redirect,new_id,2,integer,6.18,3300,Yes,6174,No,No
+musicbrainz_db,release_gid_redirect,created,3,timestamp with time zone,28.93,2459,No,6174,Yes,No
+musicbrainz_db,release_group,id,1,integer,6.51,27891,Yes,27891,No,No
+musicbrainz_db,release_group,gid,2,uuid,36.0,27891,Yes,27891,No,No
+musicbrainz_db,release_group,name,3,character varying,24.92,26082,No,27891,No,No
+musicbrainz_db,release_group,artist_credit,4,integer,5.05,14219,No,27891,No,No
+musicbrainz_db,release_group,type,5,integer,1.02,5,No,27891,Yes,No
+musicbrainz_db,release_group,comment,6,character varying,0.36,432,No,27891,No,No
+musicbrainz_db,release_group,edits_pending,7,integer,1.0,3,No,27891,No,No
+musicbrainz_db,release_group,last_updated,8,timestamp with time zone,28.91,22727,No,27891,Yes,No
+musicbrainz_db,release_group_alias,id,1,integer,4.69,2622,Yes,2622,No,No
+musicbrainz_db,release_group_alias,release_group,2,integer,6.26,1813,No,2622,No,No
+musicbrainz_db,release_group_alias,name,3,character varying,31.02,2595,No,2622,No,No
+musicbrainz_db,release_group_alias,locale,4,text,2.4,18,No,2622,Yes,No
+musicbrainz_db,release_group_alias,edits_pending,5,integer,1.0,1,No,2622,No,No
+musicbrainz_db,release_group_alias,last_updated,6,timestamp with time zone,28.88,2344,No,2622,Yes,No
+musicbrainz_db,release_group_alias,type,7,integer,1.0,2,No,2622,Yes,No
+musicbrainz_db,release_group_alias,sort_name,8,character varying,31.1,2592,No,2622,No,No
+musicbrainz_db,release_group_alias,begin_date_year,9,smallint,4.0,6,No,2622,Yes,No
+musicbrainz_db,release_group_alias,begin_date_month,10,smallint,1.0,2,No,2622,Yes,No
+musicbrainz_db,release_group_alias,begin_date_day,11,smallint,2.0,3,No,2622,Yes,No
+musicbrainz_db,release_group_alias,end_date_year,12,smallint,4.0,1,No,2622,Yes,No
+musicbrainz_db,release_group_alias,end_date_month,13,smallint,0.0,0,No,2622,Yes,Yes
+musicbrainz_db,release_group_alias,end_date_day,14,smallint,0.0,0,No,2622,Yes,Yes
+musicbrainz_db,release_group_alias,primary_for_locale,15,boolean,4.96,2,No,2622,No,No
+musicbrainz_db,release_group_alias,ended,16,boolean,5.0,2,No,2622,No,No
+musicbrainz_db,release_group_alias_type,id,1,integer,1.0,2,Yes,2,No,No
+musicbrainz_db,release_group_alias_type,name,2,text,14.5,2,No,2,No,No
+musicbrainz_db,release_group_alias_type,parent,3,integer,0.0,0,No,2,Yes,Yes
+musicbrainz_db,release_group_alias_type,child_order,4,integer,1.0,1,No,2,No,No
+musicbrainz_db,release_group_alias_type,description,5,text,0.0,0,No,2,Yes,Yes
+musicbrainz_db,release_group_alias_type,gid,6,uuid,36.0,2,Yes,2,No,No
+musicbrainz_db,release_group_annotation,release_group,1,integer,6.15,403,No,768,No,No
+musicbrainz_db,release_group_annotation,annotation,2,integer,6.2,768,No,768,No,No
+musicbrainz_db,release_group_attribute,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,release_group_attribute,release_group,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,release_group_attribute,release_group_attribute_type,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,release_group_attribute,release_group_attribute_type_allowed_value,4,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,release_group_attribute,release_group_attribute_text,5,text,0.0,0,No,0,Yes,No
+musicbrainz_db,release_group_attribute_type,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,release_group_attribute_type,name,2,character varying,0.0,0,No,0,No,No
+musicbrainz_db,release_group_attribute_type,comment,3,character varying,0.0,0,No,0,No,No
+musicbrainz_db,release_group_attribute_type,free_text,4,boolean,0.0,0,No,0,No,No
+musicbrainz_db,release_group_attribute_type,parent,5,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,release_group_attribute_type,child_order,6,integer,0.0,0,No,0,No,No
+musicbrainz_db,release_group_attribute_type,description,7,text,0.0,0,No,0,Yes,No
+musicbrainz_db,release_group_attribute_type,gid,8,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,release_group_attribute_type_allowed_value,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,release_group_attribute_type_allowed_value,release_group_attribute_type,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,release_group_attribute_type_allowed_value,value,3,text,0.0,0,No,0,Yes,No
+musicbrainz_db,release_group_attribute_type_allowed_value,parent,4,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,release_group_attribute_type_allowed_value,child_order,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,release_group_attribute_type_allowed_value,description,6,text,0.0,0,No,0,Yes,No
+musicbrainz_db,release_group_attribute_type_allowed_value,gid,7,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,release_group_gid_redirect,gid,1,uuid,36.0,11475,Yes,11475,No,No
+musicbrainz_db,release_group_gid_redirect,new_id,2,integer,6.01,5784,Yes,11475,No,No
+musicbrainz_db,release_group_gid_redirect,created,3,timestamp with time zone,28.94,5562,No,11475,Yes,No
+musicbrainz_db,release_group_meta,id,1,integer,6.51,27891,Yes,27891,No,No
+musicbrainz_db,release_group_meta,release_count,2,integer,1.08,94,No,27891,No,No
+musicbrainz_db,release_group_meta,first_release_date_year,3,smallint,4.0,95,No,27891,Yes,No
+musicbrainz_db,release_group_meta,first_release_date_month,4,smallint,1.27,12,No,27891,Yes,No
+musicbrainz_db,release_group_meta,first_release_date_day,5,smallint,1.69,31,No,27891,Yes,No
+musicbrainz_db,release_group_meta,rating,6,smallint,2.23,66,No,27891,Yes,No
+musicbrainz_db,release_group_meta,rating_count,7,integer,1.08,58,No,27891,Yes,No
+musicbrainz_db,release_group_primary_type,id,1,integer,1.4,5,Yes,5,No,No
+musicbrainz_db,release_group_primary_type,name,2,character varying,5.4,5,No,5,No,No
+musicbrainz_db,release_group_primary_type,parent,3,integer,0.0,0,No,5,Yes,Yes
+musicbrainz_db,release_group_primary_type,child_order,4,integer,1.2,5,No,5,No,No
+musicbrainz_db,release_group_primary_type,description,5,text,527.4,5,No,5,Yes,No
+musicbrainz_db,release_group_primary_type,gid,6,uuid,36.0,5,Yes,5,No,No
+musicbrainz_db,release_group_rating_raw,release_group,1,integer,5.75,5760,No,20201,No,No
+musicbrainz_db,release_group_rating_raw,editor,2,integer,6.56,2418,No,20201,No,No
+musicbrainz_db,release_group_rating_raw,rating,3,smallint,2.39,31,No,20201,No,No
+musicbrainz_db,release_group_secondary_type,id,1,integer,1.25,12,Yes,12,No,No
+musicbrainz_db,release_group_secondary_type,name,2,text,9.0,12,No,12,No,No
+musicbrainz_db,release_group_secondary_type,parent,3,integer,0.0,0,No,12,Yes,Yes
+musicbrainz_db,release_group_secondary_type,child_order,4,integer,1.0,1,No,12,No,No
+musicbrainz_db,release_group_secondary_type,description,5,text,279.58,12,No,12,Yes,No
+musicbrainz_db,release_group_secondary_type,gid,6,uuid,36.0,12,Yes,12,No,No
+musicbrainz_db,release_group_secondary_type_join,release_group,1,integer,6.56,10968,No,11578,No,No
+musicbrainz_db,release_group_secondary_type_join,secondary_type,2,integer,1.01,12,No,11578,No,No
+musicbrainz_db,release_group_secondary_type_join,created,3,timestamp with time zone,26.37,6784,No,11578,No,No
+musicbrainz_db,release_group_series,release_group,1,integer,6.52,688,No,751,Yes,No
+musicbrainz_db,release_group_series,series,2,integer,4.25,327,No,751,Yes,No
+musicbrainz_db,release_group_series,relationship,3,integer,5.1,751,No,751,Yes,No
+musicbrainz_db,release_group_series,link_order,4,integer,1.56,140,No,751,Yes,No
+musicbrainz_db,release_group_series,link,5,integer,6.0,187,No,751,Yes,No
+musicbrainz_db,release_group_series,text_value,6,text,1.94,187,No,751,Yes,No
+musicbrainz_db,release_group_tag,release_group,1,integer,6.09,17517,No,71672,No,No
+musicbrainz_db,release_group_tag,tag,2,integer,3.09,3304,No,71672,No,No
+musicbrainz_db,release_group_tag,count,3,integer,1.02,34,No,71672,No,No
+musicbrainz_db,release_group_tag,last_updated,4,timestamp with time zone,28.89,62422,No,71672,Yes,No
+musicbrainz_db,release_group_tag_raw,release_group,1,integer,5.9,17342,No,115301,No,No
+musicbrainz_db,release_group_tag_raw,editor,2,integer,6.53,1354,No,115301,No,No
+musicbrainz_db,release_group_tag_raw,tag,3,integer,3.01,3118,No,115301,No,No
+musicbrainz_db,release_group_tag_raw,is_upvote,4,boolean,4.09,2,No,115301,No,No
+musicbrainz_db,release_label,id,1,integer,6.57,39799,Yes,39799,No,No
+musicbrainz_db,release_label,release,2,integer,6.62,33001,No,39799,No,No
+musicbrainz_db,release_label,label,3,integer,4.05,6606,No,39799,Yes,No
+musicbrainz_db,release_label,catalog_number,4,character varying,9.27,27726,No,39799,Yes,No
+musicbrainz_db,release_label,last_updated,5,timestamp with time zone,28.91,28627,No,39799,Yes,No
+musicbrainz_db,release_meta,id,1,integer,6.61,35130,Yes,35130,No,No
+musicbrainz_db,release_meta,date_added,2,timestamp with time zone,28.73,32968,No,35130,Yes,No
+musicbrainz_db,release_meta,info_url,3,character varying,44.24,11395,No,35130,Yes,No
+musicbrainz_db,release_meta,amazon_asin,4,character varying,10.0,13486,No,35130,Yes,No
+musicbrainz_db,release_meta,cover_art_presence,5,user-defined,6.77,2,No,35130,No,No
+musicbrainz_db,release_packaging,id,1,integer,1.61,23,Yes,23,No,No
+musicbrainz_db,release_packaging,name,2,character varying,9.87,23,No,23,No,No
+musicbrainz_db,release_packaging,parent,3,integer,0.0,0,No,23,Yes,Yes
+musicbrainz_db,release_packaging,child_order,4,integer,1.0,3,No,23,No,No
+musicbrainz_db,release_packaging,description,5,text,80.11,9,No,23,Yes,No
+musicbrainz_db,release_packaging,gid,6,uuid,36.0,23,Yes,23,No,No
+musicbrainz_db,release_raw,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,release_raw,title,2,character varying,0.0,0,No,0,No,No
+musicbrainz_db,release_raw,artist,3,character varying,0.0,0,No,0,Yes,No
+musicbrainz_db,release_raw,added,4,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,release_raw,last_modified,5,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,release_raw,lookup_count,6,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,release_raw,modify_count,7,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,release_raw,source,8,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,release_raw,barcode,9,character varying,0.0,0,No,0,Yes,No
+musicbrainz_db,release_raw,comment,10,character varying,0.0,0,No,0,No,No
+musicbrainz_db,release_series,release,1,integer,6.71,703,No,714,Yes,No
+musicbrainz_db,release_series,series,2,integer,3.96,207,No,714,Yes,No
+musicbrainz_db,release_series,relationship,3,integer,4.54,714,No,714,Yes,No
+musicbrainz_db,release_series,link_order,4,integer,1.82,177,No,714,Yes,No
+musicbrainz_db,release_series,link,5,integer,6.0,164,No,714,Yes,No
+musicbrainz_db,release_series,text_value,6,text,1.15,164,No,714,Yes,No
+musicbrainz_db,release_status,id,1,integer,1.14,7,Yes,7,No,No
+musicbrainz_db,release_status,name,2,character varying,9.14,7,No,7,No,No
+musicbrainz_db,release_status,parent,3,integer,0.0,0,No,7,Yes,Yes
+musicbrainz_db,release_status,child_order,4,integer,1.0,7,No,7,No,No
+musicbrainz_db,release_status,description,5,text,213.71,7,No,7,Yes,No
+musicbrainz_db,release_status,gid,6,uuid,36.0,7,Yes,7,No,No
+musicbrainz_db,release_tag,release,1,integer,6.62,5965,No,16647,No,No
+musicbrainz_db,release_tag,tag,2,integer,3.45,3298,No,16647,No,No
+musicbrainz_db,release_tag,count,3,integer,1.0,9,No,16647,No,No
+musicbrainz_db,release_tag,last_updated,4,timestamp with time zone,28.89,15678,No,16647,Yes,No
+musicbrainz_db,release_tag_raw,release,1,integer,6.65,5399,No,17073,No,No
+musicbrainz_db,release_tag_raw,editor,2,integer,6.62,581,No,17073,No,No
+musicbrainz_db,release_tag_raw,tag,3,integer,3.42,3180,No,17073,No,No
+musicbrainz_db,release_tag_raw,is_upvote,4,boolean,4.01,2,No,17073,No,No
+musicbrainz_db,release_unknown_country,release,1,integer,6.9,2323,No,2323,No,No
+musicbrainz_db,release_unknown_country,date_year,2,smallint,4.0,59,No,2323,Yes,No
+musicbrainz_db,release_unknown_country,date_month,3,smallint,1.25,12,No,2323,Yes,No
+musicbrainz_db,release_unknown_country,date_day,4,smallint,1.67,31,No,2323,Yes,No
+musicbrainz_db,replication_control,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,replication_control,current_schema_sequence,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,replication_control,current_replication_sequence,3,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,replication_control,last_replication_date,4,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,script,id,1,integer,2.33,159,Yes,159,No,No
+musicbrainz_db,script,iso_code,2,character,4.0,159,No,159,No,No
+musicbrainz_db,script,iso_number,3,character,3.0,159,No,159,No,No
+musicbrainz_db,script,name,4,character varying,10.17,159,No,159,No,No
+musicbrainz_db,script,frequency,5,smallint,1.0,4,No,159,No,No
+musicbrainz_db,series,id,1,integer,4.53,2080,Yes,2080,No,No
+musicbrainz_db,series,gid,2,uuid,36.0,2080,Yes,2080,No,No
+musicbrainz_db,series,name,3,character varying,32.91,2041,No,2080,No,No
+musicbrainz_db,series,comment,4,character varying,5.87,399,No,2080,No,No
+musicbrainz_db,series,type,5,integer,1.28,15,No,2080,No,No
+musicbrainz_db,series,ordering_type,6,integer,1.0,2,No,2080,No,No
+musicbrainz_db,series,edits_pending,7,integer,1.0,2,No,2080,No,No
+musicbrainz_db,series,last_updated,8,timestamp with time zone,28.89,2079,No,2080,Yes,No
+musicbrainz_db,series_alias,id,1,integer,3.23,234,Yes,234,No,No
+musicbrainz_db,series_alias,series,2,integer,4.0,146,No,234,No,No
+musicbrainz_db,series_alias,name,3,character varying,18.84,226,No,234,No,No
+musicbrainz_db,series_alias,locale,4,text,2.04,13,No,234,Yes,No
+musicbrainz_db,series_alias,edits_pending,5,integer,1.0,1,No,234,No,No
+musicbrainz_db,series_alias,last_updated,6,timestamp with time zone,28.87,219,No,234,Yes,No
+musicbrainz_db,series_alias,type,7,integer,1.0,2,No,234,Yes,No
+musicbrainz_db,series_alias,sort_name,8,character varying,18.92,226,No,234,No,No
+musicbrainz_db,series_alias,begin_date_year,9,smallint,4.0,16,No,234,Yes,No
+musicbrainz_db,series_alias,begin_date_month,10,smallint,1.0,2,No,234,Yes,No
+musicbrainz_db,series_alias,begin_date_day,11,smallint,1.0,1,No,234,Yes,No
+musicbrainz_db,series_alias,end_date_year,12,smallint,4.0,9,No,234,Yes,No
+musicbrainz_db,series_alias,end_date_month,13,smallint,1.0,1,No,234,Yes,No
+musicbrainz_db,series_alias,end_date_day,14,smallint,1.0,1,No,234,Yes,No
+musicbrainz_db,series_alias,primary_for_locale,15,boolean,4.8,2,No,234,No,No
+musicbrainz_db,series_alias,ended,16,boolean,4.93,2,No,234,No,No
+musicbrainz_db,series_alias_type,id,1,integer,1.0,2,Yes,2,No,No
+musicbrainz_db,series_alias_type,name,2,text,11.0,2,No,2,No,No
+musicbrainz_db,series_alias_type,parent,3,integer,0.0,0,No,2,Yes,Yes
+musicbrainz_db,series_alias_type,child_order,4,integer,1.0,1,No,2,No,No
+musicbrainz_db,series_alias_type,description,5,text,0.0,0,No,2,Yes,Yes
+musicbrainz_db,series_alias_type,gid,6,uuid,36.0,2,Yes,2,No,No
+musicbrainz_db,series_annotation,series,1,integer,4.46,261,No,805,No,No
+musicbrainz_db,series_annotation,annotation,2,integer,6.32,805,No,805,No,No
+musicbrainz_db,series_attribute,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,series_attribute,series,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,series_attribute,series_attribute_type,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,series_attribute,series_attribute_type_allowed_value,4,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,series_attribute,series_attribute_text,5,text,0.0,0,No,0,Yes,No
+musicbrainz_db,series_attribute_type,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,series_attribute_type,name,2,character varying,0.0,0,No,0,No,No
+musicbrainz_db,series_attribute_type,comment,3,character varying,0.0,0,No,0,No,No
+musicbrainz_db,series_attribute_type,free_text,4,boolean,0.0,0,No,0,No,No
+musicbrainz_db,series_attribute_type,parent,5,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,series_attribute_type,child_order,6,integer,0.0,0,No,0,No,No
+musicbrainz_db,series_attribute_type,description,7,text,0.0,0,No,0,Yes,No
+musicbrainz_db,series_attribute_type,gid,8,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,series_attribute_type_allowed_value,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,series_attribute_type_allowed_value,series_attribute_type,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,series_attribute_type_allowed_value,value,3,text,0.0,0,No,0,Yes,No
+musicbrainz_db,series_attribute_type_allowed_value,parent,4,integer,0.0,0,No,0,Yes,No
+musicbrainz_db,series_attribute_type_allowed_value,child_order,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,series_attribute_type_allowed_value,description,6,text,0.0,0,No,0,Yes,No
+musicbrainz_db,series_attribute_type_allowed_value,gid,7,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,series_gid_redirect,gid,1,uuid,36.0,22,Yes,22,No,No
+musicbrainz_db,series_gid_redirect,new_id,2,integer,4.23,21,Yes,22,No,No
+musicbrainz_db,series_gid_redirect,created,3,timestamp with time zone,28.95,22,No,22,Yes,No
+musicbrainz_db,series_ordering_type,id,1,integer,1.0,2,Yes,2,No,No
+musicbrainz_db,series_ordering_type,name,2,character varying,7.5,2,No,2,No,No
+musicbrainz_db,series_ordering_type,parent,3,integer,0.0,0,No,2,Yes,Yes
+musicbrainz_db,series_ordering_type,child_order,4,integer,1.0,2,No,2,No,No
+musicbrainz_db,series_ordering_type,description,5,text,83.5,2,No,2,Yes,No
+musicbrainz_db,series_ordering_type,gid,6,uuid,36.0,2,Yes,2,No,No
+musicbrainz_db,series_tag,series,1,integer,4.14,339,No,768,No,No
+musicbrainz_db,series_tag,tag,2,integer,3.67,191,No,768,No,No
+musicbrainz_db,series_tag,count,3,integer,1.0,7,No,768,No,No
+musicbrainz_db,series_tag,last_updated,4,timestamp with time zone,28.86,765,No,768,Yes,No
+musicbrainz_db,series_tag_raw,series,1,integer,4.11,293,No,466,No,No
+musicbrainz_db,series_tag_raw,editor,2,integer,6.5,69,No,466,No,No
+musicbrainz_db,series_tag_raw,tag,3,integer,3.58,148,No,466,No,No
+musicbrainz_db,series_tag_raw,is_upvote,4,boolean,4.03,2,No,466,No,No
+musicbrainz_db,series_type,id,1,integer,1.47,17,Yes,17,No,No
+musicbrainz_db,series_type,name,2,character varying,11.53,17,No,17,No,No
+musicbrainz_db,series_type,entity_type,3,character varying,6.94,6,No,17,No,No
+musicbrainz_db,series_type,parent,4,integer,1.09,5,No,17,Yes,No
+musicbrainz_db,series_type,child_order,5,integer,1.0,6,No,17,No,No
+musicbrainz_db,series_type,description,6,text,45.53,17,No,17,Yes,No
+musicbrainz_db,series_type,gid,7,uuid,36.0,17,Yes,17,No,No
+musicbrainz_db,tag,id,1,integer,5.09,21675,Yes,21675,No,No
+musicbrainz_db,tag,name,2,character varying,15.0,21675,No,21675,No,No
+musicbrainz_db,tag,ref_count,3,integer,1.63,1645,No,21675,No,No
+musicbrainz_db,tag_relation,tag1,1,integer,0.0,0,No,0,No,No
+musicbrainz_db,tag_relation,tag2,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,tag_relation,weight,3,integer,0.0,0,No,0,No,No
+musicbrainz_db,tag_relation,last_updated,4,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,track,id,1,integer,7.74,734122,Yes,734122,No,No
+musicbrainz_db,track,gid,2,uuid,36.0,734122,Yes,734122,No,No
+musicbrainz_db,track,recording,3,integer,7.47,522821,No,734122,No,No
+musicbrainz_db,track,medium,4,integer,6.69,59369,No,734122,No,No
+musicbrainz_db,track,position,5,integer,1.39,1220,No,734122,No,No
+musicbrainz_db,track,number,6,text,1.43,2126,No,734122,No,No
+musicbrainz_db,track,name,7,character varying,34.46,453025,No,734122,No,No
+musicbrainz_db,track,artist_credit,8,integer,5.28,60754,No,734122,No,No
+musicbrainz_db,track,length,9,integer,5.91,83567,No,734122,Yes,No
+musicbrainz_db,track,edits_pending,10,integer,1.0,1,No,734122,No,No
+musicbrainz_db,track,last_updated,11,timestamp with time zone,28.9,106157,No,734122,Yes,No
+musicbrainz_db,track,is_data_track,12,boolean,5.0,2,No,734122,No,No
+musicbrainz_db,track_gid_redirect,gid,1,uuid,0.0,0,Yes,0,No,No
+musicbrainz_db,track_gid_redirect,new_id,2,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,track_gid_redirect,created,3,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,track_raw,id,1,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,track_raw,release,2,integer,0.0,0,No,0,No,No
+musicbrainz_db,track_raw,title,3,character varying,0.0,0,No,0,No,No
+musicbrainz_db,track_raw,artist,4,character varying,0.0,0,No,0,Yes,No
+musicbrainz_db,track_raw,sequence,5,integer,0.0,0,No,0,No,No
+musicbrainz_db,unreferenced_row_log,table_name,1,character varying,0.0,0,No,0,No,No
+musicbrainz_db,unreferenced_row_log,row_id,2,integer,0.0,0,Yes,0,No,No
+musicbrainz_db,unreferenced_row_log,inserted,3,timestamp with time zone,0.0,0,No,0,Yes,No
+musicbrainz_db,url,id,1,integer,7.18,161631,Yes,161631,No,No
+musicbrainz_db,url,gid,2,uuid,36.0,161631,Yes,161631,No,No
+musicbrainz_db,url,url,3,text,43.91,161631,No,161631,No,No
+musicbrainz_db,url,edits_pending,4,integer,1.0,1,No,161631,No,No
+musicbrainz_db,url,last_updated,5,timestamp with time zone,28.84,85688,No,161631,Yes,No
+musicbrainz_db,url_gid_redirect,gid,1,uuid,36.0,450,Yes,450,No,No
+musicbrainz_db,url_gid_redirect,new_id,2,integer,6.86,440,Yes,450,No,No
+musicbrainz_db,url_gid_redirect,created,3,timestamp with time zone,28.91,439,No,450,Yes,No
+musicbrainz_db,vote,id,1,integer,7.93,61357,Yes,61357,No,No
+musicbrainz_db,vote,editor,2,integer,6.19,568,No,61357,No,No
+musicbrainz_db,vote,edit,3,integer,8.17,42421,No,61357,No,No
+musicbrainz_db,vote,vote,4,smallint,1.23,4,No,61357,No,No
+musicbrainz_db,vote,vote_time,5,timestamp with time zone,28.89,15714,No,61357,Yes,No
+musicbrainz_db,vote,superseded,6,boolean,5.0,2,No,61357,No,No
+musicbrainz_db,work,id,1,integer,7.81,250731,Yes,250731,No,No
+musicbrainz_db,work,gid,2,uuid,36.0,250731,Yes,250731,No,No
+musicbrainz_db,work,name,3,character varying,27.5,216202,No,250731,No,No
+musicbrainz_db,work,type,4,integer,1.95,28,No,250731,Yes,No
+musicbrainz_db,work,comment,5,character varying,2.99,12481,No,250731,No,No
+musicbrainz_db,work,edits_pending,6,integer,1.0,2,No,250731,No,No
+musicbrainz_db,work,last_updated,7,timestamp with time zone,28.89,195382,No,250731,Yes,No
+musicbrainz_db,work_alias,id,1,integer,5.16,62640,Yes,62640,No,No
+musicbrainz_db,work_alias,work,2,integer,7.42,24031,No,62640,No,No
+musicbrainz_db,work_alias,name,3,character varying,44.61,61590,No,62640,No,No
+musicbrainz_db,work_alias,locale,4,text,2.08,71,No,62640,Yes,No
+musicbrainz_db,work_alias,edits_pending,5,integer,1.0,1,No,62640,No,No
+musicbrainz_db,work_alias,last_updated,6,timestamp with time zone,28.94,28261,No,62640,Yes,No
+musicbrainz_db,work_alias,type,7,integer,1.0,2,No,62640,Yes,No
+musicbrainz_db,work_alias,sort_name,8,character varying,44.67,61641,No,62640,No,No
+musicbrainz_db,work_alias,begin_date_year,9,smallint,4.0,43,No,62640,Yes,No
+musicbrainz_db,work_alias,begin_date_month,10,smallint,1.09,8,No,62640,Yes,No
+musicbrainz_db,work_alias,begin_date_day,11,smallint,1.76,10,No,62640,Yes,No
+musicbrainz_db,work_alias,end_date_year,12,smallint,4.0,21,No,62640,Yes,No
+musicbrainz_db,work_alias,end_date_month,13,smallint,1.0,5,No,62640,Yes,No
+musicbrainz_db,work_alias,end_date_day,14,smallint,1.73,7,No,62640,Yes,No
+musicbrainz_db,work_alias,primary_for_locale,15,boolean,4.91,2,No,62640,No,No
+musicbrainz_db,work_alias,ended,16,boolean,5.0,2,No,62640,No,No
+musicbrainz_db,work_alias_type,id,1,integer,1.0,2,Yes,2,No,No
+musicbrainz_db,work_alias_type,name,2,text,10.0,2,No,2,No,No
+musicbrainz_db,work_alias_type,parent,3,integer,0.0,0,No,2,Yes,Yes
+musicbrainz_db,work_alias_type,child_order,4,integer,1.0,1,No,2,No,No
+musicbrainz_db,work_alias_type,description,5,text,0.0,0,No,2,Yes,Yes
+musicbrainz_db,work_alias_type,gid,6,uuid,36.0,2,Yes,2,No,No
+musicbrainz_db,work_annotation,work,1,integer,7.58,5794,No,10478,No,No
+musicbrainz_db,work_annotation,annotation,2,integer,6.11,10478,No,10478,No,No
+musicbrainz_db,work_attribute,id,1,integer,6.53,563692,Yes,563692,No,No
+musicbrainz_db,work_attribute,work,2,integer,7.45,55604,No,563692,No,No
+musicbrainz_db,work_attribute,work_attribute_type,3,integer,1.8,72,No,563692,No,No
+musicbrainz_db,work_attribute,work_attribute_type_allowed_value,4,integer,1.69,102,No,563692,Yes,No
+musicbrainz_db,work_attribute,work_attribute_text,5,text,8.58,514915,No,563692,Yes,No
+musicbrainz_db,work_attribute_type,id,1,integer,2.04,83,Yes,83,No,No
+musicbrainz_db,work_attribute_type,name,2,character varying,9.02,83,No,83,No,No
+musicbrainz_db,work_attribute_type,comment,3,character varying,0.0,1,No,83,No,No
+musicbrainz_db,work_attribute_type,free_text,4,boolean,4.11,2,No,83,No,No
+musicbrainz_db,work_attribute_type,parent,5,integer,2.0,1,No,83,Yes,No
+musicbrainz_db,work_attribute_type,child_order,6,integer,1.0,5,No,83,No,No
+musicbrainz_db,work_attribute_type,description,7,text,41.47,74,No,83,Yes,No
+musicbrainz_db,work_attribute_type,gid,8,uuid,36.0,83,Yes,83,No,No
+musicbrainz_db,work_attribute_type_allowed_value,id,1,integer,2.95,1041,Yes,1041,No,No
+musicbrainz_db,work_attribute_type_allowed_value,work_attribute_type,2,integer,1.69,8,No,1041,No,No
+musicbrainz_db,work_attribute_type_allowed_value,value,3,text,9.91,1019,No,1041,Yes,No
+musicbrainz_db,work_attribute_type_allowed_value,parent,4,integer,0.0,0,No,1041,Yes,Yes
+musicbrainz_db,work_attribute_type_allowed_value,child_order,5,integer,1.05,57,No,1041,No,No
+musicbrainz_db,work_attribute_type_allowed_value,description,6,text,0.0,1,No,1041,Yes,No
+musicbrainz_db,work_attribute_type_allowed_value,gid,7,uuid,36.0,1041,Yes,1041,No,No
+musicbrainz_db,work_gid_redirect,gid,1,uuid,36.0,101295,Yes,101295,No,No
+musicbrainz_db,work_gid_redirect,new_id,2,integer,7.19,23528,Yes,101295,No,No
+musicbrainz_db,work_gid_redirect,created,3,timestamp with time zone,28.89,33948,No,101295,Yes,No
+musicbrainz_db,work_language,work,1,integer,7.82,188617,No,189449,No,No
+musicbrainz_db,work_language,language,2,integer,3.0,153,No,189449,No,No
+musicbrainz_db,work_language,edits_pending,3,integer,1.0,1,No,189449,No,No
+musicbrainz_db,work_language,created,4,timestamp with time zone,28.94,95936,No,189449,Yes,No
+musicbrainz_db,work_meta,id,1,integer,7.81,250731,Yes,250731,No,No
+musicbrainz_db,work_meta,rating,2,smallint,2.61,10,No,250731,Yes,No
+musicbrainz_db,work_meta,rating_count,3,integer,1.0,3,No,250731,Yes,No
+musicbrainz_db,work_rating_raw,work,1,integer,7.23,1355,No,1398,No,No
+musicbrainz_db,work_rating_raw,editor,2,integer,6.51,176,No,1398,No,No
+musicbrainz_db,work_rating_raw,rating,3,smallint,2.6,10,No,1398,No,No
+musicbrainz_db,work_series,work,1,integer,7.72,5725,No,7018,Yes,No
+musicbrainz_db,work_series,series,2,integer,3.44,491,No,7018,Yes,No
+musicbrainz_db,work_series,relationship,3,integer,4.55,7018,No,7018,Yes,No
+musicbrainz_db,work_series,link_order,4,integer,2.32,1032,No,7018,Yes,No
+musicbrainz_db,work_series,link,5,integer,6.04,4588,No,7018,Yes,No
+musicbrainz_db,work_series,text_value,6,text,5.21,4588,No,7018,Yes,No
+musicbrainz_db,work_tag,work,1,integer,7.73,10203,No,22860,No,No
+musicbrainz_db,work_tag,tag,2,integer,3.32,1098,No,22860,No,No
+musicbrainz_db,work_tag,count,3,integer,1.0,8,No,22860,No,No
+musicbrainz_db,work_tag,last_updated,4,timestamp with time zone,28.89,20891,No,22860,Yes,No
+musicbrainz_db,work_tag_raw,work,1,integer,7.72,9652,No,21876,No,No
+musicbrainz_db,work_tag_raw,editor,2,integer,6.36,207,No,21876,No,No
+musicbrainz_db,work_tag_raw,tag,3,integer,3.28,963,No,21876,No,No
+musicbrainz_db,work_tag_raw,is_upvote,4,boolean,4.01,2,No,21876,No,No
+musicbrainz_db,work_type,id,1,integer,1.69,29,Yes,29,No,No
+musicbrainz_db,work_type,name,2,character varying,7.41,29,No,29,No,No
+musicbrainz_db,work_type,parent,3,integer,0.0,0,No,29,Yes,Yes
+musicbrainz_db,work_type,child_order,4,integer,1.0,2,No,29,No,No
+musicbrainz_db,work_type,description,5,text,152.17,29,No,29,Yes,No
+musicbrainz_db,work_type,gid,6,uuid,36.0,29,Yes,29,No,No

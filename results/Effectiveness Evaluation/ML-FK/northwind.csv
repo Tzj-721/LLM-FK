@@ -1,0 +1,21 @@
+Table_A,Column_A,Table_B,Column_B,label,result
+Orders,EmployeeID,Employees,EmployeeID,1,1
+Region,RegionID,Products,ProductID,0,0
+Shippers,ShipperID,Categories,CategoryID,0,0
+EmployeeTerritories,TerritoryID,Territories,TerritoryID,1,1
+Products,SupplierID,Suppliers,SupplierID,1,1
+Orders,ShipVia,Shippers,ShipperID,1,0
+Region,RegionID,Employees,EmployeeID,0,0
+EmployeeTerritories,EmployeeID,Employees,EmployeeID,1,1
+Orders,ShipVia,Products,ProductID,0,0
+Orders,EmployeeID,Suppliers,SupplierID,0,0
+Shippers,ShipperID,Employees,EmployeeID,0,0
+Order Details,OrderID,Orders,OrderID,1,1
+Products,CategoryID,Categories,CategoryID,1,1
+Products,SupplierID,Products,ProductID,0,0
+Orders,CustomerID,Customers,CustomerID,1,1
+Territories,RegionID,Categories,CategoryID,0,0
+Order Details,ProductID,Products,ProductID,1,1
+Categories,CategoryID,Employees,EmployeeID,0,1
+Employees,EmployeeID,Products,ProductID,0,0
+Territories,RegionID,Region,RegionID,1,1

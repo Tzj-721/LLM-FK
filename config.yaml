@@ -1,0 +1,21 @@
+# is unique-prune
+is_ucc: true
+# is conflict solve
+is_conflict_solve: true
+
+# if empty tables and columns are considered
+is_empty_col: false
+
+# LLM configuration
+base_url: ""
+api_key: ""
+model: ""
+# database background knowledge , such as it is a
+data_knowledge: ""
+# role for LLM
+role: ""
+
+# other setting
+concurrency: 5
+timeout: 30
+max_iter: 100

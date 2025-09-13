@@ -1,0 +1,1 @@
+https://learn.microsoft.com/zh-cn/sql/samples/adventureworks-install-configure?view=sql-server-ver17&tabs=ssms
