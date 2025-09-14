@@ -35,7 +35,6 @@ def unique_key_prune(candidate, dataframes):
             future = executor.submit(process_table, table, df)
             futures[future] = table
 
-        # 进度条监控
         with tqdm(total=len(futures), desc="Processing UCC") as pbar:
             for future in as_completed(futures):
                 table_name, ucc_str = future.result()
@@ -308,5 +307,4 @@ def get_result_no_ucc(row):
         json_str = result[json_start:json_end]
         data = json.loads(json_str)
         pk_value = data['pk']
-        # 接着这里的pk要与提示词的对应
         return pk_value
