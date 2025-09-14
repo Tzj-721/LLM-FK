@@ -32,8 +32,7 @@ def rule_prune(dependencies_df: pd.DataFrame,
             axis=1
         )
         filtered_df = filtered_df[mask].reset_index(drop=True)
-
-    # 步骤3：过滤类型不匹配
+        
     def get_col_type(table: str, col: str) -> str:
         return col_info_map.get((table.lower(), col), {}).get("data_type", "").lower()
 
