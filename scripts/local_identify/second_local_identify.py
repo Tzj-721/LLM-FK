@@ -161,7 +161,7 @@ def re_second_local_identify(config, dataframes, relation_df, column_info_df, co
 
     for result in results:
         if result.startswith("Error:"):
-            conclusions.append('未知')
+            conclusions.append('Unknown')
             confidences.append(0.0)
             explanations.append(result)
         else:
@@ -178,7 +178,6 @@ def re_second_local_identify(config, dataframes, relation_df, column_info_df, co
     result_df = prompt_df[prompt_df['conclusion'] == 'Yes']
     result_df.to_csv("./result.csv")
     result_df = process_dataframe(result_df, error_log, true_log)
-    # 这里只是一个再确认的方法
     return result_df
 
 
@@ -191,16 +190,10 @@ def process_dataframe(df: pd.DataFrame,
             src_parts = error_item["source"].split('.')
             tgt_parts = error_item["target"].split('.')
             mask = (
-                    (processed_df['connect_name_A'] == src_parts[0]) &
-                    (processed_df['database_A'] == src_parts[1]) &
-                    (processed_df['schema_A'] == src_parts[2]) &
-                    (processed_df['table_A'] == src_parts[3]) &
-                    (processed_df['column_A'] == src_parts[4]) &
-                    (processed_df['connect_name_B'] == tgt_parts[0]) &
-                    (processed_df['database_B'] == tgt_parts[1]) &
-                    (processed_df['schema_B'] == tgt_parts[2]) &
-                    (processed_df['table_B'] == tgt_parts[3]) &
-                    (processed_df['column_B'] == tgt_parts[4])
+                    (processed_df['table_A'] == src_parts[0]) &
+                    (processed_df['column_A'] == src_parts[1]) &
+                    (processed_df['table_B'] == tgt_parts[0]) &
+                    (processed_df['column_B'] == tgt_parts[1])
             )
             processed_df = processed_df[~mask]
     if true_log:
@@ -209,38 +202,20 @@ def process_dataframe(df: pd.DataFrame,
             tgt_parts = true_item["target"].split('.')
 
             mask = (
-                    (processed_df['connect_name_A'] == src_parts[0]) &
-                    (processed_df['database_A'] == src_parts[1]) &
-                    (processed_df['schema_A'] == src_parts[2]) &
-                    (processed_df['table_A'] == src_parts[3]) &
-                    (processed_df['column_A'] == src_parts[4]) &
-                    (processed_df['connect_name_B'] == tgt_parts[0]) &
-                    (processed_df['database_B'] == tgt_parts[1]) &
-                    (processed_df['schema_B'] == tgt_parts[2]) &
-                    (processed_df['table_B'] == tgt_parts[3]) &
-                    (processed_df['column_B'] == tgt_parts[4])
+                    (processed_df['table_A'] == src_parts[0]) &
+                    (processed_df['column_A'] == src_parts[1]) &
+                    (processed_df['table_B'] == tgt_parts[0]) &
+                    (processed_df['column_B'] == tgt_parts[1])
             )
             if mask.any():
                 processed_df.loc[mask, 'confidence'] = 1.0
-                processed_df.loc[mask, 'explanation'] = processed_df.loc[mask, 'explanation'].fillna('') + "--手动添加"
+                processed_df.loc[mask, 'explanation'] = processed_df.loc[mask, 'explanation'].fillna('') + "--manual"
             else:
                 new_row = pd.DataFrame([{
-                    'connect_name_A': src_parts[0],
-                    'database_A': src_parts[1],
-                    'schema_A': src_parts[2],
-                    'table_A': src_parts[3],
-                    'column_A': src_parts[4],
-                    'connect_name_B': tgt_parts[0],
-                    'database_B': tgt_parts[1],
-                    'schema_B': tgt_parts[2],
-                    'table_B': tgt_parts[3],
-                    'column_B': tgt_parts[4],
-                    'is_subset': True,
-                    'table': "",
-                    'primary_keys': "",
-                    'pk_count': 0,
-                    'status': "OK",
-                    'is_pk': True,
+                    'table_A': src_parts[0],
+                    'column_A': src_parts[1],
+                    'table_B': tgt_parts[0],
+                    'column_B': tgt_parts[1],
                     'conclusion': "Yes",
                     'confidence': 1.0,
                     'explanation': "--expert annotation"
