@@ -27,7 +27,7 @@ def out_of_value_feature(raw_data_dict, row):
     if count_referenced > 0:
         percentage_out_of_range = out_of_range_count / count_referenced
     else:
-        percentage_out_of_range = 0  # 如果没有唯一值，则返回 0%
+        percentage_out_of_range = 0 
 
     return percentage_out_of_range
 
