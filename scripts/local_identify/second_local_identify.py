@@ -438,7 +438,7 @@ excel at accurately identifying the most likely foreign keys from multiple candi
 conventions, database modeling experience, and the business entities represented by the database.
 
 Please analyze whether a foreign key dependency exists between two columns from different data tables—i.e., 
-whether column A depends on column B—and return the results in the specified format. Reason step by step based on the 
+whether column A references column B—and return the results in the specified format. Reason step by step based on the 
 following information: 
 
 ## Database Background 
@@ -524,7 +524,7 @@ excel at accurately identifying the most likely foreign keys from multiple candi
 conventions, database modeling experience, and the business entities represented by the database.
 
 Please analyze whether a foreign key dependency exists between two columns from different data tables—i.e., 
-whether column A depends on column B—and return the results in the specified format. Reason step by step based on the 
+whether column A references column B—and return the results in the specified format. Reason step by step based on the 
 following information: 
 
 ## Database Background 
